@@ -389,7 +389,7 @@ The distribution **matches the deliberate batch themes** in the seed data — Ba
 
 ---
 
-## Data provenance
+## Dataset
 
 All 300 seed tickets in `data/batch_*.json` are **synthetic**:
 
@@ -397,38 +397,10 @@ All 300 seed tickets in `data/batch_*.json` are **synthetic**:
 2. **Quality rewrite** — Claude (Anthropic) hand-rewrote each ticket to fix templated outputs and ensure realistic edge cases (typos, all-caps rage, forwarded chains, MSA threats, etc.)
 3. **Validation** — structurally verified: unique IDs/subjects/body openings, valid ISO 8601 timestamps, valid email format, 30 sender domains, ~150 unique sender names
 
-No real customer data, no scraped data, no copied production records. See `data/README.md` for the full provenance breakdown.
+No real customer data, no scraped data, no copied production records. See `data/README.md` for the full breakdown.
 
 ---
 
-## Not built (deliberate scope cuts)
-
-| Cut | Why |
-|---|---|
-| FastAPI HTTP layer | Streamlit calls services directly; no second consumer to justify the API tier |
-| structlog featured deliverable | Stdlib `logging` covers the demo; structlog is a one-file swap if needed later |
-| Alembic migrations | Single environment, settled schema |
-| Authentication / multi-tenant | Single-user demo |
-| Gmail / IMAP integration | Self-contained synthetic dataset is sufficient for the demo; OAuth would be friction without value |
-| Tests (pytest) | Code is small and reviewable; tests would be the obvious next addition for a team setting |
-
-These are pragmatic MVP cuts. Each could be added without restructuring — the layered architecture makes them additive, not disruptive.
-
----
-
-## Roadmap
-
-| Next | What it adds |
-|---|---|
-| `data/README.md` ✅ | Provenance disclosure (done) |
-| `README.md` ✅ | This file (done) |
-| Architecture diagram (visual) | Excalidraw → PNG → embedded in this README |
-| Deploy to Streamlit Cloud / Fly.io | Public demo URL for the portfolio / resume |
-| Paste-in box in the dashboard | Live triage of an arbitrary email at demo time |
-| Switch logging to structlog | JSON-structured logs with request-scoped context |
-| pytest test suite | Mocked LLM + real Postgres/Redis for integration tests |
-
----
 
 ## What this project demonstrates
 
@@ -442,10 +414,4 @@ Skills exercised end-to-end:
 - **Docker Compose** — multi-container orchestration, named volumes, service-name DNS
 - **Layered architecture** — DTOs / ORM / repositories / services / scripts / UI cleanly separated
 
-It's intentionally a small project (~600 lines of code) where every line earns its place. Architecture and code quality matter more than feature count.
-
 ---
-
-## License
-
-MIT
