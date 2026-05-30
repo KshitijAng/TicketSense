@@ -6,7 +6,6 @@
 
 Built with FastAPI-style layered architecture (DTOs / repositories / services), two storage tiers (Postgres for durable data, Redis for cached LLM results), production-grade LLM resilience (retry + model fallback), and a pre-computed overview pattern that scales the read path independently of dataset size.
 
----
 
 ## What it does
 
@@ -22,7 +21,6 @@ Plus a one-sentence summary and 2–5 free-form tags per ticket.
 
 A dashboard surfaces the aggregate (counts per dimension) and a random sample of triaged tickets so support managers can spot trends and high-priority items in seconds rather than minutes.
 
----
 
 ## Architecture
 
@@ -39,7 +37,7 @@ data/batch_{1-6}.json                │  Streamlit dashboard (:8501)    │
    │  300 immutable rows  │           ┌──────────────────────────────┐
    └──────────┬───────────┘           │  Redis (:6379)               │
               │                       │                              │
-              │ scripts/triage_all    │  triage:ticket:{id} × 300   │
+              │ scripts/triage_all    │  triage:ticket:{id} × 300    │
               ▼                       │  (per-ticket TriageOutput,   │
    ┌──────────────────────┐           │   7-day TTL)                 │
    │  TriageService       │ writes →  │                              │
@@ -66,9 +64,6 @@ data/batch_{1-6}.json                │  Streamlit dashboard (:8501)    │
 | **Cached analysis** | Redis (`triage:ticket:*`) | LLM-produced labels per ticket | 7-day TTL — regenerable if lost |
 | **Read-optimized aggregate** | Redis (`triage:overview`) | Pre-computed counts for the dashboard | 24-hour TTL — refreshed after bulk triage |
 
-The dashboard reads **one** Redis key per page load (`triage:overview`) — constant-time regardless of dataset size.
-
----
 
 ## Tech stack
 
@@ -96,52 +91,8 @@ The dashboard reads **one** Redis key per page load (`triage:overview`) — cons
 
 Two containers + two local processes. No conflicts; all four can run simultaneously.
 
----
 
-## Quickstart
-
-Requires Docker, Python 3.10+, a Groq API key ([free signup](https://console.groq.com)).
-
-```bash
-# 1. Clone + enter
-git clone <your-repo-url> ticket-sense
-cd ticket-sense
-
-# 2. Python environment
-python3 -m venv venv
-venv/bin/pip install -r requirements.txt
-
-# 3. Create .env with your credentials
-cat > .env <<'EOF'
-DATABASE_URL=postgresql+asyncpg://triage:triage_dev@localhost:5432/triage
-REDIS_URL=redis://localhost:6379/0
-GROQ_API_KEY=your-groq-key-from-console.groq.com
-EOF
-
-# 4. Start Postgres + Redis
-docker compose up -d
-
-# 5. Bootstrap the schema (creates the `tickets` table)
-venv/bin/python -m scripts.init_db
-
-# 6. Load the 300 seed tickets into Postgres
-venv/bin/python -m scripts.load_seed
-
-# 7. Triage every ticket via Groq (~12 minutes for all 300)
-venv/bin/python -m scripts.triage_all
-
-# 8. Launch the dashboard
-venv/bin/streamlit run dashboard.py            # → http://localhost:8501
-
-# 9. (Optional) Launch the HTTP API
-venv/bin/uvicorn app.main:app --reload --port 8000   # → http://localhost:8000/docs
-```
-
----
-
-## HTTP API
-
-The FastAPI tier exposes the same services as the dashboard, callable from any HTTP client. Interactive auto-generated OpenAPI docs at **`http://localhost:8000/docs`** (Swagger UI).
+## API Endpoints
 
 | Method | Path | Purpose |
 |---|---|---|
@@ -264,10 +215,10 @@ Two layers of fault tolerance for every LLM call:
        Ticket → TriageService.triage(subject, body)
                             │
                             ▼
-            ┌─────────────────────────────────┐
-            │  Primary: Llama 4 Scout (17B MoE)│
-            │  with structured_output(TriageOutput)
-            └────────────┬────────────────────┘
+            ┌──────────────────────────────────────┐
+            │  Primary: Llama 4 Scout (17B MoE)    │
+            │  with structured_output(TriageOutput)│
+            └────────────┬─────────────────────────┘
                          │
               ┌──────────┴──────────┐
               │                     │
@@ -291,7 +242,6 @@ Two layers of fault tolerance for every LLM call:
 **Why two layers:**
 - Retry-with-backoff handles transient 429s (most common failure, recoverable in seconds)
 - Model-level fallback handles persistent issues with primary (different rate-limit pool, different infrastructure)
-- Combined: ~95% of failures handled invisibly to the caller
 
 ### Pre-computed overview for dashboard scalability
 
@@ -311,13 +261,6 @@ Dashboard request
      by_sentiment={...},
    )
 ```
-
-Recompute is decoupled from reads:
-- After bulk triage finishes → `OverviewService.refresh_overview()` writes the aggregate
-- Or manually: `python -m scripts.refresh_overview`
-- Or via the "Refresh" button in the dashboard sidebar
-
-**Scaling profile:** dashboard read latency stays flat whether the system has 300 tickets or 3M.
 
 ### Constrained LLM output via Pydantic + Literal
 
@@ -345,49 +288,6 @@ Entry point        →  Script or Streamlit app
 ```
 
 Each layer has a single concern. Swapping Streamlit for FastAPI, or Postgres for MySQL, or Groq for OpenAI, touches only one layer.
-
----
-
-## Metrics from the live demo dataset
-
-| Metric | Value |
-|---|---|
-| Synthetic tickets generated | **300** across 6 thematic batches |
-| Failed triages (Groq) | **0 / 300** |
-| Per-ticket triage time (Groq Llama 4 Scout) | **~2.5s** average |
-| Full dataset triage runtime | **~12 minutes** for 300 tickets |
-| Dashboard initial load time | **~50 ms** (single Redis GET + chart render) |
-| Pre-computed aggregate Redis key size | **~250 bytes** |
-| Lines of application code | **~600** across 13 files |
-| Python packages | 11 direct dependencies (see `requirements.txt`) |
-
-### Triage distribution on the seed dataset
-
-After running `scripts/triage_all` on all 300 seed tickets, the LLM produced this distribution (real output, not handcrafted):
-
-| Dimension | Distribution |
-|---|---|
-| **Priority** | 99 low · 68 medium · 54 high · 79 critical |
-| **Category** | 28 billing · 106 technical · 94 feature_request · 30 complaint · 42 general |
-| **Sentiment** | 46 positive · 105 neutral · 65 negative · 84 angry |
-
-The distribution **matches the deliberate batch themes** in the seed data — Batch 5 (P0 outages) produced critical/technical/angry as expected, Batch 3 (positive feature requests) produced low/feature_request/positive, etc. Useful end-to-end validation that the LLM is reading content correctly.
-
----
-
-## Key design decisions
-
-| Decision | Rationale |
-|---|---|
-| **Two storage layers (Postgres + Redis), not one** | Different lifecycle: tickets are durable, triage results are regenerable. Triage TTL means stale LLM versions evict themselves. |
-| **Pre-computed overview, not on-the-fly aggregation** | Decouples dashboard latency from dataset size. Same ~50ms whether 300 or 3M tickets. |
-| **Model-level fallback, not just retry** | Different failure modes need different responses. Primary 429s recover with retry; persistent issues need a different model. |
-| **TriageOutput reused as API + LLM contract** | The LLM contract IS the API contract for triage data. One Pydantic class, two enforcement points. |
-| **`Base.metadata.create_all()` instead of Alembic** | Single environment, settled schema. Alembic is overkill at this scale; one `init_db.py` call suffices. |
-| **Skipped FastAPI** | Streamlit reads Postgres + Redis directly. No need for an HTTP layer when there's one consumer. Reduces moving parts. |
-| **Inline `logging`, not structlog (for now)** | Stdlib logging covers the demo's needs. structlog migration is a one-file refactor when warranted. |
-
----
 
 ## Dataset
 
