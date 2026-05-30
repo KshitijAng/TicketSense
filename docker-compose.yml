@@ -1,0 +1,39 @@
+# Docker Compose file for the Triage project's local infrastructure.
+# Run with: docker compose up -d
+# Stop with: docker compose down
+# Checking it's running: docker compose ps
+# Tailing the logs (useful when debugging): docker compose logs -f postgres
+# Connecting to Postgres directly: docker compose exec postgres psql -U triage -d triage
+# Connecting to Redis directly:    docker compose exec redis redis-cli
+# Browse Redis visually:           RedisInsight desktop app → connect to localhost:6379
+# Type \dt to list tables, \q to quit psql.
+# Restarting after edits to docker-compose.yml: docker compose up -d --force-recreate
+
+services:
+
+  postgres:
+    image: postgres:16-alpine          # Official Postgres image, Alpine Linux variant (small, ~80MB)
+    container_name: triage_postgres    # Friendly name shown in `docker ps`
+    restart: unless-stopped            # Auto-restart on crash, but not if you `docker stop` it manually
+    environment:
+      POSTGRES_USER: triage            # Username for the DB connection
+      POSTGRES_PASSWORD: triage_dev    # Password — local dev only, NOT production
+      POSTGRES_DB: triage              # Database name created on first startup
+    ports:
+      - "5432:5432"                    # Expose container's port 5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Persistent storage — survives container restarts
+
+  redis:
+    image: redis:7-alpine              # Official Redis image, Alpine variant (~40MB)
+    container_name: triage_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"                    # Standard Redis port — exposed to host so Python can connect via localhost
+    volumes:
+      - redis_data:/data               # Persistent storage for AOF/RDB files
+    command: redis-server --appendonly yes  # Enable AOF persistence (writes survive restart)
+
+volumes:
+  postgres_data:                       # Named volume, lives in Docker's storage area
+  redis_data:                          # Persisted Redis dataset

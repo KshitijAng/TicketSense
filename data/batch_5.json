@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ticket_201",
+    "subject": "P0: All API calls returning 503 — production down",
+    "body": "We are seeing 100% failure rate on /v1/* endpoints from our infrastructure since 07:48 UTC. Initial trace below:\n\n```\nHTTP 503 Service Unavailable\nx-request-id: c4f8e2a-2026-...\nupstream connect error or disconnect/reset before headers. reset reason: connection failure\n```\n\nLatency on our side is normal; resolves to your edge IP. Suspect upstream issue. Our customer-facing dashboard is fully degraded.\n\nNeed someone on this immediately. Status page shows green which is wrong.\n\nAarav Mehta\nSenior SRE",
+    "from_name": "Aarav Mehta",
+    "from_email": "aarav.mehta@atlasdata.com",
+    "created_at": "2026-03-20T08:04:00Z"
+  },
+  {
+    "id": "ticket_202",
+    "subject": "CRITICAL: webhook deliveries dropped at 13:50 UTC",
+    "body": "Webhook delivery rate from your platform dropped to ~3% at 13:50 UTC. Our event-driven downstream systems are not receiving updates. We have $2.4M of payment events queued behind this.\n\nNot a config change on our side. Confirmed receiving 200s on our endpoint when manually testing. Your retry queue must be wedged.\n\nThis is impacting revenue right now. Please respond.\n\nPriya, Engineering Lead",
+    "from_name": "Priya Nair",
+    "from_email": "priya.nair@cloudforge.io",
+    "created_at": "2026-04-08T14:07:00Z"
+  },
+  {
+    "id": "ticket_203",
+    "subject": "URGENT — security concern, possible account compromise",
+    "body": "I'm seeing API calls from IPs we don't own — 4 different ASNs in the last 2 hours, none of which are ours. Authenticated as our service account.\n\nOur AWS CloudTrail confirms we did NOT issue these calls. Either our API key has leaked or there's something off with your auth layer.\n\nI've rotated the key. But we need to understand the blast radius. Can your security team pull the full audit log for our account from 18:00 UTC yesterday to now?\n\nChen Wei\nCTO",
+    "from_name": "Chen Wei",
+    "from_email": "chen.wei@vertexai.com",
+    "created_at": "2026-04-02T21:59:00Z"
+  },
+  {
+    "id": "ticket_204",
+    "subject": "DOWN during customer demo in 12 minutes",
+    "body": "I have a $400K customer demo starting at 01:30 UTC. Right now I cannot log into our workspace. Says 'session expired' on every browser, every device. Cleared cookies. No dice.\n\nIf I can't fix this in 12 minutes the demo is dead.\n\nPlease — anyone — respond.\n\nSofia",
+    "from_name": "Sofia Alvarez",
+    "from_email": "sofia.alvarez@cloudforge.io",
+    "created_at": "2026-04-28T01:18:00Z"
+  },
+  {
+    "id": "ticket_205",
+    "subject": "Production data discrepancy detected",
+    "body": "We have a data integrity issue. The ticket count in your /v2/reports/overview API is off from the actual ticket count in our database by ~18%. Reproduced consistently across 5 different windows.\n\nThis affects our customer-facing metrics page. Customers are about to start asking why our numbers don't match theirs.\n\nNeed engineering on this. Not a question of UI — the API is wrong.\n\nKwame Mensah\nHead of Engineering",
+    "from_name": "Kwame Mensah",
+    "from_email": "kwame.mensah@cloudforge.io",
+    "created_at": "2026-05-04T16:32:00Z"
+  },
+  {
+    "id": "ticket_206",
+    "subject": "URGENT: Production outage affecting critical workflows",
+    "body": "Multiple services are failing. Our team cannot complete core workflows. Specifically:\n\n- Inbox is not loading (spinner)\n- API returns 500 on /tickets and /tickets/{id}\n- Email-in is silently dropping (we can see customer emails not arriving)\n\nStarted ~08:30 UTC. Status page still green. Please escalate to on-call.\n\nElena Petrova\nVP Engineering",
+    "from_name": "Elena Petrova",
+    "from_email": "elena.petrova@cloudforge.io",
+    "created_at": "2026-04-11T08:36:00Z"
+  },
+  {
+    "id": "ticket_207",
+    "subject": "Tickets disappearing from inbox in real time",
+    "body": "I'm watching my inbox right now and tickets are disappearing. They were there 5 minutes ago. They're gone now. I can see in our audit log that they're being archived by 'system' — no user attribution.\n\nThis is across multiple users on my team. Not isolated.\n\nIs there a runaway automation? Did something deploy that's auto-archiving? STOP IT. We need this data.\n\nDiego",
+    "from_name": "Diego Romero",
+    "from_email": "diego.romero@vertexai.com",
+    "created_at": "2026-03-27T14:54:00Z"
+  },
+  {
+    "id": "ticket_208",
+    "subject": "Compliance audit at 12:00 UTC — need access fixed NOW",
+    "body": "We have a SOC 2 audit in 4 hours. The auditor needs to see our access logs and ticket history for Q1. Our admin account is currently locked out — 'too many failed attempts' even though I'm the only one with credentials.\n\nIf I can't get in within 2 hours we fail the audit. Failing the audit costs us a $1.2M enterprise contract that closes Friday.\n\nUnlock the account. I will verify identity any way you need.\n\nAnanya Rao\nHead of Compliance",
+    "from_name": "Ananya Rao",
+    "from_email": "ananya.rao@northstar.ai",
+    "created_at": "2026-03-06T19:32:00Z"
+  },
+  {
+    "id": "ticket_209",
+    "subject": "SSO completely broken since deploy",
+    "body": "Since your deploy at 22:00 UTC, SSO via Okta is completely broken for our org. 247 users affected. Login redirects to a 404.\n\nWe disabled SSO temporarily and fell back to password auth as workaround, but most users don't have passwords set.\n\nUrgently need this rolled back or fixed forward.\n\nJean Dupont\nDirector of IT",
+    "from_name": "Jean Dupont",
+    "from_email": "jean.dupont@vertexai.com",
+    "created_at": "2026-03-14T23:42:00Z"
+  },
+  {
+    "id": "ticket_210",
+    "subject": "Database lock — entire workspace frozen",
+    "body": "Our workspace appears completely frozen. All write operations return:\n\n```\n{\"error\": \"workspace_locked\", \"retry_after\": 60}\n```\n\nBut it's been 45 minutes. Reads still work. Writes still fail.\n\nWe have an end-of-day book close happening. Stuck.\n\nLi Na, CTO",
+    "from_name": "Li Na",
+    "from_email": "li.na@coregrid.io",
+    "created_at": "2026-04-15T23:28:00Z"
+  },
+  {
+    "id": "ticket_211",
+    "subject": "Sev1: rate limits cratered after upgrade",
+    "body": "We upgraded to Enterprise tier yesterday. Per the plan we should get 10K req/min.\n\nInstead, since 12:00 UTC we've been throttled at ~500 req/min — actually lower than our previous tier. Every burst returns 429. Our integration is dead in the water.\n\nThe rate limit config on your side must not have updated post-upgrade. Please fix manually.\n\nMateo Herrera\nStaff Engineer",
+    "from_name": "Mateo Herrera",
+    "from_email": "mateo.herrera@cloudforge.io",
+    "created_at": "2026-04-05T12:49:00Z"
+  },
+  {
+    "id": "ticket_212",
+    "subject": "URGENT — customer data leakage detected",
+    "body": "I just received a notification email from your system that contained another customer's data. Their ticket subject, body, and email address. Not mine.\n\nThis is a serious P0 privacy incident. I have a screenshot. I'm not sharing it publicly because that would compound the leak, but you need to know — your notification routing is broken.\n\nI want a written incident response and confirmation that my data hasn't been sent to anyone else.\n\nAmina Bello\nGeneral Counsel",
+    "from_name": "Amina Bello",
+    "from_email": "amina.bello@atlasdata.com",
+    "created_at": "2026-05-12T15:44:00Z"
+  },
+  {
+    "id": "ticket_213",
+    "subject": "P1 — bulk export hung 4h, jobs queued behind",
+    "body": "Bulk export job exp_8a31b2 has been processing for 4 hours and 12 minutes. Stuck at 47%. All subsequent jobs from our org are queued behind it.\n\nWe have a weekly reporting deadline that hits at 00:00 UTC. We need this unstuck or killed so we can re-queue.\n\nLogs from your side?\n\nOliver Fischer",
+    "from_name": "Oliver Fischer",
+    "from_email": "oliver.fischer@atlasdata.com",
+    "created_at": "2026-04-07T22:48:00Z"
+  },
+  {
+    "id": "ticket_214",
+    "subject": "Customer was just billed twice in 30 seconds",
+    "body": "Critical issue — our payment provider just executed two charges 30 seconds apart for the same customer. Both successful. They emailed me upset.\n\nWebhook from your system fired twice with identical payloads. event_id is same. Some kind of retry logic gone wrong on your side?\n\nI need this fixed before more customers are double-charged. Pause the webhook stream for our account if you have to.\n\nRiya Kapoor\nVP Engineering",
+    "from_name": "Riya Kapoor",
+    "from_email": "riya.kapoor@northstar.ai",
+    "created_at": "2026-03-25T13:07:00Z"
+  },
+  {
+    "id": "ticket_215",
+    "subject": "Inbox shows yesterday's data — stale cache?",
+    "body": "Every user on my team is seeing the inbox state from ~14 hours ago. Refreshing doesn't update. New emails aren't appearing in the UI. The data IS coming in (we can see it in the API) — it's just not showing in the UI.\n\nSomething is serving stale cached data. Please flush our org's cache or whatever needs to happen.\n\nTomas",
+    "from_name": "Tomas Novak",
+    "from_email": "tomas.novak@atlasdata.com",
+    "created_at": "2026-03-30T14:58:00Z"
+  },
+  {
+    "id": "ticket_216",
+    "subject": "Outage during product launch — RESPOND NOW",
+    "body": "WE ARE LAUNCHING IN 90 MINUTES AND YOUR PRODUCT IS DOWN. We were supposed to live-demo the AI Copilot feature on our launch keynote. It doesn't work.\n\nI've contacted your team via 3 channels in the past hour. Zero response.\n\nIf we can't demo on time, that's $300K of product launch marketing burned and I'm escalating to your CEO publicly.\n\nMei Zhang, CEO",
+    "from_name": "Mei Zhang",
+    "from_email": "mei.zhang@coregrid.io",
+    "created_at": "2026-05-14T08:48:00Z"
+  },
+  {
+    "id": "ticket_217",
+    "subject": "P0: data deletion — need restore from backup",
+    "body": "I need a restore. Today at 20:00 UTC, ~5,400 tickets were deleted from our workspace. We've audited and confirmed: no user on our side triggered this. The audit log shows 'deleted_by: api_token_xxx' but that token hasn't been used by us today.\n\nEither someone else has our token, OR your platform deleted data autonomously. Either way it's catastrophic.\n\nNeed: full restore + incident report. Status: P0.\n\nCarlos Mendes\nHead of Customer Success",
+    "from_name": "Carlos Mendes",
+    "from_email": "carlos.mendes@northstar.ai",
+    "created_at": "2026-05-20T20:08:00Z"
+  },
+  {
+    "id": "ticket_218",
+    "subject": "Heimdall integration totally broken since 03:00",
+    "body": "Our Heimdall pipeline broke at 03:00 UTC and we just noticed at standup. Every event from your platform → our system is failing schema validation.\n\nLooks like you changed the webhook payload shape without notice. New required field `event_metadata.dispatch_id` was not there yesterday.\n\nWas this announced? Couldn't find it in changelog. Please confirm and provide a transition window. Production-critical.\n\nNandini Iyer\nPlatform Engineer",
+    "from_name": "Nandini Iyer",
+    "from_email": "nandini.iyer@northstar.ai",
+    "created_at": "2026-05-23T09:33:00Z"
+  },
+  {
+    "id": "ticket_219",
+    "subject": "DDoS or runaway client? Our usage just exploded",
+    "body": "Our API usage just jumped from baseline 200 req/sec to 14,000 req/sec in 4 minutes. Our auth logs show every request authenticating as our service account.\n\nWe are not the source. Suspect either credential leak (key in a public repo somewhere — investigating) or DDoS through our auth path.\n\nCan you rate-limit our token to baseline + 10% until we contain this on our side? Will rotate the key in next 15 minutes.\n\nPablo Gutierrez\nSecurity Engineer",
+    "from_name": "Pablo Gutierrez",
+    "from_email": "pablo.gutierrez@cloudforge.io",
+    "created_at": "2026-05-07T19:34:00Z"
+  },
+  {
+    "id": "ticket_220",
+    "subject": "P0 — Customer-facing chat widget completely broken",
+    "body": "Our embedded chat widget is broken on all customer sites. Console shows:\n\n```\nUncaught TypeError: Cannot read property 'apiKey' of undefined\n    at chat-widget.min.js:12:8421\n    at HTMLDocument.<anonymous> (chat-widget.min.js:14:202)\n```\n\nDeployed your widget JS at v3.4.1, was working yesterday. Did you push v3.4.2 without warning?\n\nOur customers cannot chat with our support team right now. THIS IS BLOCKING REVENUE.\n\nAnna Kowalska, Engineering Lead",
+    "from_name": "Anna Kowalska",
+    "from_email": "anna.kowalska@coregrid.io",
+    "created_at": "2026-05-22T12:05:00Z"
+  },
+  {
+    "id": "ticket_221",
+    "subject": "API auth completely broken — 401 on every request",
+    "body": "Every API call from us to your platform has been returning 401 since 06:00 UTC. Same API key that worked yesterday. We have NOT rotated.\n\nWe verified: header is `Authorization: Bearer xxx`, key matches what's in your dashboard, account is active.\n\nIs there a JWT issuer issue? Some kind of cert expiry?\n\nThis is breaking our overnight batch jobs. Please look.\n\nRahul Verma\nLead Engineer",
+    "from_name": "Rahul Verma",
+    "from_email": "rahul.verma@vertexai.com",
+    "created_at": "2026-03-10T06:05:00Z"
+  },
+  {
+    "id": "ticket_222",
+    "subject": "Critical: tickets routing to wrong inboxes",
+    "body": "We are seeing tickets that should route to our Billing inbox going to our Technical Support inbox. ~30% misroute rate.\n\nOur tagging rules haven't changed. The misrouted tickets all have correct tags applied. Something on your routing layer is wrong.\n\nThis is messing up our team's queue. Customers complaining about delayed responses on billing issues. Please look.\n\nEva Muller",
+    "from_name": "Eva Muller",
+    "from_email": "eva.muller@atlasdata.com",
+    "created_at": "2026-04-04T16:36:00Z"
+  },
+  {
+    "id": "ticket_223",
+    "subject": "All emails bouncing — outgoing replies failing",
+    "body": "Since 09:15 UTC, every outgoing reply from our team is bouncing back with:\n\n```\nDelivery to the following recipient failed permanently:\nReason: 550-5.7.1 Email rejected per DMARC policy\n```\n\nOur DKIM/SPF records haven't changed. Either your outbound mail config changed or your relay IP got onto a blocklist.\n\nWe have ~800 customer replies queued that haven't gone out. Please fix urgently.\n\nSamuel Okafor",
+    "from_name": "Samuel Okafor",
+    "from_email": "samuel.okafor@atlasdata.com",
+    "created_at": "2026-05-10T09:29:00Z"
+  },
+  {
+    "id": "ticket_224",
+    "subject": "P0: Dashboard showing $0 revenue",
+    "body": "Our revenue dashboard is showing $0 across all customers since 17:00 UTC. We know this is wrong — backend confirms we are processing transactions normally.\n\nThis is feeding our investor metrics dashboard. We can't have $0 revenue showing.\n\nIs this a data pipeline issue on your end?\n\nIsabella Rossi\nVP Finance",
+    "from_name": "Isabella Rossi",
+    "from_email": "isabella.rossi@vertexai.com",
+    "created_at": "2026-05-01T17:29:00Z"
+  },
+  {
+    "id": "ticket_225",
+    "subject": "Production fire — please escalate",
+    "body": "I've been waiting 6 hours for a response on ticket #20104 which I marked P0 yesterday. The issue (analytics pipeline emitting bad data) is still ongoing and is now affecting our customer-facing reports.\n\nI'm beyond frustrated at this point but more critically — we need engineering on this. Six hours on a P0 with zero response is an SLA violation.\n\nWho do I need to escalate to to actually get someone to look?\n\nArjun Singh\nDirector of Engineering",
+    "from_name": "Arjun Singh",
+    "from_email": "arjun.singh@vertexai.com",
+    "created_at": "2026-03-26T08:55:00Z"
+  },
+  {
+    "id": "ticket_226",
+    "subject": "Severe perf degradation — P95 from 800ms to 14s",
+    "body": "Our P95 latency on /v1/conversations has gone from 800ms to 14,000ms over the last 90 minutes. Distribution is bimodal — 70% are fast, 30% time out at our 30s limit.\n\nOur side is fine. Same query pattern, same data volume. Something is unhealthy on your end.\n\nLucia Fernandez\nSenior SRE",
+    "from_name": "Lucia Fernandez",
+    "from_email": "lucia.fernandez@cloudforge.io",
+    "created_at": "2026-04-06T08:08:00Z"
+  },
+  {
+    "id": "ticket_227",
+    "subject": "URGENT — financial year close on hold",
+    "body": "We are in our financial year-end close right now. Our finance team needs to export 12 months of billing data and your export API has been failing for the past 4 hours.\n\nThis is blocking our annual close. CFO is escalating internally. We have a board meeting tomorrow where these numbers matter.\n\nPlease look at job ids: exp_9f2a01, exp_9f2a02, exp_9f2a03. All stuck.\n\nWei Huang, Finance Operations",
+    "from_name": "Wei Huang",
+    "from_email": "wei.huang@northstar.ai",
+    "created_at": "2026-05-21T18:42:00Z"
+  },
+  {
+    "id": "ticket_228",
+    "subject": "Sev1: backend returning corrupted JSON",
+    "body": "Started receiving malformed JSON responses from /v2/tickets/* endpoints at ~08:00 UTC. Example:\n\n```\n{\"id\":12345,\"subject\":\"foo\"\"body\":\"bar\"}  // missing comma between fields\n```\n\nParser breaks. Reproduced from multiple clients. ~12% of responses affected, seemingly random.\n\nLooks like a serialization bug post-deploy. Please rollback or hotfix.\n\nFatima Yusuf\nBackend Lead",
+    "from_name": "Fatima Yusuf",
+    "from_email": "fatima.yusuf@atlasdata.com",
+    "created_at": "2026-04-10T08:24:00Z"
+  },
+  {
+    "id": "ticket_229",
+    "subject": "Cannot reach status page or main site — full outage?",
+    "body": "Both your status page AND your main app are returning 502 Bad Gateway from our network. Confirmed from 3 different ISPs and a mobile hotspot.\n\nIf this is a full platform outage, customers will be raging. Please confirm and update us when it's resolved.\n\nMarek Zielinski, On-call Engineer",
+    "from_name": "Marek Zielinski",
+    "from_email": "marek.zielinski@northstar.ai",
+    "created_at": "2026-03-21T13:46:00Z"
+  },
+  {
+    "id": "ticket_230",
+    "subject": "SAML cert expired — entire enterprise locked out",
+    "body": "Your SAML signing certificate expired today at 18:00 UTC. None of our SSO logins work. 89 users locked out, including all admins.\n\nWe have no backup local auth on this account because it's SAML-only per our security policy.\n\nPlease either renew the cert or temporarily provide an alternate auth path. We can't even file this ticket through the dashboard because we can't log in.\n\nNeha Bhatia\nIdentity Team Lead",
+    "from_name": "Neha Bhatia",
+    "from_email": "neha.bhatia@coregrid.io",
+    "created_at": "2026-04-18T18:06:00Z"
+  },
+  {
+    "id": "ticket_231",
+    "subject": "P0 — payments webhook firing for refunded transactions",
+    "body": "Your billing webhook is sending `transaction.succeeded` events for transactions that were ALREADY refunded. We're processing them as new revenue. Booking errors compounding by the hour.\n\nNeed to know:\n1. Pause the webhook stream until fixed.\n2. Send us a list of affected transactions so we can reconcile.\n\nThis is corrupting our accounting.\n\nMiguel Torres\nFinance Engineering",
+    "from_name": "Miguel Torres",
+    "from_email": "miguel.torres@coregrid.io",
+    "created_at": "2026-04-08T04:50:00Z"
+  },
+  {
+    "id": "ticket_232",
+    "subject": "Suspicious login activity — possible account takeover",
+    "body": "Hi security team,\n\nWe just received an alert: 14 successful logins to our admin account from IPs in 3 different countries within 20 minutes. None of those are us.\n\nI'm locking the account from our side. Need you to:\n1. Confirm whether your auth logs match what we see.\n2. Force-rotate all sessions for our org.\n3. Send IRR (incident response report).\n\nThis might be a credential stuffing attack against your platform.\n\nChinwe Eze, CISO",
+    "from_name": "Chinwe Eze",
+    "from_email": "chinwe.eze@vertexai.com",
+    "created_at": "2026-04-28T19:18:00Z"
+  },
+  {
+    "id": "ticket_233",
+    "subject": "Webhook deliveries delayed 15+ minutes",
+    "body": "Bonjour,\n\nOur webhook delivery latency has gone from p99 ~2s to p99 ~14 minutes. This effectively breaks our event-driven workflows downstream — by the time we get the event, the customer has already moved on.\n\nStarted around 07:00 UTC. Anything ongoing on your queue infrastructure?\n\nPierre Laurent\nPrincipal Engineer",
+    "from_name": "Pierre Laurent",
+    "from_email": "pierre.laurent@northstar.ai",
+    "created_at": "2026-04-10T07:46:00Z"
+  },
+  {
+    "id": "ticket_234",
+    "subject": "Critical: API returning records belonging to different org",
+    "body": "I'm hitting our /v1/tickets endpoint and getting back tickets that belong to a different customer. NOT OURS. Different domain, different sender names.\n\nThis is a data leak. I'm not going to share the data here for obvious reasons but I have logs proving this.\n\nNeed immediate response. This is a P0 multi-tenant boundary violation.\n\nKavya Sharma\nStaff Engineer",
+    "from_name": "Kavya Sharma",
+    "from_email": "kavya.sharma@coregrid.io",
+    "created_at": "2026-03-04T07:33:00Z"
+  },
+  {
+    "id": "ticket_235",
+    "subject": "P0 — multiple services failing, status page wrong",
+    "body": "Multiple production services failing simultaneously. Symptoms:\n- /tickets endpoint timing out at 60s\n- Inbox UI shows infinite spinner\n- Webhook outbound: 0 deliveries in past 30 min\n- Email-in: not appearing in inbox\n\nLooks like a database / queue layer issue. Status page still claims green which is a separate problem.\n\nJavier Morales, Lead SRE",
+    "from_name": "Javier Morales",
+    "from_email": "javier.morales@atlasdata.com",
+    "created_at": "2026-05-20T11:54:00Z"
+  },
+  {
+    "id": "ticket_236",
+    "subject": "Sev2 escalating to Sev1 — search returning wrong tickets",
+    "body": "Search results are returning tickets from other customers' workspaces. Confirmed by multiple users on my team independently — they each see results for customers they don't know.\n\nThis is a multi-tenant data leak issue, same severity as a security incident.\n\nDisable search until you can confirm it's safe. We're disabling it on our side too.\n\nGrace Ndlovu\nVP Product",
+    "from_name": "Grace Ndlovu",
+    "from_email": "grace.ndlovu@northstar.ai",
+    "created_at": "2026-04-15T20:51:00Z"
+  },
+  {
+    "id": "ticket_237",
+    "subject": "Critical: notifications going to wrong people",
+    "body": "We just got a notification email about a ticket — sent to me, but the content references a customer who is NOT in my workspace. The notification system is mis-addressing emails.\n\nMore worryingly: who is getting OUR notifications? Probably some other unrelated customer.\n\nThis is a privacy issue. Please disable the notification system org-wide until fixed.\n\nViktor Horvat",
+    "from_name": "Viktor Horvat",
+    "from_email": "viktor.horvat@cloudforge.io",
+    "created_at": "2026-04-20T13:03:00Z"
+  },
+  {
+    "id": "ticket_238",
+    "subject": "Platform-wide degradation — need on-call update",
+    "body": "Production outage in progress. Symptoms:\n- All API endpoints returning 502/503\n- Customer-facing chat widget broken on our site\n- Inbox view empty (data fetch failing)\n- Webhook queue stuck\n\nWe've had to put a banner on our site saying 'support tools temporarily degraded.' Customer trust impact mounting.\n\nNeed update from your on-call within 15 minutes.\n\nSneha Kulkarni, Director of Engineering",
+    "from_name": "Sneha Kulkarni",
+    "from_email": "sneha.kulkarni@cloudforge.io",
+    "created_at": "2026-05-13T04:59:00Z"
+  },
+  {
+    "id": "ticket_239",
+    "subject": "API permissions issue — getting 403s on documented endpoints",
+    "body": "Our service account is getting 403 Forbidden on /v2/admin/users endpoint. Per your docs, this endpoint is accessible to admin tokens. Our token has admin scope (verified in dashboard).\n\nDid scopes change recently? Migration we missed?\n\nThis is breaking our nightly user-sync job.\n\nRicardo Silva\nIntegration Engineer",
+    "from_name": "Ricardo Silva",
+    "from_email": "ricardo.silva@vertexai.com",
+    "created_at": "2026-03-09T11:38:00Z"
+  },
+  {
+    "id": "ticket_240",
+    "subject": "Memory leak in your widget — crashing customer browsers",
+    "body": "Your chat widget v3.4.1 has a memory leak. Customer browsers are crashing after ~45 minutes of having the widget loaded.\n\nReproduced in Chrome DevTools — JS heap grows ~3MB/min, no GC. Heap snapshot shows your widget's event listeners accumulating.\n\nWe've pulled the widget from our site for now. Need a hotfix.\n\nZhang Min\nFrontend Lead",
+    "from_name": "Zhang Min",
+    "from_email": "zhang.min@cloudforge.io",
+    "created_at": "2026-04-03T14:49:00Z"
+  },
+  {
+    "id": "ticket_241",
+    "subject": "P0: timezones broken on a major customer's data",
+    "body": "Our timestamps from your platform are off by exactly 5h 30m for one specific customer. All other customers normal. Customer is in India (UTC+5:30).\n\nLooks like a TZ handling bug — you're treating their local time as UTC. Their reports are showing yesterday's data as today's.\n\nNeeds a hotfix. This is also probably affecting other India-based customers we don't know about.\n\nAditya Joshi, Tech Lead",
+    "from_name": "Aditya Joshi",
+    "from_email": "aditya.joshi@atlasdata.com",
+    "created_at": "2026-04-09T13:14:00Z"
+  },
+  {
+    "id": "ticket_242",
+    "subject": "Customer demo in 1 hour — workspace inaccessible",
+    "body": "I have a $1.2M Fortune 500 demo at 16:14 UTC. My demo workspace is throwing 'workspace temporarily disabled' on every page load.\n\nWhy is it disabled? I have not done anything to trigger this. Demo is in less than 60 minutes.\n\nIf this demo doesn't happen, my CEO will personally call your CEO. Please respond.\n\nHelena Berg, VP Sales",
+    "from_name": "Helena Berg",
+    "from_email": "helena.berg@northstar.ai",
+    "created_at": "2026-03-09T15:14:00Z"
+  },
+  {
+    "id": "ticket_243",
+    "subject": "API quota exhausted unexpectedly",
+    "body": "We hit our monthly API quota at 23:47 UTC — three days before the cycle ends. Our usage hasn't changed; same volume as last 4 months.\n\nLooks like your usage metering has miscounted somewhere. Can you check whether bot/retry traffic is being counted against our quota?\n\nWe need quota raised temporarily to keep production running.\n\nEmeka Obi\nPlatform Engineer",
+    "from_name": "Emeka Obi",
+    "from_email": "emeka.obi@cloudforge.io",
+    "created_at": "2026-05-12T23:47:00Z"
+  },
+  {
+    "id": "ticket_244",
+    "subject": "All push notifications stopped at 06:00 UTC",
+    "body": "Our team relies on push notifications from your mobile app to know when high-priority tickets come in. At 06:00 UTC today, push notifications stopped for everyone. No exceptions.\n\nIn-app notifications still work. Email notifications still work. Just push is dead.\n\nFirebase/APNS issue on your side?\n\nLaura Garcia",
+    "from_name": "Laura Garcia",
+    "from_email": "laura.garcia@vertexai.com",
+    "created_at": "2026-04-22T06:58:00Z"
+  },
+  {
+    "id": "ticket_245",
+    "subject": "5+ hours on a P0 — escalating to leadership",
+    "body": "I opened ticket #21887 at 17:00 UTC yesterday marked P0. Database write failures — symptom is that ticket state changes (close, assign, tag) silently fail. UI says success, DB doesn't update.\n\nIt's now 22:30 UTC. I have had zero response from your team. P0 SLA is 1 hour.\n\nI've copied my CTO and yours (Niraj). If this isn't fixed and explained by EOD I'm invoking the early-termination clause in our contract.\n\nRohan Malhotra, VP Platform Engineering",
+    "from_name": "Rohan Malhotra",
+    "from_email": "rohan.malhotra@atlasdata.com",
+    "created_at": "2026-04-23T22:29:00Z"
+  },
+  {
+    "id": "ticket_246",
+    "subject": "Replay attack vulnerability — webhooks not idempotent",
+    "body": "Investigating an issue and discovered: your webhook deliveries don't include a unique idempotency key in the headers. Re-replays of the same payload (intentional or not) are indistinguishable from new events.\n\nWe've been double-processing some events because of this. Need an `Idempotency-Key` or similar header on webhook deliveries.\n\nThis is borderline security issue — replay-vulnerable webhook stream.\n\nBeatriz Lima, Security Engineer",
+    "from_name": "Beatriz Lima",
+    "from_email": "beatriz.lima@vertexai.com",
+    "created_at": "2026-02-28T14:57:00Z"
+  },
+  {
+    "id": "ticket_247",
+    "subject": "CRITICAL: ticket data exposed to anonymous URL",
+    "body": "I just discovered that ticket detail URLs (e.g., yourapp.com/t/abc123) are accessible WITHOUT authentication. I copied a URL from my browser, opened an incognito window, pasted it — and got the full ticket detail.\n\nThis appears to be a recent regression. Authentication has been bypassed somewhere.\n\nFIX IMMEDIATELY. This is data exposure at scale.\n\nYusuf Ibrahim\nApplication Security Lead",
+    "from_name": "Yusuf Ibrahim",
+    "from_email": "yusuf.ibrahim@northstar.ai",
+    "created_at": "2026-05-22T16:01:00Z"
+  },
+  {
+    "id": "ticket_248",
+    "subject": "Severe: customer onboarding broken end-to-end",
+    "body": "New signups can't get past the welcome screen. We test this every day and today (since the morning deploy on your side) it's completely broken. Console shows:\n\n```\nFetch error: workspace creation failed (HTTP 500)\n```\n\nWe have 30+ pending signups stuck. Estimated revenue impact: $4K/hour and growing.\n\nClara Weber\nGrowth Engineering",
+    "from_name": "Clara Weber",
+    "from_email": "clara.weber@vertexai.com",
+    "created_at": "2026-03-09T12:58:00Z"
+  },
+  {
+    "id": "ticket_249",
+    "subject": "URGENT — analytics showing impossible values",
+    "body": "Our analytics dashboard is showing -3,400 active tickets. NEGATIVE. This is mathematically impossible.\n\nMore concerning: this number is being pushed to our customer-facing 'platform health' dashboard. Customers see negative numbers and panic.\n\nDisable the metric or fix the bug. Both work for me. Need it gone in the next hour.\n\nLukas Schneider\nSite Reliability Engineer",
+    "from_name": "Lukas Schneider",
+    "from_email": "lukas.schneider@cloudforge.io",
+    "created_at": "2026-04-28T16:14:00Z"
+  },
+  {
+    "id": "ticket_250",
+    "subject": "P0: Service worker pushing malformed updates to all users",
+    "body": "Your service worker pushed an update at 01:30 UTC that is causing every page in our embedded UI to white-screen. Every customer with our integration is affected.\n\nLooks like a malformed JS bundle was deployed. We've forced cache-bust on our side but the service worker is serving the broken version.\n\nROLLBACK NOW. We are unable to mitigate from our side.\n\nMariana Costa, Frontend Architect",
+    "from_name": "Mariana Costa",
+    "from_email": "mariana.costa@cloudforge.io",
+    "created_at": "2026-03-09T01:44:00Z"
+  }
+]

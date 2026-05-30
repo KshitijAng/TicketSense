@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ticket_051",
+    "subject": "Fourth report of same assignment bug — switching to Zendesk",
+    "body": "This is now the FOURTH time I've reported the same bug in your assignment automation, and the FOURTH time I've been told 'we're looking into it.' How long does it take? Three weeks of back-and-forth and we're no closer to a fix.\n\nIf this isn't resolved by end of next week we're moving to Zendesk. I have approval from leadership and I've already started the procurement process.\n\nMichael",
+    "from_name": "Michael Grant",
+    "from_email": "michael.grant@orbitdb.org",
+    "created_at": "2026-04-04T10:00:00Z"
+  },
+  {
+    "id": "ticket_052",
+    "subject": "WE ARE DOWN AND NOBODY IS ANSWERING",
+    "body": "WE HAVE BEEN DOWN FOR 4 HOURS. FOUR. AND NOT A SINGLE PERSON FROM YOUR TEAM HAS BOTHERED TO RESPOND. WE PAY YOU $24K A YEAR FOR THIS???\n\nMY CUSTOMERS ARE ASKING ME WHY THEIR TICKETS DON'T GET ROUTED. WHY THEIR EMAILS BOUNCE. AND I HAVE NO ANSWER BECAUSE YOU PEOPLE DON'T REPLY.\n\nGET BACK TO ME. NOW.",
+    "from_name": "Priya Sharma",
+    "from_email": "priya.sharma@acmecloud.io",
+    "created_at": "2026-03-20T23:00:00Z"
+  },
+  {
+    "id": "ticket_053",
+    "subject": "Formal notice of SLA breach — Account CW-orbitdb-2024-441",
+    "body": "Dear Sir/Madam,\n\nReference: Account #CW-orbitdb-2024-441\n\nThis communication serves as formal notice that your continued failure to deliver the services contracted in our Master Services Agreement dated 14 November 2024, specifically the 99.5% uptime SLA, constitutes a material breach.\n\nWe have documented four separate incidents in Q1 2026 exceeding the contractual downtime threshold. Unless remediation and SLA credits are issued within 10 business days, our legal counsel will be engaged.\n\nKindly direct your response to legal@orbitdb.org as well.\n\nRegards,\nChen Wei\nVP, Operations",
+    "from_name": "Chen Wei",
+    "from_email": "chen.wei@orbitdb.org",
+    "created_at": "2026-04-08T22:00:00Z"
+  },
+  {
+    "id": "ticket_054",
+    "subject": "Integration still broken 11 days later",
+    "body": "Hi team,\n\nI'm sure this is just an oversight on your end, but our integration has been broken for 11 days now. I'm sure you have many priorities, but it would be lovely if someone could acknowledge that this exists.\n\nI'm sure you're aware that this is the second time this quarter. I'm SURE there's a reasonable explanation.\n\nLooking forward to hearing back at your earliest convenience (whatever that means in your world).\n\nLucas",
+    "from_name": "Lucas Martin",
+    "from_email": "lucas.martin@acmecloud.io",
+    "created_at": "2026-03-30T09:00:00Z"
+  },
+  {
+    "id": "ticket_055",
+    "subject": "Two months of broken sync — going public unless this changes",
+    "body": "I've had enough. Two months of broken sync, three escalations, zero resolution. I'm writing a detailed Twitter thread about my experience with your product tonight unless I hear back from a human (not a bot) in the next 6 hours.\n\nI'll also be leaving honest reviews on G2 and Capterra. People deserve to know what they're getting into.\n\nReply or don't — your choice.",
+    "from_name": "Amina Bello",
+    "from_email": "amina.bello@helix-systems.io",
+    "created_at": "2026-05-22T05:00:00Z"
+  },
+  {
+    "id": "ticket_056",
+    "subject": "Goodbye after 4 years",
+    "body": "I've been a customer for 4 years. I championed your product to 3 different employers. I wrote a case study you used in your marketing.\n\nAnd in the last 6 months, I've watched the quality fall apart. Response times have tripled. Bugs that used to get fixed in days now sit for weeks. The product feels neglected.\n\nI don't know what's happening internally but please understand — you're losing the customers who used to evangelize you. This isn't a threat, it's a goodbye letter unless something changes.\n\nRahul",
+    "from_name": "Rahul Verma",
+    "from_email": "rahul.verma@helix-systems.io",
+    "created_at": "2026-03-23T07:00:00Z"
+  },
+  {
+    "id": "ticket_057",
+    "subject": "Cancelled in March, charged again in May — third occurrence",
+    "body": "I cancelled my subscription on March 1. I have the cancellation email. Today, May 1, I see another $189 charge on my card.\n\nThis is the THIRD time you've charged me after a cancellation. Refund this immediately and confirm in writing that no further charges will occur, or I'm disputing with my bank.\n\nSofia",
+    "from_name": "Sofia Alvarez",
+    "from_email": "sofia.alvarez@orbitdb.org",
+    "created_at": "2026-03-18T08:00:00Z"
+  },
+  {
+    "id": "ticket_058",
+    "subject": "URGENT: 6 days of activity logs disappeared after deploy",
+    "body": "Last night's deploy on your end appears to have deleted 6 days of activity logs from our account. They were there yesterday morning. They're gone now. Other users on my team confirmed the same.\n\nThis is compliance-critical data. We are required by law to retain it. If it cannot be restored from your backups, we have a serious problem and our CISO needs to be looped in.\n\nThis is urgent. Please respond within the hour.",
+    "from_name": "Kwame Mensah",
+    "from_email": "kwame.mensah@brightlane.co",
+    "created_at": "2026-03-27T22:00:00Z"
+  },
+  {
+    "id": "ticket_059",
+    "subject": "Cancellation button doesn't work — third week trying",
+    "body": "I've been trying to cancel my account for over two weeks. Your cancellation flow is deliberately broken — the 'Confirm cancellation' button does nothing. I've raised this twice via support and gotten no help.\n\nThis is bordering on dark-pattern behavior. I'm not paying another month's invoice. If the cancellation isn't processed in 48 hours I'll be filing a complaint with the Better Business Bureau and contacting your payment processor directly.\n\nElena Petrova",
+    "from_name": "Elena Petrova",
+    "from_email": "elena.petrova@acmecloud.io",
+    "created_at": "2026-05-26T23:00:00Z"
+  },
+  {
+    "id": "ticket_060",
+    "subject": "P1 SLA violated — credit owed per MSA Section 4.3",
+    "body": "Per our enterprise agreement, support response time for P1 tickets is 1 hour. I opened ticket #51022 yesterday at 09:14 UTC marked P1. It's 17:00 UTC the next day and no human has responded.\n\nThat's an 8x miss on the SLA. Per Section 4.3 of our MSA, we are entitled to a 25% credit on this month's invoice. I'd like that processed and confirmation sent to procurement@orbitdb.org.\n\nDiego",
+    "from_name": "Diego Romero",
+    "from_email": "diego.romero@brightlane.co",
+    "created_at": "2026-02-27T17:00:00Z"
+  },
+  {
+    "id": "ticket_061",
+    "subject": "Fifth follow-up — please acknowledge",
+    "body": "This is my fifth follow-up on a critical issue. FIFTH. I have been ignored for 17 days.\n\nI don't even know what to say at this point. Are you going bankrupt? Did you fire your entire support team? Some explanation — ANY explanation — would be appreciated.\n\nAnanya",
+    "from_name": "Ananya Rao",
+    "from_email": "ananya.rao@helix-systems.io",
+    "created_at": "2026-05-08T21:00:00Z"
+  },
+  {
+    "id": "ticket_062",
+    "subject": "We are not your beta testers",
+    "body": "The product worked beautifully when we signed up 8 months ago. Since the redesign in February, everything has slowed down, half the features feel half-finished, and the bugs we report just sit in your queue.\n\nWhatever your team prioritized in that redesign, it wasn't us. We're a paying customer with 60 seats and we feel like beta testers.\n\nFix this or we're out.\n\nJean",
+    "from_name": "Jean Dupont",
+    "from_email": "jean.dupont@acmecloud.io",
+    "created_at": "2026-03-04T05:00:00Z"
+  },
+  {
+    "id": "ticket_063",
+    "subject": "$450 overage on an 'unlimited' plan",
+    "body": "Why is there a $450 'overage fee' on my invoice? We have unlimited usage on our plan. I have the contract in front of me right now and 'unlimited' is clearly stated.\n\nReverse this charge and explain how it happened. If your billing system has 'leaks' I need to know what else it might be charging us for.\n\nLi Na",
+    "from_name": "Li Na",
+    "from_email": "li.na@atlas-pro.com",
+    "created_at": "2026-04-10T17:00:00Z"
+  },
+  {
+    "id": "ticket_064",
+    "subject": "GDPR concern — emails exposed in activity log",
+    "body": "Your last release introduced a feature that exposes our customer emails in the activity log to ALL workspace members, including read-only users. This is a GDPR concern and potentially a contractual breach with our own customers.\n\nWe've already had to inform two customers about this. This needs to be rolled back today, not 'in the next sprint.' I want a written confirmation that the data has been wiped from logs that should never have shown it.\n\nMateo",
+    "from_name": "Mateo Herrera",
+    "from_email": "mateo.herrera@atlas-pro.com",
+    "created_at": "2026-04-07T15:00:00Z"
+  },
+  {
+    "id": "ticket_065",
+    "subject": "Performance has collapsed and your status page lies",
+    "body": "Page load times have gone from 1.2s to 7-9s over the last month. Every single page. Search is essentially unusable.\n\nI've checked everything on our side. Other SaaS tools work fine. Your status page shows 'all systems operational' which is laughably wrong.\n\nIs anyone actually monitoring product performance? Because the user experience right now is unacceptable for what we're paying.\n\nOliver",
+    "from_name": "Oliver Fischer",
+    "from_email": "oliver.fischer@helix-systems.io",
+    "created_at": "2026-04-20T19:00:00Z"
+  },
+  {
+    "id": "ticket_066",
+    "subject": "Account suspended without notice — losing fortune 500 deliverable",
+    "body": "My account is suspended. No warning, no reason given, no email. I have $200K of customer data inside and I can't access any of it. This is for a fortune 500 contract that has a deliverable tomorrow.\n\nUnsuspend the account NOW. We will discuss why this happened separately. Right now I need access.\n\n+44 7700 900112 if you want to actually talk.\n\nRiya",
+    "from_name": "Riya Kapoor",
+    "from_email": "riya.kapoor@orbitdb.org",
+    "created_at": "2026-03-30T11:00:00Z"
+  },
+  {
+    "id": "ticket_067",
+    "subject": "Slack integration broke again — customers blaming us",
+    "body": "Your last update broke our Slack integration. AGAIN. Every Slack message from our customers is now silently dropped — not sent to the channel, not stored, not surfaced anywhere.\n\nWe found out because a customer escalated to my CEO that 'no one responded for 3 days.' We hadn't ignored them. Your product had eaten the messages.\n\nThis can't keep happening. What's the path forward?\n\nTomas",
+    "from_name": "Tomas Novak",
+    "from_email": "tomas.novak@acmecloud.io",
+    "created_at": "2026-04-27T00:00:00Z"
+  },
+  {
+    "id": "ticket_068",
+    "subject": "Promised feature, paid for it, still doesn't exist",
+    "body": "In November, your AE promised our team that 'role-based reporting' would ship in Q1. We bought 50 seats partially because of that commitment.\n\nIt's May. There is no role-based reporting. Not in the roadmap, not in the changelog, not even acknowledged as planned anymore.\n\nWe were sold a product that doesn't exist. What's your retention offer?\n\nMei",
+    "from_name": "Mei Zhang",
+    "from_email": "mei.zhang@acmecloud.io",
+    "created_at": "2026-05-20T11:00:00Z"
+  },
+  {
+    "id": "ticket_069",
+    "subject": "You billed us for an add-on we declined in writing",
+    "body": "You billed our card for a 'premium support add-on' we never purchased. The charge appeared 2 weeks after the AE's quarterly business review where he 'highlighted the value' of this add-on.\n\nWe declined it in writing. You charged us anyway. This is the kind of thing that gets companies in trouble. Refund immediately, and remove the AE from our account. I don't trust him.\n\nCarlos",
+    "from_name": "Carlos Mendes",
+    "from_email": "carlos.mendes@orbitdb.org",
+    "created_at": "2026-05-18T23:00:00Z"
+  },
+  {
+    "id": "ticket_070",
+    "subject": "Need to escalate to your CEO",
+    "body": "I want to escalate this to your CEO. Three months of bugs, two outages, one data discrepancy that nearly cost us a customer.\n\nIf you cannot provide that escalation path, I'll find it on LinkedIn myself. I'm done with the front-line support team — clearly nothing meaningful is happening there.\n\nNandini",
+    "from_name": "Nandini Iyer",
+    "from_email": "nandini.iyer@brightlane.co",
+    "created_at": "2026-03-17T03:00:00Z"
+  },
+  {
+    "id": "ticket_071",
+    "subject": "Last chance — three competitors waiting",
+    "body": "I've been evaluating alternatives for two months. We've now demoed Intercom, Freshdesk, Zendesk, and Help Scout. Every one of them responded to our trial within hours and assigned a dedicated rep.\n\nYour team hasn't responded to my last three messages. The decision is honestly almost made. Last chance — convince me to stay.\n\nPablo",
+    "from_name": "Pablo Gutierrez",
+    "from_email": "pablo.gutierrez@acmecloud.io",
+    "created_at": "2026-05-21T15:00:00Z"
+  },
+  {
+    "id": "ticket_072",
+    "subject": "API-assigned tickets show unassigned in UI — losing customers",
+    "body": "Critical bug, third report this week: when a ticket is assigned via the API, it shows as 'unassigned' in the UI. Our SLAs are missing because of it.\n\nWe lost a customer yesterday over this. I am not exaggerating. There is a direct line from your bug to our lost revenue.\n\nI need eyes on this within the hour or I'm pulling our integration and going elsewhere.\n\nAnna Kowalska",
+    "from_name": "Anna Kowalska",
+    "from_email": "anna.kowalska@helix-systems.io",
+    "created_at": "2026-03-03T17:00:00Z"
+  },
+  {
+    "id": "ticket_073",
+    "subject": "Cancelling after 3 years",
+    "body": "After 3 years with you, we're moving to a competitor. I won't go into all the reasons — they're in our previous tickets, if anyone bothers to read them.\n\nI just wanted to give you the courtesy of knowing, since your CSM hasn't checked in once in the last 4 months.\n\nMy contract ends June 30. Please confirm cancellation in writing.\n\nSamuel",
+    "from_name": "Samuel Okafor",
+    "from_email": "samuel.okafor@orbitdb.org",
+    "created_at": "2026-03-12T00:00:00Z"
+  },
+  {
+    "id": "ticket_074",
+    "subject": "Should not be this hard to give you more money",
+    "body": "Why is this so hard? I just want to add 5 seats to my plan. Three days, two failed attempts in your billing portal, one ignored support ticket.\n\nDo it for me, manually, and send a confirmation. I should not have to fight with software to give you more money.\n\nIsabella",
+    "from_name": "Isabella Rossi",
+    "from_email": "isabella.rossi@acmecloud.io",
+    "created_at": "2026-05-16T13:00:00Z"
+  },
+  {
+    "id": "ticket_075",
+    "subject": "Six weeks of 'investigating' with no progress",
+    "body": "I want to walk you through what's happened over the past 6 weeks because I don't think anyone on your team has connected the dots:\n\nApril 2: ticket #48201 — webhook deliveries dropping. 'Investigating.' No update.\nApril 18: ticket #48955 — dashboard data not matching API. 'Investigating.' No update.\nMay 1: ticket #49677 — bulk export job stuck for 36 hours. 'Investigating.' No update.\nMay 8: ticket #50012 — same bulk export bug, different job. 'Investigating.' No update.\n\nAt some point 'investigating' becomes the same word as 'ignoring.' Which one is it?\n\nArjun",
+    "from_name": "Arjun Singh",
+    "from_email": "arjun.singh@brightlane.co",
+    "created_at": "2026-05-05T13:00:00Z"
+  },
+  {
+    "id": "ticket_076",
+    "subject": "What it feels like to be your customer right now",
+    "body": "I don't know who reads these messages, but I want you to understand what it feels like to be on this side of the conversation.\n\nWe trusted you with our customer relationships. When something breaks here, it breaks there. When you ignore us, we have to face our own customers asking why their experience is broken.\n\nThis week one of our biggest accounts cancelled. They said 'your tool feels neglected.' They were right.\n\nLucia",
+    "from_name": "Lucia Fernandez",
+    "from_email": "lucia.fernandez@atlas-pro.com",
+    "created_at": "2026-03-28T20:00:00Z"
+  },
+  {
+    "id": "ticket_077",
+    "subject": "14 misclassified tickets — your triage is broken",
+    "body": "Attached is a screenshot showing 14 unresolved tickets from the past 3 months, all marked 'low priority' by your system, none of them actually low priority.\n\nWhoever is doing your triage is broken. Either your humans aren't reading, or your AI is misclassifying. Either way it's failing.\n\nFix the triage system before the tickets it creates start showing up in lawsuits.\n\nWei",
+    "from_name": "Wei Huang",
+    "from_email": "wei.huang@atlas-pro.com",
+    "created_at": "2026-03-14T02:00:00Z"
+  },
+  {
+    "id": "ticket_078",
+    "subject": "Calendar question — is April 28 before April 30?",
+    "body": "Your support said I'm not eligible for a refund because 'cancellation occurred after the renewal date.' We cancelled on April 28. Our renewal was April 30. THAT IS BEFORE.\n\nDoes your team know how calendars work? Refund the May charge. This isn't complicated.\n\nFatima",
+    "from_name": "Fatima Yusuf",
+    "from_email": "fatima.yusuf@helix-systems.io",
+    "created_at": "2026-05-27T17:00:00Z"
+  },
+  {
+    "id": "ticket_079",
+    "subject": "One bad day from posting everything",
+    "body": "I have screenshots of every broken feature, every ignored ticket, every CSM no-show meeting from the past quarter. I am one bad day from posting all of it.\n\nReddit. Hacker News. G2. Glassdoor (for prospective employees of yours, too — they should know).\n\nLast chance to make this right.\n\nMarek",
+    "from_name": "Marek Zielinski",
+    "from_email": "marek.zielinski@atlas-pro.com",
+    "created_at": "2026-05-27T01:00:00Z"
+  },
+  {
+    "id": "ticket_080",
+    "subject": "Renewal handled in bad faith — release us or reset pricing",
+    "body": "I asked your team to follow up before our renewal. I asked twice. Nobody followed up. Now we're locked into another year at the OLD rate, which is 22% higher than the new pricing on your website.\n\nThis is bad-faith. Either reset the renewal at current pricing or release us from the contract. I won't pay more than someone signing up today.\n\nNeha",
+    "from_name": "Neha Bhatia",
+    "from_email": "neha.bhatia@atlas-pro.com",
+    "created_at": "2026-05-03T23:00:00Z"
+  },
+  {
+    "id": "ticket_081",
+    "subject": "PRODUCTION DOWN — CALL ME NOW",
+    "body": "DOWN. ALL USERS. PRODUCTION. THIS IS OUR THIRD SUCH OUTAGE IN A MONTH. SOMEONE CALL ME. +1-650-555-0188.",
+    "from_name": "Miguel Torres",
+    "from_email": "miguel.torres@brightlane.co",
+    "created_at": "2026-03-26T17:00:00Z"
+  },
+  {
+    "id": "ticket_082",
+    "subject": "Is anyone home over there?",
+    "body": "There is a particular kind of arrogance in not responding to your customers. You build a product, you take their money, and then when the product fails them, you ghost.\n\nWe pay $48K/year. We've been with you for 27 months. We've raised 11 tickets in the past quarter, of which 6 remain open. Five of those six relate to the same root issue.\n\nIs anyone home over there?\n\nChinwe",
+    "from_name": "Chinwe Eze",
+    "from_email": "chinwe.eze@atlas-pro.com",
+    "created_at": "2026-04-19T13:00:00Z"
+  },
+  {
+    "id": "ticket_083",
+    "subject": "Initiating chargeback Monday unless this is resolved",
+    "body": "I've contacted my bank to initiate a chargeback for the past three months of charges, citing services not delivered. If you can show me a single business day in March where the product worked as advertised, I'll withdraw it.\n\nOtherwise, expect to see disputed charges on your processor's dashboard by Monday.\n\nPierre",
+    "from_name": "Pierre Laurent",
+    "from_email": "pierre.laurent@atlas-pro.com",
+    "created_at": "2026-05-09T07:00:00Z"
+  },
+  {
+    "id": "ticket_084",
+    "subject": "Three weeks of wrong rate limit — paying for what we're not getting",
+    "body": "I've tried to be patient. Three weeks ago, I reported that our API rate limit was incorrectly set after we upgraded. I was told it would be 'fixed in the next deploy.' Two deploys have happened. The limit is still wrong.\n\nWe are paying for the higher tier and getting the lower tier's service. This is unacceptable and I want it remediated today.\n\nKavya",
+    "from_name": "Kavya Sharma",
+    "from_email": "kavya.sharma@acmecloud.io",
+    "created_at": "2026-05-11T13:00:00Z"
+  },
+  {
+    "id": "ticket_085",
+    "subject": "Demand: name of your engineering manager",
+    "body": "Who is the engineering manager for the analytics product area? I want to talk to that person directly. Front-line support has been completely useless for the past month and clearly the issue requires someone with actual authority to fix.\n\nNot asking — telling. I want the name and direct contact.\n\nJavier",
+    "from_name": "Javier Morales",
+    "from_email": "javier.morales@orbitdb.org",
+    "created_at": "2026-04-08T06:00:00Z"
+  },
+  {
+    "id": "ticket_086",
+    "subject": "Starting migration in June — courtesy notice",
+    "body": "I'm not even angry anymore. I'm just tired. Tired of the same bugs being reported and ignored. Tired of pretending your team cares. Tired of finding out about outages from MY customers instead of YOUR status page.\n\nWe're starting our migration to a different vendor in June. This isn't a negotiation. This is a courtesy.\n\nGrace",
+    "from_name": "Grace Ndlovu",
+    "from_email": "grace.ndlovu@atlas-pro.com",
+    "created_at": "2026-03-12T03:00:00Z"
+  },
+  {
+    "id": "ticket_087",
+    "subject": "$1,847 in unexplained charges",
+    "body": "I went back through our last 14 invoices and found four charges I cannot account for. They're listed as 'usage adjustment' or 'service fee' with no line-item explanation.\n\nTotal disputed: $1,847.\n\nProvide written explanation for each line item within 5 business days or I'm pulling the entire AR review and going to my accountant. This is not optional.\n\nViktor",
+    "from_name": "Viktor Horvat",
+    "from_email": "viktor.horvat@brightlane.co",
+    "created_at": "2026-03-12T09:00:00Z"
+  },
+  {
+    "id": "ticket_088",
+    "subject": "SaaS community is asking which tools to avoid",
+    "body": "There's a Slack community for SaaS support managers — 4,200 members — where I'm an active participant. Every week someone asks 'what tool should I avoid?'\n\nDo you want your name to be the answer to that question?\n\nFix our issues. I am running out of patience.\n\nSneha",
+    "from_name": "Sneha Kulkarni",
+    "from_email": "sneha.kulkarni@orbitdb.org",
+    "created_at": "2026-04-13T19:00:00Z"
+  },
+  {
+    "id": "ticket_089",
+    "subject": "Formal notice — material breach of MSA",
+    "body": "For documentation purposes, this email serves as our formal notice that the product as delivered is not meeting the specifications outlined in our purchase agreement, specifically:\n\n- 99.9% uptime guarantee (current month: 97.2%)\n- 24-hour P1 response (average this quarter: 41 hours)\n- SOC 2 audit log access (not delivered)\n\nWe will be invoking the cure period per Section 8 of our MSA. Counterparty: your legal team.\n\nRicardo Silva\nDirector, IT Governance",
+    "from_name": "Ricardo Silva",
+    "from_email": "ricardo.silva@brightlane.co",
+    "created_at": "2026-03-11T12:00:00Z"
+  },
+  {
+    "id": "ticket_090",
+    "subject": "Lost an hour of work — you have backups, right?",
+    "body": "What the hell. I just lost an hour of work because your save failed silently. No error, no warning, just gone.\n\nThis is the THIRD time. Tell me you have backups.",
+    "from_name": "Zhang Min",
+    "from_email": "zhang.min@brightlane.co",
+    "created_at": "2026-05-21T20:00:00Z"
+  },
+  {
+    "id": "ticket_091",
+    "subject": "Tagging your CEO on LinkedIn tomorrow",
+    "body": "Tomorrow I will be tagging your CEO on LinkedIn. I have been polite for 6 weeks. I have raised 9 support tickets, all marked 'resolved' without any actual resolution.\n\nIf you don't want this to be public, fix it tonight.\n\nAditya",
+    "from_name": "Aditya Joshi",
+    "from_email": "aditya.joshi@orbitdb.org",
+    "created_at": "2026-05-19T12:00:00Z"
+  },
+  {
+    "id": "ticket_092",
+    "subject": "Removing my reference quote from your homepage",
+    "body": "I used to recommend you to every founder I met. I gave you a customer reference quote that's STILL on your homepage.\n\nIn the last quarter you've broken our Stripe integration twice, deleted two days of activity logs after a deploy, and refused to acknowledge a security report I filed in February.\n\nI'm not the person you want angry at you. But here we are.\n\nHelena",
+    "from_name": "Helena Berg",
+    "from_email": "helena.berg@orbitdb.org",
+    "created_at": "2026-05-27T04:00:00Z"
+  },
+  {
+    "id": "ticket_093",
+    "subject": "Newsletter coverage pending — your call",
+    "body": "I run a tech newsletter with 8,200 subscribers in the customer success industry. I have not yet written about your product. I would prefer to keep it that way.\n\nThe issues we've reported in the past month are now genuinely concerning to me as a paying customer. Please escalate this to someone with authority before I have to do it through a different channel.\n\nEmeka",
+    "from_name": "Emeka Obi",
+    "from_email": "emeka.obi@atlas-pro.com",
+    "created_at": "2026-05-25T18:00:00Z"
+  },
+  {
+    "id": "ticket_094",
+    "subject": "DOWN AGAIN",
+    "body": "DOWN AGAIN. THIRD TIME THIS WEEK. WHAT IS GOING ON. RESPOND.",
+    "from_name": "Laura Garcia",
+    "from_email": "laura.garcia@atlas-pro.com",
+    "created_at": "2026-03-22T03:00:00Z"
+  },
+  {
+    "id": "ticket_095",
+    "subject": "Executive escalation per Section 6.2 — 84 seats at risk",
+    "body": "Escalating per the path outlined in our enterprise contract.\n\nTickets affected: #50341, #50562, #50711, #50885\nAccount: helix-systems / Rohan Malhotra\nSeats: 84\nARR: $51,600\n\nNone of the above tickets have been touched in 11+ days. Per Section 6.2, this triggers the executive escalation clause. Please connect me with your Director of Customer Success within 48 hours.\n\nIf there is no response, I will be invoking the early termination clause without further notice.\n\nRohan",
+    "from_name": "Rohan Malhotra",
+    "from_email": "rohan.malhotra@helix-systems.io",
+    "created_at": "2026-05-13T12:00:00Z"
+  },
+  {
+    "id": "ticket_096",
+    "subject": "We're done",
+    "body": "I have spent more time managing your team's mistakes than I have using your product. That's the honest truth.\n\nI don't think there's anything you can say at this point. We're cancelling.\n\nBeatriz",
+    "from_name": "Beatriz Lima",
+    "from_email": "beatriz.lima@orbitdb.org",
+    "created_at": "2026-03-12T04:00:00Z"
+  },
+  {
+    "id": "ticket_097",
+    "subject": "Thanks for the third outage this month!",
+    "body": "Just wanted to send a quick THANK YOU for the third outage this month! Really appreciated explaining to my CFO why our customer dashboard was showing yesterday's numbers today!\n\nKeep up the great work. I love spending board meetings defending your product.\n\nYusuf",
+    "from_name": "Yusuf Ibrahim",
+    "from_email": "yusuf.ibrahim@orbitdb.org",
+    "created_at": "2026-03-28T00:00:00Z"
+  },
+  {
+    "id": "ticket_098",
+    "subject": "Formal notice of dissatisfaction — bulk export failures",
+    "body": "This is a formal notice of dissatisfaction.\n\nIssue: Bulk export jobs failing intermittently since March.\nReports filed: 4 (tickets #48823, #49011, #49445, #49710).\nResolution status: open / unresolved.\nBusiness impact: weekly reporting cycle disrupted, escalated by our COO last Friday.\n\nWe expect a substantive response — not 'we're looking into it' — by EOD tomorrow.\n\nClara Weber\nHead of Operations",
+    "from_name": "Clara Weber",
+    "from_email": "clara.weber@atlas-pro.com",
+    "created_at": "2026-03-24T17:00:00Z"
+  },
+  {
+    "id": "ticket_099",
+    "subject": "My reputation is tied to your performance",
+    "body": "Look. I championed your product internally. I argued for the budget. I'm the reason we signed.\n\nAnd now I look like an idiot to my CFO because your product is broken half the time and your team doesn't reply when I ask for help. My reputation is tied to your performance. Please understand what that means.\n\nThis is personal at this point.\n\nLukas",
+    "from_name": "Lukas Schneider",
+    "from_email": "lukas.schneider@helix-systems.io",
+    "created_at": "2026-03-15T08:00:00Z"
+  },
+  {
+    "id": "ticket_100",
+    "subject": "Cancel my account — don't try to win me back",
+    "body": "Twenty seven days since I reported the data discrepancy. Twenty seven days. Zero responses.\n\nI'm sending this last email out of professional courtesy. Cancel my account. Send a final invoice. Don't try to win me back — that ship sailed 22 days ago.\n\nMariana",
+    "from_name": "Mariana Costa",
+    "from_email": "mariana.costa@helix-systems.io",
+    "created_at": "2026-05-12T06:00:00Z"
+  }
+]

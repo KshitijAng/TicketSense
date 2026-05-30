@@ -1,0 +1,84 @@
+# ─── Python ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg
+*.egg-info/
+wheels/
+.eggs/
+
+# ─── Virtual environments ───────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ─── Test & type-check caches ───────────────────────────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+
+# ─── Secrets & env files ────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+
+# ─── IDE / editors ──────────────────────────────────────────
+.idea/
+.vscode/
+.claude
+.claude/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ─── OS files ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs ───────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Databases (local dev) ──────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+pgdata/
+postgres_data/
+redis_data/
+
+# ─── Docker volumes (mounted dirs) ──────────────────────────
+.docker/
+docker-volumes/
+
+# ─── Project-specific ──────────────────────────────────────
+# Run artifacts (if we add a worker / pipeline later)
+.runs/
+
+# Activity log PDF (personal, not part of repo)
+*Activity_Activity_Log.pdf
+
+# Personal build log / chapter-by-chapter plan (kept local, not part of public repo)
+docs/
+docs/PLAN.md

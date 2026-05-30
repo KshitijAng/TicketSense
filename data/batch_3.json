@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ticket_101",
+    "subject": "Love the product — small idea for the inbox view",
+    "body": "Hey team!\n\nFirst off, I've been using your tool for about 4 months now and it's genuinely changed how my support team operates. Thank you for what you build. 🙏\n\nOne small thing — would it be possible to add a 'recently viewed tickets' section to the inbox sidebar? I bounce between 5-6 tickets at a time and the back-and-forth between search results gets clicky.\n\nNo pressure, just thought I'd flop the idea over.\n\nAarav",
+    "from_name": "Aarav Mehta",
+    "from_email": "aarav.mehta@gmail.com",
+    "created_at": "2026-03-23T08:00:00Z"
+  },
+  {
+    "id": "ticket_102",
+    "subject": "Feature idea: Slack thread → ticket conversion",
+    "body": "Hi,\n\nLove the Slack integration. One workflow gap: when our team discusses an issue in a Slack thread and decides it should become a ticket, we currently copy/paste the whole thread manually.\n\nWould be magical if there was a slash command (/triage or similar) that turned the active Slack thread into a ticket here, with all messages as context.\n\nThanks for considering!\n\nPriya",
+    "from_name": "Priya Nair",
+    "from_email": "priya.nair@protonmail.com",
+    "created_at": "2026-05-11T12:00:00Z"
+  },
+  {
+    "id": "ticket_103",
+    "subject": "tiny request from a happy customer 🚀",
+    "body": "hey 👋\n\nbuilding my whole company on this. real talk. just one thing — can we get a dark mode for the embedded chat widget? our dashboard is dark themed and the white widget pops weirdly against it.\n\nkeep cooking 💯\n\nchen",
+    "from_name": "Chen Wei",
+    "from_email": "chen.wei@founderlab.io",
+    "created_at": "2026-05-13T08:00:00Z"
+  },
+  {
+    "id": "ticket_104",
+    "subject": "Saved search / smart filters?",
+    "body": "Hi team,\n\nI use the same 3-4 filter combinations every day (e.g., 'urgent + assigned to me + open' and 'billing tag + last 7 days'). Would be amazing if these could be saved as named smart views in the sidebar.\n\nWould save me 30 seconds × 20 times a day = real time.\n\nSofia",
+    "from_name": "Sofia Alvarez",
+    "from_email": "sofia.alvarez@gmail.com",
+    "created_at": "2026-05-19T01:00:00Z"
+  },
+  {
+    "id": "ticket_105",
+    "subject": "Integration idea: Linear (we'd use it heavily)",
+    "body": "Hi,\n\nWe're heavy Linear users and I keep wishing for a direct link between tickets here and Linear issues. Specifically:\n- Create Linear issue from a ticket with one click\n- Sync status both ways\n- Show ticket reference inside Linear\n\nIf this is on the roadmap, I'd love to be in the beta. Happy to share our workflow context.\n\nKwame",
+    "from_name": "Kwame Mensah",
+    "from_email": "kwame.mensah@startupforge.co",
+    "created_at": "2026-05-22T08:00:00Z"
+  },
+  {
+    "id": "ticket_106",
+    "subject": "I love your product BUT...",
+    "body": "Hey,\n\nI love your product — like genuinely, it's my favorite SaaS tool we use. BUT — the mobile experience is kinda rough. I get notifications, tap them, and the deep-link doesn't take me to the right ticket. I end up scrolling the inbox manually on a 5-inch screen.\n\nAny chance of mobile getting some love? Not a complaint, just a love letter with a wish.\n\nElena",
+    "from_name": "Elena Petrova",
+    "from_email": "elena.petrova@gmail.com",
+    "created_at": "2026-03-07T08:00:00Z"
+  },
+  {
+    "id": "ticket_107",
+    "subject": "Bulk action improvement",
+    "body": "Hi team,\n\nWhen I select 30+ tickets to bulk-tag, the action takes 12-15 seconds and there's no progress indicator. Couple times I've thought it crashed and reloaded.\n\nWould be helpful if (a) the bulk action was faster, or (b) at minimum there was a 'processing X of Y' indicator.\n\nDiego",
+    "from_name": "Diego Romero",
+    "from_email": "diego.romero@protonmail.com",
+    "created_at": "2026-05-13T17:00:00Z"
+  },
+  {
+    "id": "ticket_108",
+    "subject": "Massive thanks + one ask",
+    "body": "Hi!\n\nI just wanted to say — I switched from Zendesk to your product 6 weeks ago and my team's morale has noticeably improved. The UI is just so much less hostile.\n\nOne ask: any plan for a public roadmap? It would help us understand what's coming and plan our own work around it.\n\nAnanya",
+    "from_name": "Ananya Rao",
+    "from_email": "ananya.rao@indiebuilders.io",
+    "created_at": "2026-05-05T09:00:00Z"
+  },
+  {
+    "id": "ticket_109",
+    "subject": "Feature idea for exports",
+    "body": "Hi,\n\nQuick idea — could the CSV export include a 'filtered by' header row so when I send the file to teammates, they can see what filters were applied? Right now I have to write that in the email.\n\nMerci!\n\nJean",
+    "from_name": "Jean Dupont",
+    "from_email": "jean.dupont@gmail.com",
+    "created_at": "2026-03-06T07:00:00Z"
+  },
+  {
+    "id": "ticket_110",
+    "subject": "Wishlist (in priority order)",
+    "body": "Hi team,\n\nI use the tool daily and have been mentally collecting these. In rough priority order:\n\n1. Inline ticket editing from the list view (high — saves so many clicks)\n2. Custom keyboard shortcuts (medium — power user nice-to-have)\n3. Mention notifications in the dashboard, not just email (medium)\n4. Ticket templates for repeated reply patterns (low — but lovely)\n5. Public API for our internal Slack bot (low — we'd build it ourselves)\n\nThanks for reading!\n\nLi Na",
+    "from_name": "Li Na",
+    "from_email": "li.na@gmail.com",
+    "created_at": "2026-05-06T17:00:00Z"
+  },
+  {
+    "id": "ticket_111",
+    "subject": "shipping fast & loving it — small ask",
+    "body": "y'all are shipping at insane speed. respect 🫡\n\none thing: webhook signatures pls. we want to verify incoming webhooks but you don't sign them yet. blocking us from using webhooks in prod.\n\nmateo",
+    "from_name": "Mateo Herrera",
+    "from_email": "mateo.herrera@makerhub.io",
+    "created_at": "2026-04-27T06:00:00Z"
+  },
+  {
+    "id": "ticket_112",
+    "subject": "Suggestion for the analytics page",
+    "body": "Hello,\n\nThe analytics page is great but I find myself wanting to compare two time windows side by side (e.g., 'this week vs last week'). Currently I have to take screenshots and compare manually.\n\nA comparison toggle would make it 10x more useful for me. Would also love trend lines on the totals.\n\nThanks!\nAmina",
+    "from_name": "Amina Bello",
+    "from_email": "amina.bello@protonmail.com",
+    "created_at": "2026-05-01T11:00:00Z"
+  },
+  {
+    "id": "ticket_113",
+    "subject": "Recurring tickets feature?",
+    "body": "Hi,\n\nWe have certain ticket types that recur on a schedule (weekly customer check-ins, monthly compliance reviews). Right now I create them manually each time.\n\nWould a 'recurring ticket template' feature be feasible? Set frequency, template body, default assignee, and it auto-creates on schedule.\n\nWould save my team a real chunk of time.\n\nOliver",
+    "from_name": "Oliver Fischer",
+    "from_email": "oliver.fischer@gmail.com",
+    "created_at": "2026-05-09T20:00:00Z"
+  },
+  {
+    "id": "ticket_114",
+    "subject": "Idea: 'similar tickets' sidebar",
+    "body": "Hi team!\n\nWhen I open a ticket, I'd love a sidebar that shows 3-5 similar past tickets (based on content / tags / sender). Often the answer is something we've already solved before, and finding it manually is the slowest part of my day.\n\nBet your team has the data for this. Worth a thought!\n\nRiya",
+    "from_name": "Riya Kapoor",
+    "from_email": "riya.kapoor@shipfast.io",
+    "created_at": "2026-04-14T05:00:00Z"
+  },
+  {
+    "id": "ticket_115",
+    "subject": "Saved views request",
+    "body": "Hi,\n\nWould it be possible to have personal saved views that don't get shared across the team? Right now every saved view is global. Some of my views are just for me (e.g., 'tickets I'm CC'd on that I haven't read') and I don't need to pollute the team list.\n\nTomas",
+    "from_name": "Tomas Novak",
+    "from_email": "tomas.novak@gmail.com",
+    "created_at": "2026-03-30T08:00:00Z"
+  },
+  {
+    "id": "ticket_116",
+    "subject": "Small UX win: confirmation when archiving",
+    "body": "Hi,\n\nI archived a ticket by accident last week and it took me 10 minutes to find it again because there's no toast / undo. Could you add a 5-second 'Undo' toast after archive actions? Same pattern Gmail uses.\n\nMei",
+    "from_name": "Mei Zhang",
+    "from_email": "mei.zhang@protonmail.com",
+    "created_at": "2026-03-30T22:00:00Z"
+  },
+  {
+    "id": "ticket_117",
+    "subject": "Feature: schedule a reply for later",
+    "body": "Hi team,\n\nOne workflow gap — sometimes I draft a reply at 9 PM but don't want to send it then (looks bad for boundaries / wakes the customer up). Could we have a 'send later' option like Gmail's scheduled send?\n\nWould genuinely improve life quality.\n\nCarlos",
+    "from_name": "Carlos Mendes",
+    "from_email": "carlos.mendes@gmail.com",
+    "created_at": "2026-03-23T03:00:00Z"
+  },
+  {
+    "id": "ticket_118",
+    "subject": "AI summary on long threads — yes please",
+    "body": "Hi,\n\nLong customer threads (15+ messages) are painful to read top-to-bottom when someone hands off to me. An AI-generated summary at the top of the thread (1-2 sentences: 'customer reported X on Mar 5, resolved Y on Mar 8, currently asking about Z') would be a game-changer.\n\nI saw you're shipping AI features in the changelog — adding my vote here.\n\nNandini",
+    "from_name": "Nandini Iyer",
+    "from_email": "nandini.iyer@founderstack.io",
+    "created_at": "2026-05-04T13:00:00Z"
+  },
+  {
+    "id": "ticket_119",
+    "subject": "Just here to say thanks",
+    "body": "Hi,\n\nNo feature request today, just wanted to drop a line saying your product has made a real difference for our small team. The onboarding was painless and the docs are some of the best I've used.\n\nKeep building.\n\nPablo",
+    "from_name": "Pablo Gutierrez",
+    "from_email": "pablo.gutierrez@gmail.com",
+    "created_at": "2026-03-14T02:00:00Z"
+  },
+  {
+    "id": "ticket_120",
+    "subject": "Custom fields with conditional logic?",
+    "body": "Hi,\n\nA more advanced ask — would it be possible to have custom fields that show conditionally? Example: if a ticket is tagged 'refund', show fields for amount + payment method. If tagged 'technical', show fields for browser + URL.\n\nWould reduce noise on simple tickets and capture better structured data on complex ones.\n\nAnna",
+    "from_name": "Anna Kowalska",
+    "from_email": "anna.kowalska@protonmail.com",
+    "created_at": "2026-03-04T13:00:00Z"
+  },
+  {
+    "id": "ticket_121",
+    "subject": "Internal notes formatting",
+    "body": "Hi!\n\nInternal notes (the @mention ones) currently support markdown — beautiful. But could they support code blocks with syntax highlighting? Our team often shares snippets of customer-facing API calls and right now they render as plain text.\n\nThanks!\nRahul",
+    "from_name": "Rahul Verma",
+    "from_email": "rahul.verma@gmail.com",
+    "created_at": "2026-03-25T23:00:00Z"
+  },
+  {
+    "id": "ticket_122",
+    "subject": "Dark mode in the changelog email?",
+    "body": "Hi,\n\nMinor nitpick — your changelog emails are pure white background. I read email in dark mode and the contrast is jarring. Could you add a dark variant? Most newsletter tools support this natively now.\n\nEva",
+    "from_name": "Eva Muller",
+    "from_email": "eva.muller@gmail.com",
+    "created_at": "2026-04-13T08:00:00Z"
+  },
+  {
+    "id": "ticket_123",
+    "subject": "Power user request: command palette",
+    "body": "Hey team,\n\nI'm in the tool every day, all day. The single feature that would transform my experience: a Cmd+K command palette. Linear/Raycast-style. Search tickets, jump to settings, perform actions, all from keyboard.\n\nIf you build it I will sing your praises in every SaaS slack I'm in.\n\nSamuel",
+    "from_name": "Samuel Okafor",
+    "from_email": "samuel.okafor@startupforge.co",
+    "created_at": "2026-04-06T04:00:00Z"
+  },
+  {
+    "id": "ticket_124",
+    "subject": "Could we tag tickets from email replies?",
+    "body": "Hi,\n\nQuick idea — when a customer replies via email, sometimes I just want to add a tag without opening the dashboard. Could we add tags via email reply? E.g., responding with '+tag billing' on its own line adds the tag.\n\nNot urgent, just a thought from someone who lives in their inbox.\n\nIsabella",
+    "from_name": "Isabella Rossi",
+    "from_email": "isabella.rossi@gmail.com",
+    "created_at": "2026-04-17T22:00:00Z"
+  },
+  {
+    "id": "ticket_125",
+    "subject": "love the new look 🎨 + question",
+    "body": "the redesign last month is gorgeous. genuinely the cleanest support tool ui i've ever used.\n\nq: any plan to expose the design system as a public CSS file or figma? we'd love to keep our embedded chat widget visually consistent with our app.\n\narjun",
+    "from_name": "Arjun Singh",
+    "from_email": "arjun.singh@makerhub.io",
+    "created_at": "2026-04-29T05:00:00Z"
+  },
+  {
+    "id": "ticket_126",
+    "subject": "Suggestion: timezone display on tickets",
+    "body": "Hi,\n\nMy team is distributed across 5 timezones. When I see 'Replied at 3:42 PM' on a ticket, I don't know if that means the customer's local time or mine. Could timestamps optionally show with timezone (e.g., '3:42 PM CET')?\n\nLucia",
+    "from_name": "Lucia Fernandez",
+    "from_email": "lucia.fernandez@gmail.com",
+    "created_at": "2026-04-19T14:00:00Z"
+  },
+  {
+    "id": "ticket_127",
+    "subject": "Webhook for ticket status change",
+    "body": "Hi,\n\nWe have a webhook for 'ticket created' but not for 'ticket status changed.' We'd love the latter — would let us auto-update our customer-facing status page when tickets resolve.\n\nThanks for considering!\nWei",
+    "from_name": "Wei Huang",
+    "from_email": "wei.huang@protonmail.com",
+    "created_at": "2026-04-21T01:00:00Z"
+  },
+  {
+    "id": "ticket_128",
+    "subject": "Snippets / canned responses",
+    "body": "Hi,\n\nDo you support snippets / canned responses? I have about 15 stock replies I send daily ('here are the steps to reset', 'pricing question - here's the doc', etc.). Right now I keep them in a Notion page and copy-paste.\n\nIf this exists and I missed it — point me to it. If it doesn't — please build it!\n\nFatima",
+    "from_name": "Fatima Yusuf",
+    "from_email": "fatima.yusuf@gmail.com",
+    "created_at": "2026-04-11T02:00:00Z"
+  },
+  {
+    "id": "ticket_129",
+    "subject": "Multi-language support for customer-facing emails",
+    "body": "Hi,\n\nWe have customers in Poland, Germany, and Spain. We currently respond in English regardless because we don't have an easy translation workflow. Would be amazing if the compose window had a 'translate to customer's language' option (based on browser locale or a manual override).\n\nProbably not trivial to build but flagging the need.\n\nMarek",
+    "from_name": "Marek Zielinski",
+    "from_email": "marek.zielinski@gmail.com",
+    "created_at": "2026-04-23T11:00:00Z"
+  },
+  {
+    "id": "ticket_130",
+    "subject": "Quick win: keyboard nav for the inbox list",
+    "body": "Hi team,\n\nLove the tool. One small thing — when I'm in the inbox list, j/k for next/previous (Gmail style) would make scanning so much faster. Currently I have to click each one.\n\nNeha",
+    "from_name": "Neha Bhatia",
+    "from_email": "neha.bhatia@indiebuilders.io",
+    "created_at": "2026-05-04T14:00:00Z"
+  },
+  {
+    "id": "ticket_131",
+    "subject": "Idea: customer journey on profile",
+    "body": "Hi,\n\nWhen I open a customer profile, I see their recent tickets. Would love to also see their journey — when they signed up, plan changes, key product events. Helps me answer their question with full context.\n\nI know you have this data via the integrations. Surfacing it would be magic.\n\nMiguel",
+    "from_name": "Miguel Torres",
+    "from_email": "miguel.torres@gmail.com",
+    "created_at": "2026-04-27T09:00:00Z"
+  },
+  {
+    "id": "ticket_132",
+    "subject": "Compliments + tiny ask",
+    "body": "Hi!\n\nFirst time writing in — three months of using the tool and it's solid. Onboarding was the smoothest I've experienced.\n\nTiny ask: could the favicon turn red when there's an unread urgent ticket? Helps me notice without having the tab in focus.\n\nChinwe",
+    "from_name": "Chinwe Eze",
+    "from_email": "chinwe.eze@protonmail.com",
+    "created_at": "2026-03-07T17:00:00Z"
+  },
+  {
+    "id": "ticket_133",
+    "subject": "API endpoint for analytics?",
+    "body": "Bonjour,\n\nWe pull data from your dashboard manually into our weekly reporting deck. Would be lovely if there was a public API endpoint for the same analytics data (response times, ticket volume, CSAT). Anything we can grab programmatically?\n\nMerci,\nPierre",
+    "from_name": "Pierre Laurent",
+    "from_email": "pierre.laurent@gmail.com",
+    "created_at": "2026-03-16T20:00:00Z"
+  },
+  {
+    "id": "ticket_134",
+    "subject": "Two ideas from a daily user",
+    "body": "Hi,\n\nLove the tool. Two ideas while they're fresh:\n\n1. Bulk merge tickets — currently I can merge 2 at a time. Sometimes I have 4-5 duplicates.\n2. 'Resolved this week' digest email every Friday — quick win-list for my team's Monday standup.\n\nKavya",
+    "from_name": "Kavya Sharma",
+    "from_email": "kavya.sharma@gmail.com",
+    "created_at": "2026-04-27T03:00:00Z"
+  },
+  {
+    "id": "ticket_135",
+    "subject": "Idea: dropdown for common assignees",
+    "body": "Hi,\n\nWhen I assign a ticket, the dropdown lists ALL team members alphabetically. In practice, 90% of my assignments go to 3 people. Could the dropdown show 'frequent assignees' at the top, then alphabetical below?\n\nNot a blocker, just friction.\n\nJavier",
+    "from_name": "Javier Morales",
+    "from_email": "javier.morales@startupforge.co",
+    "created_at": "2026-05-24T11:00:00Z"
+  },
+  {
+    "id": "ticket_136",
+    "subject": "Notion integration — please??",
+    "body": "Hi,\n\nWe document everything in Notion. Would love an integration where I can link a ticket to a Notion page (e.g., the internal runbook for an issue type) and have the link surface inline.\n\nGrace",
+    "from_name": "Grace Ndlovu",
+    "from_email": "grace.ndlovu@gmail.com",
+    "created_at": "2026-04-23T15:00:00Z"
+  },
+  {
+    "id": "ticket_137",
+    "subject": "Suggestion: SLA countdown in the ticket header",
+    "body": "Hi,\n\nWe have SLA-bound tickets and would love a visible countdown timer in the ticket header (e.g., '4h 12m remaining' for an SLA-tagged P1). Right now I have to mentally calculate this against the timestamp.\n\nViktor",
+    "from_name": "Viktor Horvat",
+    "from_email": "viktor.horvat@protonmail.com",
+    "created_at": "2026-04-15T14:00:00Z"
+  },
+  {
+    "id": "ticket_138",
+    "subject": "love it. small thing about the search bar",
+    "body": "the global search bar is great but it only searches subjects. could it also search body content? sometimes i remember a phrase the customer used but not their subject line.\n\nthanks 🙏\nsneha",
+    "from_name": "Sneha Kulkarni",
+    "from_email": "sneha.kulkarni@gmail.com",
+    "created_at": "2026-04-10T12:00:00Z"
+  },
+  {
+    "id": "ticket_139",
+    "subject": "Read receipts on internal notes?",
+    "body": "Hi,\n\nWhen I @mention a teammate on an internal note, I don't know if they've seen it. Could you add a small 'seen by' indicator like Slack does?\n\nWould reduce the 'hey did you see my note' pings.\n\nRicardo",
+    "from_name": "Ricardo Silva",
+    "from_email": "ricardo.silva@gmail.com",
+    "created_at": "2026-03-31T05:00:00Z"
+  },
+  {
+    "id": "ticket_140",
+    "subject": "feature req from a heavy api user",
+    "body": "hey,\n\nbuilt a slack bot on top of your API. one missing piece: pagination headers. when i fetch /tickets, i get items but no easy way to know if there's a next page. having to count results vs limit is fragile.\n\nadd Link header (RFC 5988) or similar pls.\n\nzhang min",
+    "from_name": "Zhang Min",
+    "from_email": "zhang.min@makerhub.io",
+    "created_at": "2026-04-19T14:00:00Z"
+  },
+  {
+    "id": "ticket_141",
+    "subject": "Loving the product! Tiny copy nit",
+    "body": "Hi team,\n\nThe empty state on the inbox says 'You have no tickets — enjoy the peace!' which is delightful. But the loading state right before is 'Loading...' which feels jarring after.\n\nCould the loading state get some of that personality too? Even just 'Fetching your inbox...' would feel more on-brand.\n\nAditya",
+    "from_name": "Aditya Joshi",
+    "from_email": "aditya.joshi@gmail.com",
+    "created_at": "2026-04-27T05:00:00Z"
+  },
+  {
+    "id": "ticket_142",
+    "subject": "Group assignments — round robin?",
+    "body": "Hi,\n\nWhen a ticket is assigned to a team (not an individual), would it be possible to round-robin auto-assign to a specific person? Right now it just sits unassigned to anyone in particular and no one picks it up quickly.\n\nHelena",
+    "from_name": "Helena Berg",
+    "from_email": "helena.berg@protonmail.com",
+    "created_at": "2026-05-19T17:00:00Z"
+  },
+  {
+    "id": "ticket_143",
+    "subject": "Suggestion: customer tagging from email signature parsing",
+    "body": "Hi,\n\nA lot of incoming emails have signatures with the customer's company / role. Right now those are unstructured. Could you parse signatures and surface company / role as a tag automatically?\n\nWould save us manual tagging time.\n\nEmeka",
+    "from_name": "Emeka Obi",
+    "from_email": "emeka.obi@gmail.com",
+    "created_at": "2026-03-02T16:00:00Z"
+  },
+  {
+    "id": "ticket_144",
+    "subject": "Three months in — feedback",
+    "body": "Hi team,\n\nWe've been on the platform for 3 months now. Quick honest feedback:\n\nWhat's working great: the dashboard, response speed, integrations.\nWhat we miss from our old tool: a 'parking lot' status for tickets we want to come back to but don't want cluttering the open queue.\n\nSomething like 'snoozed' or 'parked' with a return date.\n\nLaura",
+    "from_name": "Laura Garcia",
+    "from_email": "laura.garcia@founderstack.io",
+    "created_at": "2026-03-02T05:00:00Z"
+  },
+  {
+    "id": "ticket_145",
+    "subject": "Could we get a public roadmap?",
+    "body": "Hi,\n\nLove the product and the velocity. Only thing I'd love more is a public roadmap so we can plan our own work around what's coming.\n\nEven 'this quarter / next quarter / later' buckets would help.\n\nRohan",
+    "from_name": "Rohan Malhotra",
+    "from_email": "rohan.malhotra@gmail.com",
+    "created_at": "2026-03-10T16:00:00Z"
+  },
+  {
+    "id": "ticket_146",
+    "subject": "Mention-triggered Slack alerts",
+    "body": "Hi,\n\nWhen I'm @mentioned on a ticket, I currently get an email. Could there be an option to also send a Slack DM? Email is a lot slower for me than Slack.\n\nThanks!\nBeatriz",
+    "from_name": "Beatriz Lima",
+    "from_email": "beatriz.lima@gmail.com",
+    "created_at": "2026-05-05T06:00:00Z"
+  },
+  {
+    "id": "ticket_147",
+    "subject": "Idea: customer satisfaction survey trigger",
+    "body": "Hi,\n\nWe currently send CSAT surveys manually after resolution. Could there be an automated trigger (e.g., 24h after a ticket is resolved, send a 1-click satisfaction survey)?\n\nWould let us track CSAT trends without manual work.\n\nYusuf",
+    "from_name": "Yusuf Ibrahim",
+    "from_email": "yusuf.ibrahim@protonmail.com",
+    "created_at": "2026-05-18T04:00:00Z"
+  },
+  {
+    "id": "ticket_148",
+    "subject": "Enterprise security features",
+    "body": "Hi,\n\nAs we grow, our security team is asking about features I don't see yet:\n- IP allowlisting\n- Session timeout configuration per role\n- Audit log export\n\nAre any of these planned? Happy to share more about what our security team needs if helpful.\n\nClara",
+    "from_name": "Clara Weber",
+    "from_email": "clara.weber@gmail.com",
+    "created_at": "2026-05-15T10:00:00Z"
+  },
+  {
+    "id": "ticket_149",
+    "subject": "Inline previews for shared links",
+    "body": "Hi,\n\nWhen a customer pastes a URL in their message, it shows as raw text. Would be nicer if it expanded inline (OG image + title) like Slack does. Helps me grok context faster without leaving the ticket.\n\nLukas",
+    "from_name": "Lukas Schneider",
+    "from_email": "lukas.schneider@gmail.com",
+    "created_at": "2026-05-15T18:00:00Z"
+  },
+  {
+    "id": "ticket_150",
+    "subject": "Just signed up — first impressions = love",
+    "body": "Hi team!\n\nSigned up yesterday and migrated our entire support workflow over today. The onboarding flow was the smoothest I've ever seen.\n\nOne small ask: it would be helpful if there was a 'sample data' toggle for new accounts so we could see what a populated dashboard looks like before importing our own tickets.\n\nThanks for building something great.\n\nMariana",
+    "from_name": "Mariana Costa",
+    "from_email": "mariana.costa@startupforge.co",
+    "created_at": "2026-05-10T07:00:00Z"
+  }
+]

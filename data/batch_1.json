@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ticket_001",
+    "subject": "Unable to sign in after password reset",
+    "body": "Hi team,\n\nI reset my password about 20 minutes ago using the email link, and now I can't get past the sign-in screen. It just says 'Invalid credentials' even though I've tried the new password three times. Cleared cache too. Could someone take a look?\n\nThanks,\nAarav",
+    "from_name": "Aarav Mehta",
+    "from_email": "aarav.mehta@acmecloud.io",
+    "created_at": "2026-04-14T12:15:00Z"
+  },
+  {
+    "id": "ticket_002",
+    "subject": "API requests timing out intermittently",
+    "body": "Hello,\n\nWe're seeing intermittent 504 timeouts on our API calls — about 1 in every 8 requests over the last two days. Endpoints affected are /v1/contacts and /v1/messages. Latency on the successful calls is also higher than usual (~3-4s vs the normal 600ms).\n\nAnything ongoing on your side? Happy to share request IDs if helpful.",
+    "from_name": "Priya Nair",
+    "from_email": "priya.nair@atlas-pro.com",
+    "created_at": "2026-05-26T05:47:00Z"
+  },
+  {
+    "id": "ticket_003",
+    "subject": "Question about latest invoice",
+    "body": "Hi,\n\nGot the May invoice this morning and noticed it's higher than what I expected based on our plan. We're on the Pro tier ($79/mo) but the invoice came in at $112. Could you help me understand the breakdown? I don't see line items in the PDF.\n\nThanks.",
+    "from_name": "Chen Wei",
+    "from_email": "chen.wei@helix-systems.io",
+    "created_at": "2026-03-05T13:17:00Z"
+  },
+  {
+    "id": "ticket_004",
+    "subject": "Need help inviting new users",
+    "body": "Hello,\n\nI'm trying to add two new teammates to our workspace but I don't see the invite button on the Members page. Is this restricted by role? I'm currently a Member, not an Admin — does that block invites?\n\nJust want to confirm before I bother our admin.\n\nSofia",
+    "from_name": "Sofia Alvarez",
+    "from_email": "sofia.alvarez@brightlane.co",
+    "created_at": "2026-05-23T06:25:00Z"
+  },
+  {
+    "id": "ticket_005",
+    "subject": "Dashboard widgets not loading",
+    "body": "Hey,\n\nMost of my dashboard widgets are stuck on the loading spinner this morning. The Revenue and Active Users widgets work fine, but everything in the lower half of the page never finishes loading. Tried Chrome and Firefox, same behavior on both.\n\nLet me know what you need from me to debug.",
+    "from_name": "Kwame Mensah",
+    "from_email": "kwame.mensah@brightlane.co",
+    "created_at": "2026-04-10T11:43:00Z"
+  },
+  {
+    "id": "ticket_006",
+    "subject": "Request to upgrade subscription plan",
+    "body": "Hi,\n\nWe'd like to move from the Starter plan to Business this month. We've added a few team members and the seat limit is becoming a constraint. Can you tell me what happens to our current billing cycle if we upgrade mid-month?\n\nBest,\nElena",
+    "from_name": "Elena Petrova",
+    "from_email": "elena.petrova@orbitdb.org",
+    "created_at": "2026-03-30T11:21:00Z"
+  },
+  {
+    "id": "ticket_007",
+    "subject": "SSO login failing for some users",
+    "body": "Hello support,\n\nOur Okta SSO is working for most of the team but four users get a 'SAML response invalid' error on sign-in. Same Okta config, same group assignment. We tried removing and re-adding their accounts but the error persists.\n\nCould you check our SSO logs from your end? Domain: orbitdb.org",
+    "from_name": "Diego Romero",
+    "from_email": "diego.romero@orbitdb.org",
+    "created_at": "2026-04-30T08:38:00Z"
+  },
+  {
+    "id": "ticket_008",
+    "subject": "Looking for onboarding resources",
+    "body": "Hi team,\n\nI just joined as the new ops lead and I'm working through your product. Do you have any onboarding playlists or docs you'd recommend for someone coming in fresh? I've watched the intro video on your site but I'm looking for something more in-depth.\n\nThanks!",
+    "from_name": "Ananya Rao",
+    "from_email": "ananya.rao@acmecloud.io",
+    "created_at": "2026-04-18T02:52:00Z"
+  },
+  {
+    "id": "ticket_009",
+    "subject": "Refund request for duplicate charge",
+    "body": "Hello,\n\nWe were charged twice on April 5th — once at 8:43 AM and again at 8:46 AM, both for $249. Looks like a payment retry got through. Could you refund the duplicate? I can send transaction IDs if needed.\n\nMerci.",
+    "from_name": "Jean Dupont",
+    "from_email": "jean.dupont@vectorstack.io",
+    "created_at": "2026-03-15T20:21:00Z"
+  },
+  {
+    "id": "ticket_010",
+    "subject": "Webhook integration returning errors",
+    "body": "Hi,\n\nOur webhook endpoint started returning 500s on your side starting yesterday around 14:00 UTC. We haven't changed anything on our end. Could you check if there's a payload format change or rate limit we're hitting? Our retry count is up to ~200 failed deliveries.\n\nURL: https://api.skyledger.co/hooks/incoming",
+    "from_name": "Li Na",
+    "from_email": "li.na@skyledger.co",
+    "created_at": "2026-05-25T14:33:00Z"
+  },
+  {
+    "id": "ticket_011",
+    "subject": "Updating payment method",
+    "body": "Hello,\n\nNeed to update the credit card on file — we switched corporate cards. Where in the dashboard do I do this? I poked around Settings → Billing but only saw a 'View invoice history' link.\n\nThanks,\nMateo",
+    "from_name": "Mateo Herrera",
+    "from_email": "mateo.herrera@vectorstack.io",
+    "created_at": "2026-05-21T03:55:00Z"
+  },
+  {
+    "id": "ticket_012",
+    "subject": "Search results page behaving unexpectedly",
+    "body": "Hi,\n\nThe search bar at the top of the dashboard isn't returning the right results lately. If I search for a customer name I know exists (e.g., 'Vargas Industries'), I get either no results or a much older snapshot. New customers added in the last 2 weeks don't show up at all.\n\nSome kind of indexing delay?",
+    "from_name": "Amina Bello",
+    "from_email": "amina.bello@skyledger.co",
+    "created_at": "2026-03-28T17:25:00Z"
+  },
+  {
+    "id": "ticket_013",
+    "subject": "Need API documentation for exports",
+    "body": "Hi,\n\nI'm building a script to pull our reporting data automatically. The dashboard has CSV export, but I need it via API. I see /v1/reports endpoints in the docs but no clear examples for the export flow. Could you point me to docs (or share examples) for triggering and downloading exports programmatically?\n\nThanks.",
+    "from_name": "Oliver Fischer",
+    "from_email": "oliver.fischer@dataforge.io",
+    "created_at": "2026-04-21T22:36:00Z"
+  },
+  {
+    "id": "ticket_014",
+    "subject": "Monthly invoice not received",
+    "body": "Hi team,\n\nUsually we get the monthly invoice on the 1st but nothing came through this month. Checked spam too. Could you resend it? Account: helix-systems / Riya Kapoor / billing email is finance@helix-systems.io.\n\nThanks!",
+    "from_name": "Riya Kapoor",
+    "from_email": "riya.kapoor@helix-systems.io",
+    "created_at": "2026-05-15T01:09:00Z"
+  },
+  {
+    "id": "ticket_015",
+    "subject": "Data sync delay between systems",
+    "body": "Hello,\n\nOur Salesforce sync seems to be lagging — changes I make in your dashboard show up in Salesforce 30-40 mins later instead of the usual 2-3. It's been like this since Sunday. Hasn't broken anything yet but I'd like to know if this is a known issue or if I need to reconfigure something.\n\nTomas",
+    "from_name": "Tomas Novak",
+    "from_email": "tomas.novak@acmecloud.io",
+    "created_at": "2026-04-01T13:58:00Z"
+  },
+  {
+    "id": "ticket_016",
+    "subject": "Suggestion for customizable table columns",
+    "body": "Hi,\n\nA small ask — could the table view on the Customers page support hiding/showing columns? Right now I have to scroll horizontally for fields I don't care about, and the ones I do use most (LTV, segment, last_seen) are off-screen. Even just remembering my last selection would help.\n\nCheers.",
+    "from_name": "Mei Zhang",
+    "from_email": "mei.zhang@vectorstack.io",
+    "created_at": "2026-05-12T16:40:00Z"
+  },
+  {
+    "id": "ticket_017",
+    "subject": "Unable to access analytics dashboard",
+    "body": "Hi,\n\nClicking on Analytics in the sidebar throws me to a blank page. Network tab shows a 403 on /api/v2/analytics/load. My role is Admin, so I shouldn't be permission-blocked. Started after the deploy notification banner yesterday — could be related.\n\nCarlos",
+    "from_name": "Carlos Mendes",
+    "from_email": "carlos.mendes@orbitdb.org",
+    "created_at": "2026-05-11T14:17:00Z"
+  },
+  {
+    "id": "ticket_018",
+    "subject": "Clarification on annual billing option",
+    "body": "Hello,\n\nI'm considering switching from monthly to annual billing for the discount but I want to confirm a few things:\n- Is the discount 15% or 20%? Different pages on your site say different things.\n- Can we add seats mid-year and only pay prorated?\n- Refund policy if we cancel before renewal?\n\nTrying to put a proposal together for our CFO.",
+    "from_name": "Nandini Iyer",
+    "from_email": "nandini.iyer@skyledger.co",
+    "created_at": "2026-05-19T19:53:00Z"
+  },
+  {
+    "id": "ticket_019",
+    "subject": "Question about workspace setup",
+    "body": "Hi,\n\nSetting up a new workspace for our marketing team — separate from our main one. Are workspaces fully isolated, or can data leak across them via integrations / shared connections? Specifically thinking about HubSpot, which we'd want connected to both.\n\nThanks.",
+    "from_name": "Pablo Gutierrez",
+    "from_email": "pablo.gutierrez@skyledger.co",
+    "created_at": "2026-05-17T18:14:00Z"
+  },
+  {
+    "id": "ticket_020",
+    "subject": "Export job stuck in processing state",
+    "body": "Hi support,\n\nI kicked off a bulk export of contacts (~28k records) yesterday at 4 PM CET. It's been stuck on 'Processing' for 19 hours now. Job ID is exp_4f8a72e. Should I cancel and retry or is it still working in the background?",
+    "from_name": "Anna Kowalska",
+    "from_email": "anna.kowalska@helix-systems.io",
+    "created_at": "2026-04-15T14:11:00Z"
+  },
+  {
+    "id": "ticket_021",
+    "subject": "Requesting credit note information",
+    "body": "Hello,\n\nWe need a credit note for the March invoice (INV-2026-0314) for our internal records — finance needs the GST-compliant version for our books. Could you email it across?\n\nThanks,\nRahul",
+    "from_name": "Rahul Verma",
+    "from_email": "rahul.verma@dataforge.io",
+    "created_at": "2026-04-13T22:14:00Z"
+  },
+  {
+    "id": "ticket_022",
+    "subject": "Minor UI enhancement idea",
+    "body": "Hey team,\n\nTiny one — when you hover over a contact's avatar in the activity feed, could a small popover show their company + role? Right now I have to click through to see who they are, which adds friction when I'm just scanning the feed.\n\nNo rush, just a thought.",
+    "from_name": "Eva Muller",
+    "from_email": "eva.muller@vectorstack.io",
+    "created_at": "2026-05-09T04:48:00Z"
+  },
+  {
+    "id": "ticket_023",
+    "subject": "Error when connecting third-party integration",
+    "body": "Hi,\n\nTrying to connect Stripe and getting 'Integration not authorized' after the OAuth flow completes. Steps I followed: clicked Connect → signed into Stripe → got redirected back → error banner appeared. Tried twice, same result.\n\nStripe account is in good standing on our side. Anything I should check?",
+    "from_name": "Samuel Okafor",
+    "from_email": "samuel.okafor@acmecloud.io",
+    "created_at": "2026-03-20T20:54:00Z"
+  },
+  {
+    "id": "ticket_024",
+    "subject": "Can I get a copy of past invoices?",
+    "body": "Hi,\n\nCould you send me PDFs of all our invoices from January through April? My finance team is putting together the quarterly close and we'd rather grab them in one shot than download individually.\n\nAccount email: isabella.rossi@vectorstack.io",
+    "from_name": "Isabella Rossi",
+    "from_email": "isabella.rossi@vectorstack.io",
+    "created_at": "2026-05-05T20:18:00Z"
+  },
+  {
+    "id": "ticket_025",
+    "subject": "Page loading slower than usual",
+    "body": "Hi,\n\nThe dashboard is feeling sluggish over the last week — pages take 4-6 seconds to load where they used to be near-instant. Is there a known performance issue? Could be on our network side, but our other SaaS tools are fine.\n\nArjun",
+    "from_name": "Arjun Singh",
+    "from_email": "arjun.singh@northbridgeapps.com",
+    "created_at": "2026-03-06T05:16:00Z"
+  },
+  {
+    "id": "ticket_026",
+    "subject": "Need help understanding role permissions",
+    "body": "Hello,\n\nCould you point me to docs explaining the difference between 'Admin', 'Editor', and 'Manager' roles? The descriptions in-app are pretty short. Specifically: can a Manager invite users, or only Admin can do that?\n\nTrying to set up our team correctly from the start.",
+    "from_name": "Lucia Fernandez",
+    "from_email": "lucia.fernandez@dataforge.io",
+    "created_at": "2026-05-05T06:25:00Z"
+  },
+  {
+    "id": "ticket_027",
+    "subject": "Subscription downgrade inquiry",
+    "body": "Hi,\n\nWe'd like to step down from Business to Pro at our next renewal. Two questions:\n1. Do we lose any data on the downgrade?\n2. Can we re-upgrade later without losing the discount we currently have?\n\nThanks for the help.",
+    "from_name": "Wei Huang",
+    "from_email": "wei.huang@dataforge.io",
+    "created_at": "2026-05-26T03:41:00Z"
+  },
+  {
+    "id": "ticket_028",
+    "subject": "Reports API returning inconsistent data",
+    "body": "Hi support,\n\nRunning the same /v1/reports/usage query at different times of day is returning different totals — sometimes by ~12%. Same date range, same filters. Is there a cache or eventual consistency situation I should be aware of? I want to use this in an automated report and need the numbers to be reliable.\n\nFatima",
+    "from_name": "Fatima Yusuf",
+    "from_email": "fatima.yusuf@atlas-pro.com",
+    "created_at": "2026-05-25T22:14:00Z"
+  },
+  {
+    "id": "ticket_029",
+    "subject": "Feature request for dark mode scheduling",
+    "body": "Hi,\n\nDark mode is great but I'd love it to switch automatically based on time of day (or follow my OS setting). Right now it's a manual toggle every time. Would that be feasible to add?\n\nMarek",
+    "from_name": "Marek Zielinski",
+    "from_email": "marek.zielinski@brightlane.co",
+    "created_at": "2026-04-18T00:09:00Z"
+  },
+  {
+    "id": "ticket_030",
+    "subject": "Billing contact change request",
+    "body": "Hi,\n\nWe're transitioning finance team members. Please update the billing contact on our account from 'jaspreet@vectorstack.io' to 'finance-ops@vectorstack.io'. Future invoices should go to the new address.\n\nLet me know if you need confirmation from the old contact.",
+    "from_name": "Neha Bhatia",
+    "from_email": "neha.bhatia@vectorstack.io",
+    "created_at": "2026-04-22T13:57:00Z"
+  },
+  {
+    "id": "ticket_031",
+    "subject": "Unexpected logout during active session",
+    "body": "Hi,\n\nI've been getting logged out about every 30 minutes today, even while I'm actively using the app. Yesterday everything was fine. Nothing's changed on my end — same browser, same Wi-Fi. Tried clearing cookies but it just happens again.\n\nAnything broken on auth?",
+    "from_name": "Miguel Torres",
+    "from_email": "miguel.torres@dataforge.io",
+    "created_at": "2026-03-27T19:57:00Z"
+  },
+  {
+    "id": "ticket_032",
+    "subject": "Question about account setup checklist",
+    "body": "Hi,\n\nThe setup checklist on the home screen mentions 'Connect your data source' — but I have multiple data sources (Mixpanel + Segment + a Postgres DB). Do I need to set up all three to mark this step complete, or just one to start?\n\nJust don't want to skip something important.",
+    "from_name": "Chinwe Eze",
+    "from_email": "chinwe.eze@acmecloud.io",
+    "created_at": "2026-03-02T07:10:00Z"
+  },
+  {
+    "id": "ticket_033",
+    "subject": "Refund status follow-up",
+    "body": "Hi,\n\nFollowing up on a refund request I submitted 8 days ago (ticket #44218). I was told it'd take 5 business days but I haven't seen the credit on my card or any update from your team. Could you check the status?\n\nPierre",
+    "from_name": "Pierre Laurent",
+    "from_email": "pierre.laurent@atlas-pro.com",
+    "created_at": "2026-02-28T03:21:00Z"
+  },
+  {
+    "id": "ticket_034",
+    "subject": "Bulk import process failing",
+    "body": "Hi,\n\nTried to import a CSV of 4,200 contacts but got a generic 'Import failed' error at around row 200. No specific error message, no row number flagged. The file is from your downloadable template so the headers should be correct.\n\nCould you check the import log on your side? Job ref: imp_2bce91",
+    "from_name": "Kavya Sharma",
+    "from_email": "kavya.sharma@acmecloud.io",
+    "created_at": "2026-04-23T14:53:00Z"
+  },
+  {
+    "id": "ticket_035",
+    "subject": "Invoice currency confirmation",
+    "body": "Hi,\n\nOur invoices are coming in USD but our entity is based in Brazil — we'd ideally like BRL billing if that's available. Or at least confirmation of whether we can switch. Our finance team is asking.\n\nThanks!",
+    "from_name": "Javier Morales",
+    "from_email": "javier.morales@brightlane.co",
+    "created_at": "2026-04-20T23:26:00Z"
+  },
+  {
+    "id": "ticket_036",
+    "subject": "Recurring dashboard refresh issue",
+    "body": "Hi support,\n\nEvery time I refresh the dashboard, the date range filter resets to 'Last 7 days' even though I've explicitly set it to 'Last 30 days' and saved it as a default. Tried different browsers, same behavior. Bug or expected?\n\nGrace",
+    "from_name": "Grace Ndlovu",
+    "from_email": "grace.ndlovu@skyledger.co",
+    "created_at": "2026-04-16T07:07:00Z"
+  },
+  {
+    "id": "ticket_037",
+    "subject": "API authentication token rejected",
+    "body": "Hi,\n\nMy API token is suddenly returning 401 Unauthorized. I haven't rotated it. Last successful call was yesterday at 17:00 UTC. Token ID ends in ...8c2a. Should I regenerate, or could this be on your side?\n\nViktor",
+    "from_name": "Viktor Horvat",
+    "from_email": "viktor.horvat@orbitdb.org",
+    "created_at": "2026-05-20T11:24:00Z"
+  },
+  {
+    "id": "ticket_038",
+    "subject": "Need pricing details for additional seats",
+    "body": "Hi,\n\nWe've maxed out our current seat count and need to add 4 more. Could you confirm:\n- Per-seat cost on the Business plan?\n- Is it prorated to our current renewal date?\n- Can we add seats without triggering a plan upgrade?\n\nThanks.",
+    "from_name": "Sneha Kulkarni",
+    "from_email": "sneha.kulkarni@acmecloud.io",
+    "created_at": "2026-05-08T07:23:00Z"
+  },
+  {
+    "id": "ticket_039",
+    "subject": "Request for downloadable documentation",
+    "body": "Hi,\n\nIs there a downloadable / printable version of your developer docs? I'd love a PDF for offline reference while I'm prototyping on a flight next week. The online docs are great but I won't have wifi.\n\nRicardo",
+    "from_name": "Ricardo Silva",
+    "from_email": "ricardo.silva@northbridgeapps.com",
+    "created_at": "2026-05-19T03:06:00Z"
+  },
+  {
+    "id": "ticket_040",
+    "subject": "CSV export contains duplicate rows",
+    "body": "Hi,\n\nThe CSV export from /reports/customers has duplicate rows — each customer appears twice. I checked the underlying data in the dashboard and there's only one record per customer. Looks like the export is joining wrong.\n\nExport run today around 09:00 UTC.",
+    "from_name": "Zhang Min",
+    "from_email": "zhang.min@northbridgeapps.com",
+    "created_at": "2026-04-17T23:57:00Z"
+  },
+  {
+    "id": "ticket_041",
+    "subject": "Cancel pending upgrade",
+    "body": "Hi,\n\nI clicked Upgrade earlier today by mistake — meant to compare plans, not actually upgrade. Can you cancel the pending change before it goes into effect next cycle?\n\nThanks,\nAditya",
+    "from_name": "Aditya Joshi",
+    "from_email": "aditya.joshi@acmecloud.io",
+    "created_at": "2026-03-23T18:59:00Z"
+  },
+  {
+    "id": "ticket_042",
+    "subject": "Would love keyboard shortcuts",
+    "body": "Hi,\n\nPower user request: keyboard shortcuts for the common actions (new ticket, search, navigate between views). Would speed things up a lot for those of us in the tool all day. Slack and Linear both do this well — would be amazing to have something similar here.\n\nHelena",
+    "from_name": "Helena Berg",
+    "from_email": "helena.berg@atlas-pro.com",
+    "created_at": "2026-03-16T13:04:00Z"
+  },
+  {
+    "id": "ticket_043",
+    "subject": "Integration sync stopped overnight",
+    "body": "Hi,\n\nOur Zapier integration was syncing fine until ~23:00 UTC last night. Since then, no events have been delivered. I haven't disabled or changed anything. Could you check whether the Zapier connection has been throttled or something?\n\nEmeka",
+    "from_name": "Emeka Obi",
+    "from_email": "emeka.obi@brightlane.co",
+    "created_at": "2026-03-04T14:55:00Z"
+  },
+  {
+    "id": "ticket_044",
+    "subject": "Payment receipt missing",
+    "body": "Hi,\n\nI see the charge on my card but didn't receive an email receipt for the April payment. Need it for expense reimbursement. Could you resend it?\n\nAccount: laura.garcia@skyledger.co\nCharge date: April 30",
+    "from_name": "Laura Garcia",
+    "from_email": "laura.garcia@skyledger.co",
+    "created_at": "2026-05-24T11:41:00Z"
+  },
+  {
+    "id": "ticket_045",
+    "subject": "Slow response from support portal",
+    "body": "Hi,\n\nI've raised two tickets this week and both have been pending for 3+ days without a first response. Not urgent issues but the SLA we discussed during onboarding mentioned 24 hours for first response. Anything going on with your support team capacity?\n\nJust want to know what to expect.",
+    "from_name": "Rohan Malhotra",
+    "from_email": "rohan.malhotra@dataforge.io",
+    "created_at": "2026-04-03T00:10:00Z"
+  },
+  {
+    "id": "ticket_046",
+    "subject": "Need guidance on workspace migration",
+    "body": "Hi,\n\nWe're consolidating two of our existing workspaces into one. Is there a guided way to migrate the data, or do we need to do it manually? Specifically concerned about historical activity logs and assigned tickets.\n\nBeatriz",
+    "from_name": "Beatriz Lima",
+    "from_email": "beatriz.lima@dataforge.io",
+    "created_at": "2026-04-06T11:49:00Z"
+  },
+  {
+    "id": "ticket_047",
+    "subject": "Duplicate billing entries",
+    "body": "Hi,\n\nOn our billing statement for April there are two identical line items for 'Pro plan - monthly' — same amount, same date. Looks like a duplicate. Could you take a look and adjust if needed?\n\nYusuf",
+    "from_name": "Yusuf Ibrahim",
+    "from_email": "yusuf.ibrahim@brightlane.co",
+    "created_at": "2026-04-29T23:59:00Z"
+  },
+  {
+    "id": "ticket_048",
+    "subject": "Mobile dashboard rendering issue",
+    "body": "Hi,\n\nThe dashboard is broken on iPhone Safari — sidebar overlaps the main content and you can't dismiss it. Works fine on desktop and on Android Chrome. iOS 17.4 if that helps.\n\nClara",
+    "from_name": "Clara Weber",
+    "from_email": "clara.weber@dataforge.io",
+    "created_at": "2026-03-12T13:10:00Z"
+  },
+  {
+    "id": "ticket_049",
+    "subject": "Question about proration during upgrades",
+    "body": "Hi,\n\nIf we upgrade plans mid-cycle, how is proration calculated? Pay-the-difference-immediately, or rolled into the next invoice? Trying to budget cleanly.\n\nThanks.",
+    "from_name": "Lukas Schneider",
+    "from_email": "lukas.schneider@brightlane.co",
+    "created_at": "2026-04-30T06:15:00Z"
+  },
+  {
+    "id": "ticket_050",
+    "subject": "Unable to save dashboard configuration",
+    "body": "Hi,\n\nI've customized my dashboard layout (rearranged widgets, changed time ranges) but the 'Save layout' button doesn't seem to do anything — no confirmation message, and when I reload, everything resets. Bug, or am I missing a step?\n\nMariana",
+    "from_name": "Mariana Costa",
+    "from_email": "mariana.costa@orbitdb.org",
+    "created_at": "2026-04-26T19:50:00Z"
+  }
+]

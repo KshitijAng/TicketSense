@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ticket_151",
+    "subject": "how do I add my team",
+    "body": "hi just signed up. where do i add people? i clicked around and only see myself. thanks!",
+    "from_name": "Sarah Miller",
+    "from_email": "sarah.miller@gmail.com",
+    "created_at": "2026-03-20T14:00:00Z"
+  },
+  {
+    "id": "ticket_152",
+    "subject": "didn't get verify email",
+    "body": "hi havent received verification email. ive checked spam too. signed up 2 hours ago. johndavis at yahoo",
+    "from_name": "John Davis",
+    "from_email": "john.davis@yahoo.com",
+    "created_at": "2026-04-29T01:00:00Z"
+  },
+  {
+    "id": "ticket_153",
+    "subject": "sorry probably stupid question",
+    "body": "Hi,\n\nSorry — really basic question. I see 'tags' and 'labels' in the UI and I don't understand the difference. Are they the same thing? Or do they do different things?\n\nThanks for your patience with newbies :)\n\nPriya",
+    "from_name": "Priya Patel",
+    "from_email": "priya.patel@gmail.com",
+    "created_at": "2026-03-08T23:00:00Z"
+  },
+  {
+    "id": "ticket_154",
+    "subject": "did I pay or not",
+    "body": "im on free trial right? but my card shows pending charge for $29. is that going to clear or not?",
+    "from_name": "Mike Johnson",
+    "from_email": "mike.johnson@outlook.com",
+    "created_at": "2026-05-19T06:00:00Z"
+  },
+  {
+    "id": "ticket_155",
+    "subject": "Sorry I'm not sure what I'm doing wrong",
+    "body": "Hello,\n\nSorry for the bother. I followed the setup guide but I'm not seeing my emails come into the dashboard. I connected my Gmail (I think?) and clicked the green button that said something about authorization. But the inbox is empty.\n\nIs there a step I missed? I'm sure it's something obvious.\n\nThanks,\nEmily",
+    "from_name": "Emily Brown",
+    "from_email": "emily.brown@hotmail.com",
+    "created_at": "2026-05-20T00:00:00Z"
+  },
+  {
+    "id": "ticket_156",
+    "subject": "hello good afternoon dear support",
+    "body": "Hello good afternoon dear support team. I am very new user. I am from Mexico. My English is not perfect please excuse.\n\nI tried to make account but when I press 'continue' nothing happens. The button just sit there. Browser is Chrome. No error showing.\n\nCan you help to fix? I want to use product.\n\nThank you very much,\nCarlos Vega",
+    "from_name": "Carlos Vega",
+    "from_email": "carlos.vega@gmail.com",
+    "created_at": "2026-03-08T12:00:00Z"
+  },
+  {
+    "id": "ticket_157",
+    "subject": "Need help finding settings",
+    "body": "Hi, I'm new and trying to figure things out. Where is the settings page? I see a gear icon on desktop but can't find one on the iPad. Can you point me in the right direction?",
+    "from_name": "Anna Smith",
+    "from_email": "anna.smith@yahoo.com",
+    "created_at": "2026-03-09T05:00:00Z"
+  },
+  {
+    "id": "ticket_158",
+    "subject": "doesn't work pls help",
+    "body": "doesn't work pls help",
+    "from_name": "Raj Kumar",
+    "from_email": "raj.kumar@gmail.com",
+    "created_at": "2026-03-10T11:00:00Z"
+  },
+  {
+    "id": "ticket_159",
+    "subject": "trial ending tomorrow!! Help!!",
+    "body": "Hi!! my trial ends tomorrow and I dont know if I should pay or if I get more days. I added my card during signup but I'm not sure if I was charged or not?? please help I don't want to lose access to all the stuff I set up\n\nLisa",
+    "from_name": "Lisa Green",
+    "from_email": "lisa.green@outlook.com",
+    "created_at": "2026-03-19T17:00:00Z"
+  },
+  {
+    "id": "ticket_160",
+    "subject": "Question about feature",
+    "body": "Hi support,\n\nDoes your product have a thing where I can see who replied to a customer last? My boss asks me this every week and I have to dig through individual tickets.\n\nIf yes can you tell me where? If no, when will it be available?\n\nDavid",
+    "from_name": "David Wilson",
+    "from_email": "david.wilson@hotmail.com",
+    "created_at": "2026-03-15T22:00:00Z"
+  },
+  {
+    "id": "ticket_161",
+    "subject": "passwoed reset notnreceiving",
+    "body": "Sent from my phone\n\nHi i need to redet my passsord but the link nevwr comes. tried 3 timea. plesse help asap im locked out\n\nMaria",
+    "from_name": "Maria Lopez",
+    "from_email": "maria.lopez@gmail.com",
+    "created_at": "2026-05-20T13:00:00Z"
+  },
+  {
+    "id": "ticket_162",
+    "subject": "is this thing on?",
+    "body": "I sent an email to my support address yesterday from my personal account to test if it would show up here. Nothing showed up. Did I do something wrong? Where would it go?\n\nKevin",
+    "from_name": "Kevin White",
+    "from_email": "kevin.white@yahoo.com",
+    "created_at": "2026-05-22T11:00:00Z"
+  },
+  {
+    "id": "ticket_163",
+    "subject": "what does 'unassigned' mean",
+    "body": "Hi,\n\nNoob question — in the inbox view, some tickets say 'Unassigned' in red. Does that mean nobody is looking at them? If yes — am I supposed to assign them, or does the system do that?\n\nThanks for the help,\nNina",
+    "from_name": "Nina Roy",
+    "from_email": "nina.roy@gmail.com",
+    "created_at": "2026-05-14T02:00:00Z"
+  },
+  {
+    "id": "ticket_164",
+    "subject": "Can someone help me — I'm not sure where to start",
+    "body": "Hi team,\n\nI just inherited this account from a colleague who left. Honestly I'm a bit overwhelmed. The dashboard has a lot going on and I don't know which part to focus on first.\n\nIs there a starter guide for someone in my situation? Or could someone hop on a quick call?\n\nTom",
+    "from_name": "Tom Baker",
+    "from_email": "tom.baker@outlook.com",
+    "created_at": "2026-03-27T00:00:00Z"
+  },
+  {
+    "id": "ticket_165",
+    "subject": "free version??",
+    "body": "do u have free version i can use without giving card details? just want to try first",
+    "from_name": "Aisha Khan",
+    "from_email": "aisha.khan@gmail.com",
+    "created_at": "2026-04-24T09:00:00Z"
+  },
+  {
+    "id": "ticket_166",
+    "subject": "Two of my colleagues can sign in but not me",
+    "body": "Hi,\n\nWeird one. Two people on my team signed in fine with their Google accounts. When I try the same flow, it just redirects me back to the sign-in page. No error. Just an infinite loop.\n\nWe're on the same workspace. Same domain (hotmail.com personal, but we use the same team workspace).\n\nWhat should I check?\n\nChris",
+    "from_name": "Chris Hall",
+    "from_email": "chris.hall@hotmail.com",
+    "created_at": "2026-05-04T18:00:00Z"
+  },
+  {
+    "id": "ticket_167",
+    "subject": "Maybe a billing question? I'm not 100% sure",
+    "body": "Hello,\n\nI received an email titled 'Your invoice is ready' but when I click the link I get to a page that just says 'Account not found.' My account very much exists — I'm logged in right now writing this message.\n\nIs the email a phishing attempt or is your system confused about my account? Don't want to ignore it if real.\n\nOlga",
+    "from_name": "Olga Petrova",
+    "from_email": "olga.petrova@gmail.com",
+    "created_at": "2026-04-06T23:00:00Z"
+  },
+  {
+    "id": "ticket_168",
+    "subject": "help",
+    "body": "everything was working yesterday\n\nnow nothing\n\nhelp",
+    "from_name": "Ben Carter",
+    "from_email": "ben.carter@yahoo.com",
+    "created_at": "2026-04-06T08:00:00Z"
+  },
+  {
+    "id": "ticket_169",
+    "subject": "Setup checklist — confused about step 3",
+    "body": "Hi,\n\nOn the onboarding checklist, step 3 says 'Connect your data source.' What counts as a data source? I have a Gmail account, a HubSpot CRM, and a Notion workspace. Are any/all of those data sources? Or is it something else entirely?\n\nJenny",
+    "from_name": "Jenny Lee",
+    "from_email": "jenny.lee@gmail.com",
+    "created_at": "2026-04-29T10:00:00Z"
+  },
+  {
+    "id": "ticket_170",
+    "subject": "Fwd: Re: Re: Welcome",
+    "body": "I'm forwarding the email chain — I'm not sure which part has the problem. I clicked the link in the original welcome email and it took me to a page asking for a 'workspace ID' which I don't remember setting up.\n\nSomeone help please.\n\nMark",
+    "from_name": "Mark Young",
+    "from_email": "mark.young@outlook.com",
+    "created_at": "2026-04-01T13:00:00Z"
+  },
+  {
+    "id": "ticket_171",
+    "subject": "asking for friend",
+    "body": "hi my friend recommended your tool. is the starter plan enough for a team of 4? he uses it for a team of 12 but ours is smaller\n\nthanks\nravi",
+    "from_name": "Ravi Sharma",
+    "from_email": "ravi.sharma@gmail.com",
+    "created_at": "2026-05-07T21:00:00Z"
+  },
+  {
+    "id": "ticket_172",
+    "subject": "Help me understand my dashboard",
+    "body": "Hello,\n\nI'm looking at my dashboard and I see a lot of numbers but I don't really know what they mean. 'CSAT 87%' — is that good? 'Median first response: 4h 21m' — is that good or bad for my industry?\n\nIs there a guide that explains what 'good' looks like for these numbers?\n\nLucy",
+    "from_name": "Lucy Adams",
+    "from_email": "lucy.adams@hotmail.com",
+    "created_at": "2026-03-29T11:00:00Z"
+  },
+  {
+    "id": "ticket_173",
+    "subject": "im stuck on the integration page",
+    "body": "im trying to connect my gmail but the popup window for google auth just closes immediately and nothing happens. tried 4 times. firefox latest. did not block popups on this site (allowed it). dunno what to do\n\npaul",
+    "from_name": "Paul Scott",
+    "from_email": "paul.scott@gmail.com",
+    "created_at": "2026-05-03T09:00:00Z"
+  },
+  {
+    "id": "ticket_174",
+    "subject": "Help — but I don't really know what to ask",
+    "body": "Hi support,\n\nSo here's the thing. I signed up two weeks ago. I imported my emails. I see them in the inbox. I assigned a few to myself. I replied to a couple.\n\nBut I'm not really sure if I'm 'using' the product the way it's supposed to be used? Like, am I missing some workflow that makes this faster than just regular Gmail?\n\nMaybe a video call to walk through what 'good usage' looks like? Or is there a course?\n\nSorry this isn't really a support question.\n\nEva",
+    "from_name": "Eva Martin",
+    "from_email": "eva.martin@yahoo.com",
+    "created_at": "2026-04-07T04:00:00Z"
+  },
+  {
+    "id": "ticket_175",
+    "subject": "where the gear icon",
+    "body": "where the gear icon to change my profile pic. cant find anywhere. on mobile\n\nryan",
+    "from_name": "Ryan Clark",
+    "from_email": "ryan.clark@gmail.com",
+    "created_at": "2026-04-19T01:00:00Z"
+  },
+  {
+    "id": "ticket_176",
+    "subject": "Confused about user vs member vs admin",
+    "body": "Hi,\n\nI added someone to my workspace and the dropdown asked me to pick: User, Member, or Admin. The descriptions next to each were super short and basically said the same thing in different words.\n\nWhat's the actual difference? I picked 'Member' but now I want to make sure that's right.\n\nThanks,\nSophia",
+    "from_name": "Sophia King",
+    "from_email": "sophia.king@outlook.com",
+    "created_at": "2026-05-14T21:00:00Z"
+  },
+  {
+    "id": "ticket_177",
+    "subject": "Tried to follow tutorial — got stuck step 4",
+    "body": "Hello!\n\nI'm following the 'Getting Started' video tutorial on your YouTube. Step 4 says to click 'Create your first inbox' but I don't have that button. The tutorial is from 2024 — has the UI changed since then?\n\nDaniel",
+    "from_name": "Daniel Reed",
+    "from_email": "daniel.reed@hotmail.com",
+    "created_at": "2026-04-15T17:00:00Z"
+  },
+  {
+    "id": "ticket_178",
+    "subject": "is the inbox empty because I'm new or because something broke",
+    "body": "Hi,\n\nMy inbox is empty. I don't know if that's because I just signed up and have no emails yet, or because something is broken and emails aren't coming in. How can I tell the difference?\n\nMia",
+    "from_name": "Mia Turner",
+    "from_email": "mia.turner@gmail.com",
+    "created_at": "2026-03-27T01:00:00Z"
+  },
+  {
+    "id": "ticket_179",
+    "subject": "QUICK question",
+    "body": "is there a way to undo a send? i replied to a customer with a typo and want to fix it\n\nalex",
+    "from_name": "Alex Moore",
+    "from_email": "alex.moore@yahoo.com",
+    "created_at": "2026-05-14T06:00:00Z"
+  },
+  {
+    "id": "ticket_180",
+    "subject": "Help with importing from Gmail",
+    "body": "Hi,\n\nI'm trying to import my support emails from Gmail. I authorized the integration but the import has been 'pending' for like 6 hours. Is that normal? Should I cancel and retry?\n\nFirst time using a tool like this so I have no idea what's normal.\n\nGrace",
+    "from_name": "Grace Hill",
+    "from_email": "grace.hill@gmail.com",
+    "created_at": "2026-04-19T18:00:00Z"
+  },
+  {
+    "id": "ticket_181",
+    "subject": "Where's the export button?",
+    "body": "I want to download a list of my customers but I can't find an export button anywhere. Help?\n\nNoah",
+    "from_name": "Noah Ward",
+    "from_email": "noah.ward@outlook.com",
+    "created_at": "2026-03-15T02:00:00Z"
+  },
+  {
+    "id": "ticket_182",
+    "subject": "Hello from a confused new user",
+    "body": "Hi team,\n\nI'm trying really hard but I just can't figure out how to do something simple: when a customer emails me, how do I make sure my reply goes to them and not to someone else on my team?\n\nIs the 'reply' button replying to me, the customer, or my team? It's not clear.\n\nSorry I know this is basic.\n\nElla",
+    "from_name": "Ella Wright",
+    "from_email": "ella.wright@hotmail.com",
+    "created_at": "2026-04-08T03:00:00Z"
+  },
+  {
+    "id": "ticket_183",
+    "subject": "?",
+    "body": "broken",
+    "from_name": "Victor Chen",
+    "from_email": "victor.chen@gmail.com",
+    "created_at": "2026-03-29T14:00:00Z"
+  },
+  {
+    "id": "ticket_184",
+    "subject": "is the chatbot off?",
+    "body": "Hi,\n\nWhen I added the chat widget to my site, the test chat works but when real customers chat, my AI bot doesn't respond. Is the AI bot turned off by default? I don't see an 'on' switch anywhere.\n\nHannah",
+    "from_name": "Hannah Ross",
+    "from_email": "hannah.ross@yahoo.com",
+    "created_at": "2026-03-23T17:00:00Z"
+  },
+  {
+    "id": "ticket_185",
+    "subject": "Where to put my API key",
+    "body": "Hola,\n\nI got an API key from settings but I don't know where to use it. The docs page is showing curl commands but I don't know what curl is. I just want to make my Wordpress send tickets here.\n\nIs there a Wordpress plugin or a simpler way?\n\nLeo",
+    "from_name": "Leo Diaz",
+    "from_email": "leo.diaz@gmail.com",
+    "created_at": "2026-03-15T07:00:00Z"
+  },
+  {
+    "id": "ticket_186",
+    "subject": "first day — accidentally deleted something",
+    "body": "Hi!\n\nIt's my first day with the tool and I accidentally archived a ticket I needed. Is there a way to un-archive? I don't see it anywhere in the views.\n\nZoe",
+    "from_name": "Zoe Bell",
+    "from_email": "zoe.bell@outlook.com",
+    "created_at": "2026-03-08T14:00:00Z"
+  },
+  {
+    "id": "ticket_187",
+    "subject": "Need help — long question",
+    "body": "Dear team,\n\nI hope this message finds you well. I am writing because over the last several days I have been attempting to configure my workspace in a manner that is consistent with the needs of my small business operations, which include managing customer communications across multiple platforms.\n\nHowever, I have run into what I believe is a configuration issue but I am not entirely sure how to describe it. There are some settings that I believe should be available based on the documentation but which I cannot find.\n\nWould someone be able to assist me in a more direct fashion?\n\nWith great thanks,\nIbrahim Ali",
+    "from_name": "Ibrahim Ali",
+    "from_email": "ibrahim.ali@gmail.com",
+    "created_at": "2026-04-16T17:00:00Z"
+  },
+  {
+    "id": "ticket_188",
+    "subject": "i think i broke it",
+    "body": "i think i broke something. clicked some red 'reset workspace' button by mistake. now everything is gone? please help i didnt mean to do it\n\nchloe",
+    "from_name": "Chloe Cook",
+    "from_email": "chloe.cook@hotmail.com",
+    "created_at": "2026-02-28T17:00:00Z"
+  },
+  {
+    "id": "ticket_189",
+    "subject": "how to invite myself from another email",
+    "body": "Hi,\n\nI want to add my personal email as a second account in my workspace (for testing). Is there a way? When I try to add myself I get 'already a member' error.\n\nEthan",
+    "from_name": "Ethan Brooks",
+    "from_email": "ethan.brooks@gmail.com",
+    "created_at": "2026-05-01T14:00:00Z"
+  },
+  {
+    "id": "ticket_190",
+    "subject": "noooo my data",
+    "body": "i deleted my mom's tickets. she runs a small business and we share a workspace. she's going to be so mad. please tell me theres an undo button or a trash can\n\nlily",
+    "from_name": "Lily Wood",
+    "from_email": "lily.wood@yahoo.com",
+    "created_at": "2026-03-22T05:00:00Z"
+  },
+  {
+    "id": "ticket_191",
+    "subject": "two factor — locked out",
+    "body": "Hi,\n\nI set up 2FA last week but I lost the phone I had the authenticator app on. Now I can't log in. I have backup codes somewhere but I literally don't remember where.\n\nHow do I get back in?\n\nOscar",
+    "from_name": "Oscar Price",
+    "from_email": "oscar.price@gmail.com",
+    "created_at": "2026-04-03T05:00:00Z"
+  },
+  {
+    "id": "ticket_192",
+    "subject": "Quick question about pricing",
+    "body": "Hi,\n\nOn your pricing page it says 'starts at $19/user/month' but in my checkout it showed $24. Is there a tax or something I didn't see, or am I on the wrong plan?\n\nRuby",
+    "from_name": "Ruby Cox",
+    "from_email": "ruby.cox@outlook.com",
+    "created_at": "2026-03-17T07:00:00Z"
+  },
+  {
+    "id": "ticket_193",
+    "subject": "URGENT - new and confused",
+    "body": "okay im new and i feel dumb. i set up my account, the team see my emails fine, BUT when customers reply their email goes to my old inbox not the new one. did i do somethign wrong with forwarding?? help i have like 30 unhappy customers waiting\n\nmason",
+    "from_name": "Mason Gray",
+    "from_email": "mason.gray@hotmail.com",
+    "created_at": "2026-05-16T21:00:00Z"
+  },
+  {
+    "id": "ticket_194",
+    "subject": "Where are templates?",
+    "body": "Hi, I'm new and trying to figure things out. I saw in a youtube review that you have email templates? where do i find them?",
+    "from_name": "Ava Reed",
+    "from_email": "ava.reed@gmail.com",
+    "created_at": "2026-03-17T00:00:00Z"
+  },
+  {
+    "id": "ticket_195",
+    "subject": "i have many questions",
+    "body": "1) what is sla?\n2) what is csat?\n3) what is a 'view'?\n4) where is the analytics page?\n5) can i hide the menu on the left?\n\nsorry lol\n\njack",
+    "from_name": "Jack Long",
+    "from_email": "jack.long@yahoo.com",
+    "created_at": "2026-04-01T16:00:00Z"
+  },
+  {
+    "id": "ticket_196",
+    "subject": "Account suspended — but why?",
+    "body": "Hi,\n\nMy account just got a 'suspended' banner this morning. I didn't do anything. I'm on the free trial and was just exploring features.\n\nWhat happened? How do I un-suspend?\n\nAmelia",
+    "from_name": "Amelia Fox",
+    "from_email": "amelia.fox@gmail.com",
+    "created_at": "2026-05-03T23:00:00Z"
+  },
+  {
+    "id": "ticket_197",
+    "subject": "wrong email signed up",
+    "body": "i signed up with my work email but want to use my personal email instead. can i change the primary email or do i need to start over\n\nhenry",
+    "from_name": "Henry James",
+    "from_email": "henry.james@outlook.com",
+    "created_at": "2026-05-06T20:00:00Z"
+  },
+  {
+    "id": "ticket_198",
+    "subject": "Forwarded email chain",
+    "body": "FWD: Re: Re: Welcome Email\nFWD: Re: Trial Started\nFWD: Re: Verify Account\n\nI'm forwarding everything because I'm confused. Can someone tell me what I'm supposed to do next?",
+    "from_name": "Sofia Cruz",
+    "from_email": "sofia.cruz@hotmail.com",
+    "created_at": "2026-05-22T08:00:00Z"
+  },
+  {
+    "id": "ticket_199",
+    "subject": "Is this a scam email??",
+    "body": "Hi,\n\nI just got an email from 'no-reply@helpscout-secure.com' saying my account needs verification. It looks like it might be from you but the domain isn't yours. Is this real or phishing?\n\nDidn't click anything yet.\n\nJacob",
+    "from_name": "Jacob Stone",
+    "from_email": "jacob.stone@gmail.com",
+    "created_at": "2026-05-13T03:00:00Z"
+  },
+  {
+    "id": "ticket_200",
+    "subject": "noob here — best practices?",
+    "body": "Hi! Totally new here. Is there a best-practices guide for someone who has never used a help desk tool before? Like, what should I set up in the first week vs first month?\n\nWant to do this right.\n\nEmma",
+    "from_name": "Emma Ford",
+    "from_email": "emma.ford@yahoo.com",
+    "created_at": "2026-03-09T23:00:00Z"
+  }
+]

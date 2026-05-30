@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ticket_251",
+    "subject": "Vendor security questionnaire — 47 questions attached",
+    "body": "Dear Vendor Management,\n\nAs part of our annual third-party risk assessment, please find attached our security questionnaire (47 questions covering data handling, encryption, access controls, incident response, and business continuity). We require your completion of this within 10 business days.\n\nIn addition, please provide:\n- Current SOC 2 Type II report\n- Penetration test summary (last 12 months)\n- Data flow diagram\n- Sub-processor list\n\nKindly direct your responses to vendor-risk@apexholdings.com and CC me.\n\nRegards,\nSarah Mitchell\nDirector, Information Security\nApex Holdings",
+    "from_name": "Sarah Mitchell",
+    "from_email": "sarah.mitchell@apexholdings.com",
+    "created_at": "2026-05-25T07:00:00Z"
+  },
+  {
+    "id": "ticket_252",
+    "subject": "Request for redlined MSA review",
+    "body": "Legal has completed an initial review of your Master Services Agreement and prepared a redlined version for discussion.\n\nKey points requiring negotiation:\n- Section 4.2 (Limitation of Liability) — current cap unacceptable, propose 2x annual fees\n- Section 7 (Indemnification) — needs mutual indemnification language\n- Section 11 (Data Protection) — must reference our DPA terms verbatim\n- Section 14 (Termination) — termination for convenience with 60-day notice required\n\nPlease confirm who should coordinate contract negotiations from your side and provide estimated turnaround. We are targeting a signed MSA by month-end.\n\nDavid Chen\nVP, Legal\nVertex Industries",
+    "from_name": "David Chen",
+    "from_email": "david.chen@vertex-industries.com",
+    "created_at": "2026-04-20T12:00:00Z"
+  },
+  {
+    "id": "ticket_253",
+    "subject": "Multi-stakeholder review — procurement, legal, and IT",
+    "body": "CC: procurement@acme-corp.com, legal@acme-corp.com, it-governance@acme-corp.com\n\nDear Account Management,\n\nWe are consolidating feedback from several departments before final approval of our proposed contract. Please respond to the open questions regarding:\n\n1. Support SLAs and escalation paths\n2. Data residency commitments for EU-based users\n3. Sub-processor change notification process\n4. Data export procedures upon termination\n5. Single Sign-On configuration support\n\nProcurement requires confirmation of these items before issuing the PO. Please coordinate response across the team and respond by EOD Wednesday.\n\nRegards,\nPriya Kapoor\nSenior Procurement Manager\nAcme Corp",
+    "from_name": "Priya Kapoor",
+    "from_email": "priya.kapoor@acme-corp.com",
+    "created_at": "2026-03-25T07:00:00Z"
+  },
+  {
+    "id": "ticket_254",
+    "subject": "Annual prepay — request for additional discount",
+    "body": "Dear Account Team,\n\nWe are reviewing our subscription for the upcoming renewal cycle. Our preference is to move to annual prepay (12-month commitment, full payment upfront) on the Business tier across our 240 seats.\n\nGiven the commitment level, we'd like to discuss additional discount beyond the standard annual rate. Comparable vendors offer 18-22% off list for similar commitments. We would like to see at least 15% to make this competitive against our other options under evaluation.\n\nPlease confirm what flexibility your team has on pricing for this tier.\n\nMichael Bauer\nDirector, Procurement\nSummit Global",
+    "from_name": "Michael Bauer",
+    "from_email": "michael.bauer@summit-global.com",
+    "created_at": "2026-03-04T09:00:00Z"
+  },
+  {
+    "id": "ticket_255",
+    "subject": "Pre-sale due diligence — please confirm",
+    "body": "Hello,\n\nBefore we sign, our team needs written confirmation on the following:\n\n1. Data is encrypted at rest (AES-256) and in transit (TLS 1.2+)\n2. Backup retention is at least 30 days\n3. RTO and RPO commitments for disaster recovery\n4. Whether sub-processors are notified of changes 30 days in advance\n5. EU data residency option is available (no US data transfer)\n6. SAML SSO support with Okta and Azure AD\n\nThese are non-negotiable for our Information Security team's approval. Please respond with specifics — vague answers won't pass review.\n\nLaura Gomez\nSecurity Architect\nNorthstar Enterprise",
+    "from_name": "Laura Gomez",
+    "from_email": "laura.gomez@northstar-enterprise.com",
+    "created_at": "2026-02-28T10:00:00Z"
+  },
+  {
+    "id": "ticket_256",
+    "subject": "Integration requirements — ServiceNow",
+    "body": "Dear Integration Team,\n\nAs part of our enterprise rollout, we require bidirectional integration with ServiceNow ITSM. Specifically:\n- Tickets created in your platform should auto-create incidents in ServiceNow\n- Incident updates in ServiceNow should sync back to your platform\n- Custom field mapping (we have ~30 custom fields)\n- SLA inheritance across systems\n\nIs this supported natively, via API, or via a third-party connector? Please share documentation and estimated implementation effort.\n\nRegards,\nJames Walker\nSenior IT Architect\nAcme Corp",
+    "from_name": "James Walker",
+    "from_email": "james.walker@acme-corp.com",
+    "created_at": "2026-05-27T11:00:00Z"
+  },
+  {
+    "id": "ticket_257",
+    "subject": "SSO/SAML setup — Okta configuration questions",
+    "body": "Hello,\n\nWe are setting up SAML SSO with our Okta tenant for a 380-user rollout. A few questions before we proceed:\n\n1. Do you support IdP-initiated and SP-initiated SSO flows? Both required.\n2. Group-based provisioning (SCIM 2.0) supported?\n3. Custom attribute mapping (we need to pass department and cost center)?\n4. Force-SSO option to disable password fallback once SAML is configured?\n\nPlease share the SAML metadata XML and provisioning guide so our IT team can begin configuration.\n\nAnita Rao\nIdentity Management Lead\nVertex Industries",
+    "from_name": "Anita Rao",
+    "from_email": "anita.rao@vertex-industries.com",
+    "created_at": "2026-05-17T12:00:00Z"
+  },
+  {
+    "id": "ticket_258",
+    "subject": "DPA execution required — GDPR compliance",
+    "body": "Dear Account Manager,\n\nPer our internal compliance requirements, we cannot transmit personal data of our EU-based users to your platform without an executed Data Processing Agreement.\n\nPlease provide your standard DPA or confirm willingness to sign ours. Either is acceptable. The agreement must include:\n- Article 28 sub-processor language\n- SCCs as applicable\n- 72-hour breach notification commitment\n- Right-to-audit clause\n\nProvisioning is paused pending DPA execution.\n\nKind regards,\nRobert King\nData Protection Officer\nSummit Global",
+    "from_name": "Robert King",
+    "from_email": "robert.king@summit-global.com",
+    "created_at": "2026-03-14T08:00:00Z"
+  },
+  {
+    "id": "ticket_259",
+    "subject": "Custom invoicing — PO-based billing required",
+    "body": "Hello,\n\nOur finance department requires all vendor invoicing to be PO-based with NET-45 payment terms. The current self-serve credit-card billing flow is not acceptable for our enterprise procurement process.\n\nPlease confirm:\n- PO-based invoicing is supported\n- Invoices can be issued against a master PO with line-item references\n- Custom billing address and entity name on invoices\n- Quarterly invoicing option (vs monthly)\n\nIf any of these aren't standard, please advise on the path to enable them.\n\nEmma Fischer\nAccounts Payable Manager\nApex Holdings",
+    "from_name": "Emma Fischer",
+    "from_email": "emma.fischer@apexholdings.com",
+    "created_at": "2026-03-17T06:00:00Z"
+  },
+  {
+    "id": "ticket_260",
+    "subject": "Audit log export — SOC 2 evidence collection",
+    "body": "Dear Support,\n\nWe are preparing for our SOC 2 Type II audit. The auditor has requested audit log evidence covering Q1 2026 for our workspace, specifically:\n\n- All user authentication events (success and failure)\n- Administrative actions (role changes, user invites/removals)\n- Data access events on sensitive ticket categories\n- API key creation/rotation events\n\nThe export must be in a tamper-evident format (signed logs preferred, otherwise SHA-256 manifest acceptable).\n\nPlease advise on export procedure and turnaround time.\n\nVictor Alvarez\nCompliance Manager\nVertex Industries",
+    "from_name": "Victor Alvarez",
+    "from_email": "victor.alvarez@vertex-industries.com",
+    "created_at": "2026-04-14T12:00:00Z"
+  },
+  {
+    "id": "ticket_261",
+    "subject": "Sub-processor change — formal notification request",
+    "body": "Dear Vendor,\n\nWe received your sub-processor change notification dated 18 February 2026 (new sub-processor: undisclosed cloud provider in Asia-Pacific region).\n\nPer our DPA Section 7, we require:\n1. Specific sub-processor identity (entity name, jurisdiction)\n2. Data categories processed by this sub-processor\n3. Security certifications held by sub-processor\n4. Confirmation that SCCs are in place\n\nUntil we receive these details, we object to the addition of this sub-processor per our DPA rights.\n\nKindly respond within 14 days.\n\nHelen Brooks\nLegal Counsel, Privacy\nSummit Global",
+    "from_name": "Helen Brooks",
+    "from_email": "helen.brooks@summit-global.com",
+    "created_at": "2026-02-28T10:00:00Z"
+  },
+  {
+    "id": "ticket_262",
+    "subject": "Renewal at 220 seats — pricing review",
+    "body": "Hi,\n\nOur 12-month subscription is up for renewal on 7 July. We are currently at 220 seats on the Business tier and have grown 4x since signing.\n\nGiven the growth, I'd like to discuss:\n- A multi-year commitment (2-3 year) in exchange for locked pricing\n- Volume discount tiers at 250, 300, 500 seats\n- Bundled access to your Enterprise features (SAML, audit log, IP allowlist) given our size\n\nCan we schedule a call with someone empowered to negotiate? Procurement is engaged and we have budget approval.\n\nTom Richardson\nVP, Customer Operations\nSummit Global",
+    "from_name": "Tom Richardson",
+    "from_email": "tom.richardson@summit-global.com",
+    "created_at": "2026-05-09T07:00:00Z"
+  },
+  {
+    "id": "ticket_263",
+    "subject": "Data residency requirements — APAC region",
+    "body": "Dear Support,\n\nOur APAC entity is required by local regulation (specifically Singapore PDPA and similar regional laws) to keep customer personal data within the APAC region. We cannot transmit this data to your US-based infrastructure.\n\nPlease confirm:\n1. APAC data residency option is available\n2. Which AWS region or equivalent is used\n3. Whether our existing tenant can be migrated, or if we need a separate workspace\n4. Pricing implications\n\nThis is a regulatory blocker; without APAC residency we cannot extend the contract to our Singapore subsidiary.\n\nMei Lin\nPrivacy Counsel — APAC\nSummit Global",
+    "from_name": "Mei Lin",
+    "from_email": "mei.lin@summit-global.com",
+    "created_at": "2026-04-07T08:00:00Z"
+  },
+  {
+    "id": "ticket_264",
+    "subject": "Information security review — pen test results",
+    "body": "Dear Account Management,\n\nAs part of our annual vendor review, our Information Security team requires access to your most recent external penetration test summary (within last 12 months). Specifically:\n\n- Scope of the test\n- Methodology used\n- Findings with severity ratings\n- Remediation status of any High/Critical findings\n\nWe understand this is sensitive — happy to execute an NDA if not already in place.\n\nAlso of interest: bug bounty program details (if any) and your responsible disclosure policy URL.\n\nAhmed Hassan\nLead, Third-Party Risk Management\nSummit Global",
+    "from_name": "Ahmed Hassan",
+    "from_email": "ahmed.hassan@summit-global.com",
+    "created_at": "2026-03-21T06:00:00Z"
+  },
+  {
+    "id": "ticket_265",
+    "subject": "RBAC configuration — custom roles required",
+    "body": "Hello,\n\nOur deployment will require custom role definitions beyond your standard Admin/Editor/Viewer set. Specifically we need:\n\n1. 'Audit Reader' — read-only access to audit logs only, no ticket data\n2. 'Finance Reviewer' — access to billing-tagged tickets only\n3. 'Customer Success' — access to assigned customer tickets, not org-wide\n\nIs custom role creation supported via API or admin UI? If not natively supported, what is the workaround for similar role separation?\n\nSophie Laurent\nSenior IT Architect\nAcme Corp",
+    "from_name": "Sophie Laurent",
+    "from_email": "sophie.laurent@acme-corp.com",
+    "created_at": "2026-05-21T13:00:00Z"
+  },
+  {
+    "id": "ticket_266",
+    "subject": "BAA execution — HIPAA workload",
+    "body": "Dear Vendor,\n\nOur use case includes processing of protected health information (PHI) under HIPAA. Per regulation, we require a Business Associate Agreement (BAA) to be executed prior to onboarding.\n\nPlease provide:\n1. Your standard BAA template, or willingness to sign ours\n2. Confirmation that your platform is HIPAA-eligible for relevant features\n3. List of HIPAA-restricted features (if any)\n4. Encryption and access control evidence for PHI handling\n\nWe cannot proceed without this. Kindly route to your privacy/compliance team for response.\n\nDaniel Moore\nDirector, Healthcare IT\nAcme Corp",
+    "from_name": "Daniel Moore",
+    "from_email": "daniel.moore@acme-corp.com",
+    "created_at": "2026-03-22T08:00:00Z"
+  },
+  {
+    "id": "ticket_267",
+    "subject": "Custom SLA — uptime and response time commitments",
+    "body": "Dear Account Team,\n\nOur enterprise agreement requires custom SLA commitments beyond your standard terms. Specifically:\n\n- Platform uptime: 99.95% measured monthly (vs your standard 99.5%)\n- P1 ticket response: 30 minutes 24x7 (vs your 1 hour business hours)\n- P2 ticket response: 4 hours 24x7\n- Service credit schedule for SLA misses\n\nThese commitments are aligned with what we offer our own customers. Without these, we cannot deploy your platform in our customer-facing workflow.\n\nPlease confirm feasibility and any pricing implications.\n\nRachel Green\nVP, Vendor Management\nVertex Industries",
+    "from_name": "Rachel Green",
+    "from_email": "rachel.green@vertex-industries.com",
+    "created_at": "2026-05-08T07:00:00Z"
+  },
+  {
+    "id": "ticket_268",
+    "subject": "IP allowlisting — required for our security policy",
+    "body": "Hello,\n\nOur Information Security policy requires that any administrative access to vendor platforms be restricted by IP address (corporate VPN ranges only). End-user access (regular agents) is acceptable from any IP.\n\nDoes your platform support:\n1. IP allowlisting at the admin role level?\n2. Multiple allowed CIDR ranges per workspace?\n3. Logging of attempted access from disallowed IPs?\n\nIf available, please share configuration documentation. If not natively supported, advise on roadmap or workaround.\n\nArjun Mehta\nInformation Security Officer\nApex Holdings",
+    "from_name": "Arjun Mehta",
+    "from_email": "arjun.mehta@apexholdings.com",
+    "created_at": "2026-05-18T11:00:00Z"
+  },
+  {
+    "id": "ticket_269",
+    "subject": "Termination assistance — data export commitments",
+    "body": "Dear Vendor,\n\nAs we work towards contract signature, our legal team requires explicit language around termination assistance. Specifically:\n\n1. Upon termination, we receive a full export of our data within 30 days, in machine-readable format (JSON or CSV)\n2. A 60-day post-termination access period for retrieval and migration\n3. Confirmation that data is permanently deleted from your systems 90 days after termination\n4. Written attestation of the deletion\n\nPlease confirm whether these terms are acceptable. If not standard, advise on negotiable language.\n\nOlivia Scott\nSenior Counsel\nVertex Industries",
+    "from_name": "Olivia Scott",
+    "from_email": "olivia.scott@vertex-industries.com",
+    "created_at": "2026-05-25T06:00:00Z"
+  },
+  {
+    "id": "ticket_270",
+    "subject": "Workday HRIS integration — provisioning automation",
+    "body": "Hello,\n\nWe are evaluating your platform for a 450-user deployment. A blocker for our IT team is automated user provisioning from our Workday HRIS.\n\nDo you support:\n1. SCIM 2.0 from Workday\n2. Custom attribute sync (department, manager, cost center)\n3. Auto-deprovisioning on Workday termination\n4. Just-in-time provisioning on first SAML login\n\nWithout this we cannot manage 450 users manually. Please share documentation or roadmap.\n\nWei Zhang\nSenior IAM Engineer\nAcme Corp",
+    "from_name": "Wei Zhang",
+    "from_email": "wei.zhang@acme-corp.com",
+    "created_at": "2026-03-09T10:00:00Z"
+  },
+  {
+    "id": "ticket_271",
+    "subject": "Risk acceptance — list of accepted findings from your SOC 2",
+    "body": "Hi,\n\nWe've reviewed your SOC 2 Type II report. Most findings are acceptable to our risk team, but we'd like to discuss:\n\n1. CC6.1 partial finding — clarification on how compensating controls were assessed\n2. CC7.2 finding — current remediation status and timeline\n3. CC8.1 — confirmation that the corrective action plan was completed\n\nWe accept residual risk for items not listed above. Please confirm so we can close out our review.\n\nNatalie Reed\nThird-Party Risk Analyst\nApex Holdings",
+    "from_name": "Natalie Reed",
+    "from_email": "natalie.reed@apexholdings.com",
+    "created_at": "2026-04-06T08:00:00Z"
+  },
+  {
+    "id": "ticket_272",
+    "subject": "Custom reporting — quarterly business reviews",
+    "body": "Dear Account Manager,\n\nAs part of our enterprise contract, we expect quarterly business review meetings with custom reporting:\n\n- Ticket volume and SLA performance per customer cohort\n- Agent utilization across our 12 teams\n- Customer satisfaction trends with statistical significance\n- Year-over-year benchmarks against our industry peers (if available)\n\nWhich of these can be delivered out-of-the-box? Which require custom build? What is the standard QBR cadence for accounts of our size?\n\nGeorge Hill\nDirector, Customer Operations\nAcme Corp",
+    "from_name": "George Hill",
+    "from_email": "george.hill@acme-corp.com",
+    "created_at": "2026-04-23T13:00:00Z"
+  },
+  {
+    "id": "ticket_273",
+    "subject": "Single-tenant deployment — feasibility and cost",
+    "body": "Hello,\n\nOur Information Security team has flagged multi-tenant SaaS as a concern for our regulated workload. We'd like to explore a single-tenant deployment option:\n\n1. Is single-tenant (or dedicated infrastructure) available?\n2. Pricing premium for this option\n3. Performance and feature parity with multi-tenant\n4. Implementation timeline\n\nIf single-tenant isn't offered, please explain the alternative isolation guarantees in your standard offering.\n\nMaria Costa\nChief Information Security Officer\nNorthstar Enterprise",
+    "from_name": "Maria Costa",
+    "from_email": "maria.costa@northstar-enterprise.com",
+    "created_at": "2026-05-21T09:00:00Z"
+  },
+  {
+    "id": "ticket_274",
+    "subject": "Custom domain (CNAME) — branding requirements",
+    "body": "Hi,\n\nWe require a custom domain configuration for our deployment. Specifically:\n\n1. Customer-facing chat widget served from chat.summit-global.com (CNAME)\n2. Email replies sent from support@summit-global.com (DKIM via your DNS)\n3. Status page integrated into our internal Confluence\n\nIs this offered? If yes, share configuration guides. If no, advise on roadmap or workaround.\n\nKevin Turner\nSenior IT Manager\nSummit Global",
+    "from_name": "Kevin Turner",
+    "from_email": "kevin.turner@summit-global.com",
+    "created_at": "2026-05-22T09:00:00Z"
+  },
+  {
+    "id": "ticket_275",
+    "subject": "Pricing — request for ROI analysis materials",
+    "body": "Dear Account Team,\n\nWe are in the final stages of evaluating your platform against two competitors. Our finance committee has requested a customer-specific ROI analysis to support the purchase decision.\n\nCan you provide:\n1. Comparable enterprise customer case studies (similar industry/size)\n2. Average time-to-value benchmarks\n3. Total cost of ownership calculator (3-year)\n4. References from customers we can speak with\n\nDecision committee meets in 11 days. Materials needed by EOW.\n\nLisa Young\nDirector, Vendor Strategy\nSummit Global",
+    "from_name": "Lisa Young",
+    "from_email": "lisa.young@summit-global.com",
+    "created_at": "2026-05-16T12:00:00Z"
+  },
+  {
+    "id": "ticket_276",
+    "subject": "Vendor onboarding — required documentation",
+    "body": "Hello,\n\nTo complete vendor onboarding in our procurement system, please provide:\n\n1. W-9 (or local tax equivalent)\n2. Certificate of insurance — general liability and cyber\n3. Banking details on company letterhead\n4. Diversity certification (if applicable)\n5. ESG / sustainability disclosure (we ask all vendors)\n\nKindly route to your finance/operations team. Onboarding is the gate to PO issuance.\n\nJohn Patel\nVendor Onboarding Specialist\nVertex Industries",
+    "from_name": "John Patel",
+    "from_email": "john.patel@vertex-industries.com",
+    "created_at": "2026-02-28T14:00:00Z"
+  },
+  {
+    "id": "ticket_277",
+    "subject": "Disaster recovery — request for DR plan documentation",
+    "body": "Dear Vendor,\n\nOur business continuity team requires a copy of your disaster recovery and business continuity plan, including:\n\n1. RTO and RPO commitments\n2. Backup procedures and retention\n3. Geographic redundancy details\n4. Failover testing frequency and last test results\n5. Communication protocols during incidents\n\nThis is part of our ISO 22301 compliance program. Please respond within 15 business days.\n\nClaire Evans\nManager, Business Continuity\nNorthstar Enterprise",
+    "from_name": "Claire Evans",
+    "from_email": "claire.evans@northstar-enterprise.com",
+    "created_at": "2026-04-16T06:00:00Z"
+  },
+  {
+    "id": "ticket_278",
+    "subject": "Procurement and governance review",
+    "body": "Dear Team,\n\nWe are currently evaluating your platform as part of an enterprise procurement and governance review. Please provide the requested information and expected timelines for completion. This evaluation determines whether we proceed to contract negotiation.\n\nItems requested:\n- ISO 27001 certificate (current)\n- Recent SOC 2 Type II report (under NDA)\n- GDPR compliance attestation\n- Reference customers in financial services (3-5)\n- Implementation timeline estimate for 600-seat rollout\n\nKindly respond within 7 business days.\n\nEric Nelson\nProcurement Lead\nVertex Industries",
+    "from_name": "Eric Nelson",
+    "from_email": "eric.nelson@vertex-industries.com",
+    "created_at": "2026-04-09T06:00:00Z"
+  },
+  {
+    "id": "ticket_279",
+    "subject": "Reference call request — 3 customer references",
+    "body": "Hello,\n\nAs we approach contract decision, our committee has asked for 3 customer references we can speak to directly. Preferably:\n\n- 1 in financial services\n- 1 with similar deployment size (400+ seats)\n- 1 who has been a customer 2+ years\n\nWe'll keep calls under 30 minutes and provide questions in advance. Can you facilitate?\n\nMonica Cruz\nSenior Procurement Analyst\nApex Holdings",
+    "from_name": "Monica Cruz",
+    "from_email": "monica.cruz@apexholdings.com",
+    "created_at": "2026-03-15T07:00:00Z"
+  },
+  {
+    "id": "ticket_280",
+    "subject": "Service catalog inclusion — request for vendor profile",
+    "body": "Dear Account Manager,\n\nFollowing contract approval, we will list your platform in our internal service catalog. Please provide:\n\n1. Service description (200 words max)\n2. Use case scenarios (3-4 bullet points)\n3. Onboarding process summary\n4. Support contact for end users\n5. Cost per seat (for chargeback purposes)\n\nThis enables our 8,000-employee org to request access through standard internal channels.\n\nBrian Lee\nIT Service Management\nSummit Global",
+    "from_name": "Brian Lee",
+    "from_email": "brian.lee@summit-global.com",
+    "created_at": "2026-03-30T07:00:00Z"
+  },
+  {
+    "id": "ticket_281",
+    "subject": "Compliance — quarterly attestation requirement",
+    "body": "Hi,\n\nAs part of our vendor management program, we require quarterly attestation from key vendors. Attached is our Q1 2026 attestation form covering:\n\n- Continued SOC 2 compliance\n- No material changes to data handling practices\n- No undisclosed breaches in the reporting period\n- Sub-processor list update\n- Updated insurance certificates\n\nResponse due 30 days from receipt. Counterparty: third-party-risk@apexholdings.com.\n\nNina Shah\nThird-Party Risk Officer\nApex Holdings",
+    "from_name": "Nina Shah",
+    "from_email": "nina.shah@apexholdings.com",
+    "created_at": "2026-04-24T06:00:00Z"
+  },
+  {
+    "id": "ticket_282",
+    "subject": "Integration with internal SIEM — log streaming",
+    "body": "Hello,\n\nOur Security Operations Center requires audit log streaming from your platform into our internal SIEM (Splunk). Specifically:\n\n1. Real-time log streaming (not batch export)\n2. Structured log format (CEF or JSON)\n3. Event types: auth, admin actions, data access, API calls\n4. Configurable filtering at source\n\nIs this supported? If yes, what's the configuration process? If no, advise on roadmap.\n\nPeter Novak\nSenior SOC Engineer\nNorthstar Enterprise",
+    "from_name": "Peter Novak",
+    "from_email": "peter.novak@northstar-enterprise.com",
+    "created_at": "2026-03-12T07:00:00Z"
+  },
+  {
+    "id": "ticket_283",
+    "subject": "Custom legal terms — limitation of liability",
+    "body": "Dear Legal Counsel,\n\nReviewing your standard MSA — the limitation of liability cap at 'fees paid in prior 12 months' is below our standard threshold. Our policy requires either:\n\n1. 2x annual fees, OR\n2. Removal of cap for breach of confidentiality, data protection, IP, and indemnification obligations\n\nOption 2 is preferable. Please confirm whether this is negotiable. If not, we cannot proceed.\n\nJulia Martin\nGeneral Counsel\nAcme Corp",
+    "from_name": "Julia Martin",
+    "from_email": "julia.martin@acme-corp.com",
+    "created_at": "2026-05-11T10:00:00Z"
+  },
+  {
+    "id": "ticket_284",
+    "subject": "Custom training requirements — admin certification",
+    "body": "Hi,\n\nFor our deployment, we'd like to formally certify a small group of internal admins (4-5 people) on your platform. Question:\n\n1. Do you offer formal admin certification training?\n2. Is it instructor-led or self-paced?\n3. Cost per attendee\n4. Recertification requirements\n\nThis enables us to internally support our user base without escalating to your support for everything.\n\nChris Wood\nIT Training Manager\nApex Holdings",
+    "from_name": "Chris Wood",
+    "from_email": "chris.wood@apexholdings.com",
+    "created_at": "2026-05-06T13:00:00Z"
+  },
+  {
+    "id": "ticket_285",
+    "subject": "Annual security review — kickoff meeting request",
+    "body": "Dear Vendor Management,\n\nAs part of our annual third-party security review, we'd like to schedule a 60-minute call with your security team. Agenda:\n\n1. Update on security program (since last year's review)\n2. Walk-through of any new sub-processors or data flows\n3. Discussion of recent incidents (if any)\n4. Review of remediation items from last year\n\nProposed date: in next 3 weeks. Attendees from our side: CISO, Privacy Counsel, IT Director.\n\nAngela Price\nManager, Vendor Security\nSummit Global",
+    "from_name": "Angela Price",
+    "from_email": "angela.price@summit-global.com",
+    "created_at": "2026-04-23T14:00:00Z"
+  },
+  {
+    "id": "ticket_286",
+    "subject": "RFP response — your participation requested",
+    "body": "Hello,\n\nWe are conducting a formal RFP for our customer support platform. Your platform is one of 4 finalists.\n\nAttached:\n- RFP document (87 questions)\n- Scoring methodology\n- Timeline (responses due in 21 days)\n- Decision committee members (for context)\n\nPlease confirm your team's ability to respond and assign a single point of contact for the RFP process.\n\nRohan Verma\nSourcing Manager\nAcme Corp",
+    "from_name": "Rohan Verma",
+    "from_email": "rohan.verma@acme-corp.com",
+    "created_at": "2026-04-01T10:00:00Z"
+  },
+  {
+    "id": "ticket_287",
+    "subject": "Custom workflow approval — change advisory board",
+    "body": "Hi,\n\nOur Change Advisory Board has approved the rollout of your platform contingent on the following customizations being available:\n\n1. Approval workflows for high-value customer escalations (manager sign-off required)\n2. Mandatory commenting on certain status transitions (audit trail requirement)\n3. Role-based visibility on PHI-tagged tickets (HIPAA workload)\n\nPlease confirm support and any configuration limitations.\n\nKaren White\nIT Project Manager\nSummit Global",
+    "from_name": "Karen White",
+    "from_email": "karen.white@summit-global.com",
+    "created_at": "2026-04-28T12:00:00Z"
+  },
+  {
+    "id": "ticket_288",
+    "subject": "European entity — separate contract required",
+    "body": "Hello,\n\nOur German subsidiary requires a separate contract with your EU entity (if applicable) for tax and data residency reasons. The contract for our US parent does not cover our European operations.\n\nPlease confirm:\n1. You have an EU entity for contracting\n2. Currency options (EUR preferred)\n3. Local jurisdiction (Germany or general EU)\n4. Tax compliance (VAT handling, OSS scheme)\n\nIf you don't have an EU entity, advise on the path forward.\n\nStefan Koch\nLegal Counsel, EU Operations\nAcme Corp",
+    "from_name": "Stefan Koch",
+    "from_email": "stefan.koch@acme-corp.com",
+    "created_at": "2026-05-01T06:00:00Z"
+  },
+  {
+    "id": "ticket_289",
+    "subject": "Conditional approval — penetration test required",
+    "body": "Dear Vendor,\n\nOur InfoSec committee has conditionally approved your platform pending one additional item: we require a current penetration test summary from a reputable third party (NCC, Bishop Fox, or equivalent) within the past 6 months.\n\nIf your current report is older than 6 months, please indicate when the next test is scheduled.\n\nWe'd prefer to close out approval this quarter — please respond promptly.\n\nIsabelle Roy\nGovernance and Compliance Lead\nApex Holdings",
+    "from_name": "Isabelle Roy",
+    "from_email": "isabelle.roy@apexholdings.com",
+    "created_at": "2026-04-22T10:00:00Z"
+  },
+  {
+    "id": "ticket_290",
+    "subject": "TPRM tool integration — automated assessment exchange",
+    "body": "Hello,\n\nOur Third-Party Risk Management tool is OneTrust. We'd like to streamline our annual reviews by exchanging assessment data via the OneTrust shared profile mechanism.\n\nDoes your team:\n1. Have a published OneTrust profile?\n2. Maintain an SCA / CAIQ self-assessment that can be shared?\n3. Use any standardized assessment framework (e.g., SIG, CCM)?\n\nThis would save both teams substantial annual effort.\n\nMark Hughes\nTPRM Program Director\nVertex Industries",
+    "from_name": "Mark Hughes",
+    "from_email": "mark.hughes@vertex-industries.com",
+    "created_at": "2026-03-24T09:00:00Z"
+  },
+  {
+    "id": "ticket_291",
+    "subject": "Custom SSO integration — non-standard IdP",
+    "body": "Hi,\n\nWe use a non-standard internal identity provider (proprietary, OIDC-compliant). Standard SAML may not work with it directly.\n\nDoes your platform support:\n1. OIDC (not just SAML)?\n2. Custom claim mapping?\n3. Multiple IdPs per workspace (for federation)?\n\nIf only SAML is supported, can we use a third-party broker (like Auth0)?\n\nTeresa Bell\nIdentity Engineering\nApex Holdings",
+    "from_name": "Teresa Bell",
+    "from_email": "teresa.bell@apexholdings.com",
+    "created_at": "2026-03-15T11:00:00Z"
+  },
+  {
+    "id": "ticket_292",
+    "subject": "Implementation services — scope and pricing",
+    "body": "Hello,\n\nWe expect implementation to require significant migration assistance from your team. Specifically:\n\n1. Migration from existing Zendesk instance (~120K historical tickets)\n2. Custom integration build with our internal CRM\n3. User training rollout across 4 global offices\n4. Go-live support (2 weeks of dedicated engineer)\n\nWhat does your professional services team offer for engagements of this size? Pricing?\n\nVikram Singh\nProgram Manager\nAcme Corp",
+    "from_name": "Vikram Singh",
+    "from_email": "vikram.singh@acme-corp.com",
+    "created_at": "2026-03-18T13:00:00Z"
+  },
+  {
+    "id": "ticket_293",
+    "subject": "API limits at enterprise scale — clarification needed",
+    "body": "Dear Account Team,\n\nReviewing your API documentation, we have concerns about rate limits for our scale. We anticipate ~50,000 API calls per hour at peak from our 380 agents.\n\nPlease clarify:\n1. Default rate limits per workspace\n2. Limits per API token vs per workspace\n3. Burst capacity allowances\n4. Process to request higher limits\n5. Cost (if any) for elevated limits\n\nWe cannot proceed without confidence our usage pattern won't get throttled.\n\nGrace Miller\nTechnical Lead, Integrations\nAcme Corp",
+    "from_name": "Grace Miller",
+    "from_email": "grace.miller@acme-corp.com",
+    "created_at": "2026-03-21T12:00:00Z"
+  },
+  {
+    "id": "ticket_294",
+    "subject": "ESG compliance — request for sustainability report",
+    "body": "Dear Vendor,\n\nAs part of our ESG vendor assessment, we require disclosures aligned with our internal sustainability program:\n\n1. Carbon emissions disclosure (Scope 1, 2, 3)\n2. Renewable energy commitments\n3. DEI metrics for your workforce\n4. Modern slavery statement (UK / Australia compliance)\n\nThis assessment is mandated for all vendors with >€100K annual spend. Please respond by quarter-end.\n\nLeo Wagner\nESG Reporting Analyst\nNorthstar Enterprise",
+    "from_name": "Leo Wagner",
+    "from_email": "leo.wagner@northstar-enterprise.com",
+    "created_at": "2026-04-12T14:00:00Z"
+  },
+  {
+    "id": "ticket_295",
+    "subject": "Insurance — proof of coverage required",
+    "body": "Hello,\n\nPer our standard vendor onboarding, please provide certificates of insurance for:\n\n1. Commercial General Liability — minimum $5M per occurrence\n2. Professional Liability / Errors & Omissions — minimum $10M\n3. Cyber Liability — minimum $25M\n4. Workers' Compensation (statutory limits)\n\nCertificates should name Northstar Enterprise as additional insured where applicable. Please route to your finance/risk team.\n\nPaula Diaz\nRisk Management Coordinator\nNorthstar Enterprise",
+    "from_name": "Paula Diaz",
+    "from_email": "paula.diaz@northstar-enterprise.com",
+    "created_at": "2026-03-31T12:00:00Z"
+  },
+  {
+    "id": "ticket_296",
+    "subject": "Quarterly executive review — request for participation",
+    "body": "Dear Account Manager,\n\nAs a top-tier customer, we'd like to formalize quarterly executive reviews with your senior leadership. Suggested attendees from your side: VP of Customer Success and CTO. From ours: CIO and VP IT.\n\nProposed cadence: every 90 days, 60-min calls, alternating focus (strategic roadmap one quarter, operational health the next).\n\nPlease confirm interest and your team's availability.\n\nHenry Ford\nDirector, Strategic Vendors\nApex Holdings",
+    "from_name": "Henry Ford",
+    "from_email": "henry.ford@apexholdings.com",
+    "created_at": "2026-03-09T11:00:00Z"
+  },
+  {
+    "id": "ticket_297",
+    "subject": "Subprocessor approval — change pending",
+    "body": "Hi,\n\nYour sub-processor change notification from 14 March 2026 (addition of unnamed AI services provider) requires approval from our Data Protection Officer before we can accept.\n\nQuestions before approval:\n1. Which specific AI services provider? OpenAI, Anthropic, others?\n2. What data is sent to them?\n3. Is the data anonymized/pseudonymized before transmission?\n4. Where is the provider's processing geographically located?\n5. Can we opt out of this sub-processor while maintaining the rest of the service?\n\nPending approval, please confirm our data is NOT yet being sent to this sub-processor.\n\nElena Petrova\nData Protection Officer\nAcme Corp",
+    "from_name": "Elena Petrova",
+    "from_email": "elena.petrova@acme-corp.com",
+    "created_at": "2026-03-20T14:00:00Z"
+  },
+  {
+    "id": "ticket_298",
+    "subject": "Vendor diversity supplier program — disclosure form",
+    "body": "Dear Vendor,\n\nAs part of our supplier diversity initiative, we collect disclosure from all vendors:\n\n1. Are you a certified diverse supplier (MBE, WBE, VBE, LGBTQ+)?\n2. Approximate percentage of leadership team identifying as underrepresented\n3. Diversity hiring goals (publicly stated)\n\nThis is voluntary but tracked. Responses inform our internal diversity scorecard.\n\nNoah Carter\nSupplier Diversity Coordinator\nAcme Corp",
+    "from_name": "Noah Carter",
+    "from_email": "noah.carter@acme-corp.com",
+    "created_at": "2026-04-12T08:00:00Z"
+  },
+  {
+    "id": "ticket_299",
+    "subject": "Mid-term contract amendment — additional seats",
+    "body": "Hello,\n\nOur usage has grown faster than projected. We need to add 80 seats mid-term to our existing contract. Please confirm:\n\n1. Pro-rated pricing for the remainder of our annual term\n2. Whether the per-seat rate at our existing tier still applies, or if we trigger Enterprise pricing\n3. Co-terming with our existing renewal date\n4. Amendment paperwork required\n\nWe'd like to execute this within 2 weeks if possible.\n\nAlicia Brown\nSenior Procurement Specialist\nVertex Industries",
+    "from_name": "Alicia Brown",
+    "from_email": "alicia.brown@vertex-industries.com",
+    "created_at": "2026-03-20T14:00:00Z"
+  },
+  {
+    "id": "ticket_300",
+    "subject": "Enterprise contract — finalize and sign",
+    "body": "Dear Account Team,\n\nOur committee has approved your platform for procurement. All due diligence complete. Final steps:\n\n1. Final MSA execution (DocuSign acceptable)\n2. Order form for 410 seats — Business tier, 24-month commitment\n3. Provisioning timeline for our 6 global offices (staggered rollout)\n4. Kickoff call with implementation team\n5. Issuance of PO (we'll handle on receipt of countersigned MSA)\n\nPlease send the final agreement documents to legal@apexholdings.com (CC me). Looking forward to a productive partnership.\n\nOmar Khalid\nDirector of Procurement\nApex Holdings",
+    "from_name": "Omar Khalid",
+    "from_email": "omar.khalid@apexholdings.com",
+    "created_at": "2026-03-25T14:00:00Z"
+  }
+]
