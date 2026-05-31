@@ -161,6 +161,33 @@ Dashboard request
    )
 ```
 
+**Example `GET /overview` response** — the single key actually stored in Redis under `triage:overview`:
+
+```json
+{
+  "total_tickets": 300,
+  "by_priority": {
+    "low": 99,
+    "medium": 68,
+    "high": 54,
+    "critical": 79
+  },
+  "by_category": {
+    "billing": 28,
+    "technical": 106,
+    "feature_request": 94,
+    "complaint": 30,
+    "general": 42
+  },
+  "by_sentiment": {
+    "positive": 46,
+    "neutral": 105,
+    "negative": 65,
+    "angry": 84
+  }
+}
+```
+
 ### Constrained LLM output via Pydantic + Literal
 
 The LLM cannot produce invalid values. The schema is enforced at the API layer:
@@ -172,6 +199,22 @@ class TriageOutput(BaseModel):
     sentiment: Literal["positive", "neutral", "negative", "angry"]
     summary:   str  # max 500 chars
     tags:      list[str]  # 2-5 kebab-case tags
+```
+
+**Example triage result** — what the LLM actually returns and what gets cached under `triage:ticket:{id}`:
+
+```json
+{
+  "priority": "low",
+  "category": "billing",
+  "sentiment": "neutral",
+  "summary": "The customer did not receive an email receipt for the April payment and needs it for expense reimbursement.",
+  "tags": [
+    "payment-receipt",
+    "resend-request",
+    "expense-reporting"
+  ]
+}
 ```
 
 Combined with `LangChain.with_structured_output(TriageOutput)`, the LLM is structurally incapable of returning `"super high"` or `"medium-ish"`. Validated round-trip on both write (LLM → Redis) and read (Redis → dashboard).
