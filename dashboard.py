@@ -32,9 +32,7 @@ from repositories.triage_cache_repository import TriageCacheRepository
 from services.overview_service import OverviewService
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Page config — must be the first Streamlit call
-# ────────────────────────────────────────────────────────────────────────────
 
 st.set_page_config(
     page_title="TicketSense",
@@ -44,10 +42,8 @@ st.set_page_config(
 )
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Larger caption helper — Streamlit's built-in st.caption renders quite small.
 # This wraps st.markdown with explicit styling so all helper text is legible.
-# ────────────────────────────────────────────────────────────────────────────
 
 def big_caption(text: str) -> None:
     st.markdown(
@@ -57,7 +53,6 @@ def big_caption(text: str) -> None:
     )
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Persistent event loop — shared across all async calls in the script.
 #
 # Why not asyncio.run()? It creates a fresh loop each call and closes it after.
@@ -67,7 +62,6 @@ def big_caption(text: str) -> None:
 #
 # @st.cache_resource memoizes the loop across Streamlit reruns so the same
 # loop (and its bound connections) lives for the entire dashboard session.
-# ────────────────────────────────────────────────────────────────────────────
 
 T = TypeVar("T")
 
@@ -82,19 +76,15 @@ def run_async(coro: Coroutine[None, None, T]) -> T:
     return _event_loop().run_until_complete(coro)
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Display orderings — natural sequence for each constrained set so the bar
 # charts don't render alphabetically (which is meaningless for "priority")
-# ────────────────────────────────────────────────────────────────────────────
 
 PRIORITY_ORDER = ["low", "medium", "high", "critical"]
 SENTIMENT_ORDER = ["positive", "neutral", "negative", "angry"]
 CATEGORY_ORDER = ["billing", "technical", "feature_request", "complaint", "general"]
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Async helpers — Streamlit runs sync, so we wrap each async call in asyncio.run
-# ────────────────────────────────────────────────────────────────────────────
 
 def load_overview() -> OverviewResponse | None:
     """Single Redis GET for the cached aggregate."""
@@ -150,9 +140,7 @@ def load_sample_tickets(n: int = 10) -> list[dict]:
     return run_async(_go())
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Header
-# ────────────────────────────────────────────────────────────────────────────
 
 st.title("TicketSense")
 big_caption(
@@ -171,9 +159,7 @@ with st.sidebar:
         st.rerun()
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Load overview
-# ────────────────────────────────────────────────────────────────────────────
 
 overview = load_overview()
 
@@ -185,9 +171,7 @@ if overview is None:
     st.stop()
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # KPI row — four metric cards
-# ────────────────────────────────────────────────────────────────────────────
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Total tickets", overview.total_tickets)
@@ -196,9 +180,7 @@ col3.metric("Angry", overview.by_sentiment.get("angry", 0))
 col4.metric("Technical", overview.by_category.get("technical", 0))
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Three breakdown charts side-by-side
-# ────────────────────────────────────────────────────────────────────────────
 
 def ordered_df(counts: dict, order: list[str], col_label: str) -> pd.DataFrame:
     """Coerce a counts dict into a DataFrame ordered by domain convention,
@@ -223,9 +205,7 @@ with c3:
     st.bar_chart(ordered_df(overview.by_sentiment, SENTIMENT_ORDER, "sentiment"))
 
 
-# ────────────────────────────────────────────────────────────────────────────
 # Random sample of triaged tickets
-# ────────────────────────────────────────────────────────────────────────────
 
 st.subheader("Random sample of triaged tickets")
 big_caption("Refresh the page to draw a new random sample.")

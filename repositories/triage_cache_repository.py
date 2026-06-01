@@ -48,20 +48,6 @@ class TriageCacheRepository:
         """True if a triage exists for this ticket (and hasn't expired)."""
         return await self._client.exists(_key(ticket_id)) == 1
 
-    async def delete(self, ticket_id: str) -> bool:
-        """Remove a cached triage. Returns True if a key was deleted, False if it didn't exist."""
-        return await self._client.delete(_key(ticket_id)) == 1
-
-    async def count(self) -> int:
-        """Total number of triaged tickets currently in Redis.
-
-        Note: scans the keyspace — fine at our scale (300 tickets), slow at millions.
-        """
-        count = 0
-        async for _ in self._client.scan_iter(match=f"{TRIAGE_KEY_PREFIX}:*"):
-            count += 1
-        return count
-
     async def get_all(self) -> list[TriageOutput]:
         """Read every triage currently in the cache.
 
@@ -82,14 +68,3 @@ class TriageCacheRepository:
             for v in raw_values
             if v is not None                       # Defensive: skip any key that vanished mid-scan
         ]
-
-    async def clear_all(self) -> int:
-        """Delete every triage key. Returns the count of deleted keys.
-
-        Useful for re-triaging the full dataset from a clean slate.
-        """
-        keys = [k async for k in self._client.scan_iter(match=f"{TRIAGE_KEY_PREFIX}:*")]
-        if not keys:
-            return 0
-        await self._client.delete(*keys)
-        return len(keys)

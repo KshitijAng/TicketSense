@@ -15,12 +15,12 @@ from db.session import settings
 # Connection pool — Redis client uses this under the hood to keep
 # a small number of TCP connections open and reuse them across calls.
 
-# In Python, a leading underscore is a convention meaning "this is a private implementation detail — 
-# don't import or use this from other files."
+# In Python, a leading underscore is a convention meaning "this is a private
+# implementation detail — don't import or use this from other files."
 _pool: ConnectionPool = ConnectionPool.from_url(
     settings.redis_url,
-    decode_responses=True,   # Redis stores everything as bytes. With this, the client auto-converts to str:
-    max_connections=20,      # The pool keeps at most 20 open TCP connections to Redis.
+    decode_responses=True,   # Redis stores everything as bytes; auto-convert to str on read
+    max_connections=20,      # Pool keeps at most 20 open TCP connections to Redis
 )
 
 

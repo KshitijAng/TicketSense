@@ -1,16 +1,18 @@
-"""
-LLM-side DTOs. These are the structured shapes the LLM is FORCED to produce
-when called via `with_structured_output()` — invalid outputs are rejected before they reach us.
+"""LLM output schema.
 
-Descriptions in this file become part of the prompt the LLM sees per field. Write them like instructions.
+When called via `with_structured_output(TriageOutput)`, the LLM is forced to
+produce JSON matching this shape — invalid outputs are rejected.
+
+Field descriptions below are sent to the model as part of the prompt, so they
+read as instructions rather than documentation.
 """
 
 from typing import Literal
 from pydantic import BaseModel, Field
 
 
-class TriageOutput(BaseModel):  # What Groq returns for a triage call — constrained by this schema
-    priority: Literal["low", "medium", "high", "critical"] = Field(   # Literal[...] = LLM must pick exactly one of these strings.
+class TriageOutput(BaseModel):
+    priority: Literal["low", "medium", "high", "critical"] = Field(
         ...,
         description=(
             "How urgent is this ticket? "
@@ -45,9 +47,9 @@ class TriageOutput(BaseModel):  # What Groq returns for a triage call — constr
         ...,
         min_length=1,
         max_length=500,
-        description="One sentence (max 500 chars) summarizing what the customer is asking or reporting. Do not paraphrase — capture the core issue or request.",
+        description="One sentence summarizing what the customer is asking or reporting. Capture the core issue, don't paraphrase.",
     )
     tags: list[str] = Field(
         ...,
-        description="2 to 5 short kebab-case tags capturing key signals (e.g., 'login-issue', 'auth-error', 'urgent', 'churn-risk', 'refund-request'). Tags should help filter and search later.",
+        description="2 to 5 short kebab-case tags capturing key signals (e.g., 'login-issue', 'auth-error', 'urgent', 'churn-risk', 'refund-request').",
     )

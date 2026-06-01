@@ -26,19 +26,11 @@ from services.overview_service import OverviewService
 from services.triage_service import TriageService
 
 
-# ────────────────────────────────────────────────────────────────────────────
-# Per-request Postgres session
-# ────────────────────────────────────────────────────────────────────────────
-
 async def get_session() -> AsyncGenerator[AsyncSession, None]:
     """Yield a session that auto-closes when the request finishes."""
     async with SessionLocal() as session:
         yield session
 
-
-# ────────────────────────────────────────────────────────────────────────────
-# Repositories — thin wrappers around the session / Redis client
-# ────────────────────────────────────────────────────────────────────────────
 
 def get_ticket_repo(
     session: AsyncSession = Depends(get_session),
@@ -49,10 +41,6 @@ def get_ticket_repo(
 def get_cache_repo() -> TriageCacheRepository:
     return TriageCacheRepository(redis_client)
 
-
-# ────────────────────────────────────────────────────────────────────────────
-# Services — composed from repositories
-# ────────────────────────────────────────────────────────────────────────────
 
 def get_triage_service() -> TriageService:
     return TriageService()

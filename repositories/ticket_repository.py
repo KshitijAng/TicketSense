@@ -40,7 +40,7 @@ class TicketRepository:
             .offset(offset)                           # OFFSET M
         )
         result = await self._session.execute(stmt)
-        return list(result.scalars().all())          # scalars() = rows of Ticket objects; .all() = collect into list
+        return list(result.scalars().all())           # scalars() = rows of Ticket objects; .all() = collect into list
 
     async def count(self) -> int:
         """Total tickets in the table."""

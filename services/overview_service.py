@@ -61,18 +61,17 @@ class OverviewService:
         Returns the freshly-computed overview so callers can use it without
         a second round-trip if they want.
         """
-        # ─── 1. Pull source data ───
+        # Pull source data
         total = await self._ticket_repo.count()
         triages = await self._cache_repo.get_all()
 
-        # ─── 2. Tally each label dimension ───
-        # Counter(iterable) → {value: count}. dict() turns it into a plain dict
-        # for clean JSON serialization (Counter pickles slightly differently).
+        # Tally each label dimension. Counter(iterable) → {value: count}.
+        # dict() turns it into a plain dict for clean JSON serialization
+        # (Counter pickles slightly differently).
         by_priority = dict(Counter(t.priority for t in triages))
         by_category = dict(Counter(t.category for t in triages))
         by_sentiment = dict(Counter(t.sentiment for t in triages))
 
-        # ─── 3. Build the response DTO ───
         overview = OverviewResponse(
             total_tickets=total,
             by_priority=by_priority,
@@ -80,7 +79,7 @@ class OverviewService:
             by_sentiment=by_sentiment,
         )
 
-        # ─── 4. Cache for fast subsequent reads ───
+        # Cache for fast subsequent reads
         await self._redis.set(
             OVERVIEW_KEY,
             overview.model_dump_json(),

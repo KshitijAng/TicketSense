@@ -57,14 +57,14 @@ def dto_to_orm(request: TicketSeedRequest) -> Ticket:
 
 
 async def main() -> None:
-    # --- Step 1: read and validate everything BEFORE touching the DB ---
+    # Step 1: read and validate everything BEFORE touching the DB
     raw = load_raw_tickets()
     print(f"Read {len(raw)} tickets from {len(BATCH_FILES)} JSON files")
 
     validated = [TicketSeedRequest(**r) for r in raw]   # fails fast on any bad ticket
     print(f"Validated {len(validated)} tickets against TicketSeedRequest")
 
-    # --- Step 2: insert into Postgres (idempotent — skip if id already exists) ---
+    # Step 2: insert into Postgres (idempotent — skip if id already exists)
     inserted = 0
     skipped = 0
 
@@ -80,7 +80,7 @@ async def main() -> None:
 
         await session.commit()    # single transaction for all 300 inserts
 
-        # --- Step 3: report final state ---
+        # Step 3: report final state
         total = await repo.count()
         print(f"\nInserted: {inserted}")
         print(f"Skipped (already existed): {skipped}")

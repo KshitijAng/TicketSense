@@ -4,8 +4,9 @@ scripts/triage_all.py uses:
 - db/session.py                              → Postgres SessionLocal
 - db/redis_client.py                         → shared async Redis client
 - repositories/ticket_repository.py          → list tickets
-- repositories/triage_cache_repository.py    → set / exists / count in Redis
+- repositories/triage_cache_repository.py    → set / exists in Redis
 - services/triage_service.py                 → the LLM pipeline (primary + fallback)
+- services/overview_service.py               → refresh the pre-computed overview at end
 
 Run via:
     python -m scripts.triage_all                    # all untriaged tickets
@@ -38,7 +39,7 @@ PACING_SECONDS = 2.0
 
 
 async def main(limit: int | None, ticket_id: str | None, force: bool) -> None:
-    # ─── 1. Load the ticket(s) we want to triage from Postgres ───
+    # Load the ticket(s) we want to triage from Postgres
     async with SessionLocal() as session:
         ticket_repo = TicketRepository(session)
 
@@ -58,7 +59,7 @@ async def main(limit: int | None, ticket_id: str | None, force: bool) -> None:
     total = len(tickets)
     logger.info("Loaded %d ticket(s) from Postgres", total)
 
-    # ─── 2. Set up the cache repo + LLM service (one instance for the whole run) ───
+    # Set up the cache repo + LLM service (one instance for the whole run)
     cache_repo = TriageCacheRepository(redis_client)
     service = TriageService()    # Reads GROQ_API_KEY from settings
 
@@ -67,7 +68,7 @@ async def main(limit: int | None, ticket_id: str | None, force: bool) -> None:
     failed = 0
     start = time.time()
 
-    # ─── 3. Loop over tickets ───
+    # Loop over tickets
     for i, ticket in enumerate(tickets, start=1):
         # Idempotency: skip tickets that already have a cached triage,
         # unless the caller explicitly wants to re-triage.
@@ -90,21 +91,19 @@ async def main(limit: int | None, ticket_id: str | None, force: bool) -> None:
                 ticket.id, type(e).__name__, e,
             )
 
-        # Pace requests — sleep AFTER each call so the next iteration doesn't burst Groq's rate limit. 
+        # Pace requests — sleep AFTER each call so the next iteration doesn't burst Groq's rate limit.
         await asyncio.sleep(PACING_SECONDS)
 
     elapsed = time.time() - start
-    total_cached = await cache_repo.count()
 
-    # ─── 4. Final summary ───
+    # Final summary
     print()
     print(f"Triaged: {triaged}")
     print(f"Skipped (already cached): {skipped}")
     print(f"Failed: {failed}")
-    print(f"Total triage keys in Redis now: {total_cached}")
     print(f"Elapsed: {elapsed:.1f}s ({elapsed / max(triaged, 1):.2f}s per triage)")
 
-    # ─── 5. Refresh the pre-computed overview ───
+    # Refresh the pre-computed overview.
     # Keep the dashboard fresh without forcing it to recompute on every load.
     # Done at the end of the run since aggregating mid-run would be wasted work.
     async with SessionLocal() as session:

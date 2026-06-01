@@ -27,14 +27,10 @@ from dtos.llm import TriageOutput
 logger = logging.getLogger(__name__)
 
 
-# ────────────────────────────────────────────────────────────────────────────
-# Configuration
-# ────────────────────────────────────────────────────────────────────────────
-
 PRIMARY_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
 FALLBACK_MODEL = "llama-3.1-8b-instant"
 
-# Backoff schedule for 429 (rate-limit) retries. 
+# Backoff schedule for 429 (rate-limit) retries.
 # Applied INDEPENDENTLY to whichever model is currently being tried.
 RETRY_DELAYS_SECONDS = [1, 2, 4]
 
@@ -46,10 +42,6 @@ SYSTEM_PROMPT = (
     "Pick exactly one value from each constrained field; do not invent new values."
 )
 
-
-# ────────────────────────────────────────────────────────────────────────────
-# Service
-# ────────────────────────────────────────────────────────────────────────────
 
 class TriageService:
     """Async service that turns (subject, body) into a validated TriageOutput.
@@ -73,7 +65,7 @@ class TriageService:
             HumanMessage(content=self._format_ticket(subject, body)),
         ]
 
-        # --- Layer 1+2: try primary with retries; fall back if exhausted ---
+        # Layer 1+2: try primary with retries; fall back if exhausted
         try:
             return await self._call_with_retry(self._primary, messages, model_name=PRIMARY_MODEL)
         except Exception as primary_err:
@@ -82,7 +74,7 @@ class TriageService:
                 PRIMARY_MODEL, type(primary_err).__name__, FALLBACK_MODEL,
             )
 
-        # --- Fallback model path ---
+        # Fallback model path
         try:
             return await self._call_with_retry(self._fallback, messages, model_name=FALLBACK_MODEL)
         except Exception as fallback_err:
@@ -107,7 +99,7 @@ class TriageService:
         for attempt in range(len(RETRY_DELAYS_SECONDS) + 1):
             try:
                 result = await chain.ainvoke(messages)
-                # If result is already a TriageOutput, return it as-is. 
+                # If result is already a TriageOutput, return it as-is.
                 # Otherwise, parse it through Pydantic to turn it into one.
                 return result if isinstance(result, TriageOutput) else TriageOutput.model_validate(result)
             except Exception as e:

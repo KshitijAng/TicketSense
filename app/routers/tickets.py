@@ -2,7 +2,6 @@
 
 POST   /tickets                       → create + auto-triage (full payload)
 GET    /tickets                       → paginated list (with triage joined)
-GET    /tickets/{ticket_id}           → one ticket with its triage
 POST   /tickets/{ticket_id}/triage    → force re-triage (overrides cache)
 
 Auto-triage on POST /tickets is graceful — if the LLM fails entirely, the
@@ -44,10 +43,6 @@ logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/tickets", tags=["tickets"])
 
 
-# ────────────────────────────────────────────────────────────────────────────
-# Helpers
-# ────────────────────────────────────────────────────────────────────────────
-
 def _orm_to_response(ticket: Ticket, triage=None) -> TicketResponse:
     """Coerce an ORM Ticket + optional triage into the API response shape."""
     return TicketResponse(
@@ -60,10 +55,6 @@ def _orm_to_response(ticket: Ticket, triage=None) -> TicketResponse:
         triage=triage,
     )
 
-
-# ────────────────────────────────────────────────────────────────────────────
-# POST /tickets — create a fully-formed ticket and auto-triage it
-# ────────────────────────────────────────────────────────────────────────────
 
 @router.post(
     "",
@@ -127,10 +118,6 @@ async def create_ticket(
     return _orm_to_response(ticket, triage)
 
 
-# ────────────────────────────────────────────────────────────────────────────
-# GET /tickets — paginated list, triage attached if cached
-# ────────────────────────────────────────────────────────────────────────────
-
 @router.get(
     "",
     response_model=list[TicketResponse],
@@ -149,34 +136,6 @@ async def list_tickets(
 
     return [_orm_to_response(t, tr) for t, tr in zip(tickets, triages)]
 
-
-# ────────────────────────────────────────────────────────────────────────────
-# GET /tickets/{ticket_id} — fetch one
-# ────────────────────────────────────────────────────────────────────────────
-
-@router.get(
-    "/{ticket_id}",
-    response_model=TicketResponse,
-    summary="Fetch a single ticket and its triage",
-)
-async def get_ticket(
-    ticket_id: str,
-    ticket_repo: TicketRepository = Depends(get_ticket_repo),
-    cache_repo: TriageCacheRepository = Depends(get_cache_repo),
-) -> TicketResponse:
-    ticket = await ticket_repo.get_by_id(ticket_id)
-    if ticket is None:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Ticket {ticket_id!r} not found.",
-        )
-    triage = await cache_repo.get(ticket_id)
-    return _orm_to_response(ticket, triage)
-
-
-# ────────────────────────────────────────────────────────────────────────────
-# POST /tickets/{ticket_id}/triage — force (re)triage
-# ────────────────────────────────────────────────────────────────────────────
 
 @router.post(
     "/{ticket_id}/triage",
